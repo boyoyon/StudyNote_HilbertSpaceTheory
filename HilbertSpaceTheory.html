@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+        <meta charset="uft-8">
+        <title>ヒルベルト空間論</title>
+        <style type="text/css">
+            p
+            {
+                padding-left: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>ヒルベルト空間論 (Hilbert Space Theory)</h1>
+        <h2><a href="data/lemma01.html">補題1.</a></h2>
+        <p>
+            <a href="data/NormedSpace.html">ノルム空間</a>は<a href="data/MetricSpace.html">距離空間</a>である。
+        </p>
+        <h2><a href="data/theorem01.html">定理1.</a></h2>
+        <p>
+            <a href="data/UnitarySpace.html">ユニタリー空間</a>は<a href="data/NormedSpace.html">ノルム空間</a>である。
+        </p>
+        <h2>補題2.</h2>
+        <p>
+            <a href="data/UnitarySpace.html">ユニタリー空間</a>は<a href="data/MetricSpace.html">距離空間</a>である。
+        </p>
+        <h2>定理2. グラムとシュミットの直交化法</h2>
+        <p>
+            \(\mathscr X\)を<a href="data/UnitarySpace.html">ユニタリー空間</a>とし, \(\mathscr L＝\{x_{1}, x_{2}, ･･･, x_{n}, ･･･\}⊂\mathscr X\)<br>
+            をベクトルの1次独立な系列とする。このとき,\(\mathscr L\) に含まれるベクトルの<br>
+            1次結合で与えられるベクトルを選んで, 正規直交系<br>
+            \(\mathscr E＝\{e_{1}, e_{2}, ･･･, e_{n}, ･･･\}⊂\mathscr X\) を作ることができる。 
+        </p>
+        <h2>定理3. ベッセルの不等式</h2>
+        <p>
+            \(\mathscr X\) を<a href="data/UnitarySpace.html">ユニタリー空間</a>とし, \(\{e_{1}, e_{2},･･･, e_{n}\}⊂\mathscr X\) を<br>
+            \(\mathscr X\) の正規直交系とする。このとき, \(∀x∈\mathscr X\) に対して<br>
+            \(\sum_{j=1}^{n}|(e_{j}|x)|^2≦||x||^2\) となる。
+        </p>
+        <h2>定理4. ピタゴラスの定理</h2>
+        <p>
+            <a href="data/UnitarySpace.html">ユニタリー空間</a> \(\mathscr X\) の互いに直交するベクトル \(x, y∈\mathscr X\) に対し,<br>
+            恒等式 \(||x+y||^2＝||x||^2+||y||^2\) が成り立つ。            
+        </p>
+        <h2>定理5. ジョルダン－フォン・ノイマンの定理</h2>
+        <p>
+            ベクトル \(x, y∈\mathscr X\)に対し, 恒等式<br>
+            \(||x+y||^2+||x－y||^2＝2(||x||^2+||y||^2)\)<br>
+            が成り立つ。
+        </p>
+        <h2>補題3.</h2>
+        <p>
+            収束列は基本列である。
+        </p>
+        <h2>定理6. カントールの定理</h2>
+        <p>
+            実数全体からなる集合 \(R\) は完備距離空間である。
+        </p>
+        <h2>定理7. 完備化定理</h2>
+        <p>
+            任意の距離空間は完備距離空間の中に稠密に埋め込むことができる。<br>
+            <br>
+            集合 \(\mathscr X\) が距離関数 \(d\) について距離空間になっているとする。<br>
+            このとき, ある完備距離空間 \(\mathscr Y\) が存在し, その距離関数 \(ρ\) として,<br>
+            \(ρ(φ(x), φ(y))＝ d(x,y)　(∀x, y∈\mathscr X)\) を満足する<br>
+            \(φ：\mathscr X → \mathscr Y\) が存在する。<br>
+            さらに, この等長写像 \(φ\) による \(\mathscr X\) の像 \(φ(\mathscr X)≡\{φ(x)|∀x∈\mathscr X\}\) は<br>
+            \(\mathscr Y\) で稠密である。
+        </p>
+        <h2>定理8.</h2>
+        <p>
+            有界関数全体からなる集合 \(\mathscr B[0,1]\) は完備距離空間である。
+        </p>
+        <h2>定理9.</h2>
+        <p>
+            関数列 \(\{x_{n}\}_{n=1}^∞⊂\mathscr B[0,1]\) が \(x∈\mathscr B[0,1]\) に一様収束し, <br>
+            全ての関数 \(x_{n}\) が連続関数なら, 極限 \(x=\displaystyle \lim_{n \to \infty} x_{n}\) も連続関数になる。
+        </p>
+        <h2>定理10.</h2>
+        <p>
+            完備距離空間 \(\mathscr X\) から完備距離空間 \(\mathscr L\) への写像 \(T：\mathscr X→\mathscr L\)<br>
+            が点 \(x∈\mathscr X\) で連続ならば、\(x\) に収束する任意の点列\(\{x_{n}\}_{n=1}^∞⊂\mathscr X\)<br>
+            に対して点列 \(\{Tx_{n}\}_{n=1}^∞⊂L\) は点 \(Tx\) に収束する。<br>
+            また, 逆も成り立つ。
+        </p>
+        <h2>定理11. 不動点定理</h2>
+        <p>
+            完備距離空間Xからそれ自身への写像 \(T:\mathscr X → \mathscr X\) が縮小写像ならば<br>
+            \(Tx=x\) となる点 \(x∈X\) が唯一存在する。<br>
+            この点を縮小写像 \(T\) の不動点という。
+        </p>
+        <h2>定理12. 存在定理</h2>
+        <p>
+            関数 \(f:R^2\ni (x,y)\to f(x,y)\in R\) は領域 \(D⊂R^2\) で連続であり<br>
+            かつ何らかの正数 \(k\gt 0\) が存在して任意の \((x,y),(x,z)\in D\) に対して<br>
+            不等式 \(|f(x,y)－f(x,z)|≦k|y－z|\) が満たされるとき, <br>
+            任意の \(y_{0}∈R\) についての初期条件 \(y(x_{0})＝y_{0}\) を満足する<br>
+            微分方程式 \(\frac{dy}{dx}＝f(x,y)\) の解は \(x_{0}\) の適当な近傍で<br>
+            一意に存在する。
+        </p>
+        <h2>定理13. ワイエルシュトラス</h2>
+        <p>
+            閉区間 \([a,b]⊂R\) で定義された任意の連続関数 \(f∈C[a,b]\) とする。<br>
+            このとき、任意の正数 \(ε>0\) に対し, 何らかの多項式関数 \(p=p(x)\) <br>
+            が存在して \(||f-p||＜ε\) となる。
+        </p>
+        <h2>定理14. ヘルダーの不等式</h2>
+        <p>
+            実数 \(p＞1\) に対して \(\frac{1}{p}+\frac{1}{q}＝1\) となる \(q＞1\) を考える。<br>
+            このとき, \(f∈L^q[0,1], g∈L^q[0,1]\) ならば<br>
+            \(\int_{0}^1|f(r)g(r)|dr≦\sqrt[p]{\int_{0}^1|f(r)|^pdr}\sqrt[q]{\int_{0}^1|g(r)|^qdr}\)<br>
+            が成り立つ。<br>
+            特に \(p=q=2\) のとき、このヘルダーの不等式は<br>
+            コーシー-シュワルツの不等式と呼ばれる。
+        </p>
+        <h2>定理15. ミンコフスキーの不等式</h2>
+        <p>
+            \(f,g\in L^p[0,1]\) ならば \(||f+g||_{p}\leq ||f||_{p}+||g||_{p}\) が成り立つ。
+        </p>
+        <h2>定理16.</h2>
+        <p>
+            ノルム空間 \(\mathscr X\) からノルム空間 \(\mathscr Z\) への有界線形写像全体<br>
+            からなる集合<br>
+            \(\mathscr L\)
+        </p>
+        <h2></h2>
+        <p>
+        </p>
+        <h2></h2>
+        <p>
+        </p>
+        <h2></h2>
+        <p>
+        </p>
+        <h2></h2>
+        <p>
+        </p>
+        <h2></h2>
+        <p>
+        </p>
+        <h2></h2>
+        <p>
+        </p>
+        <h2></h2>
+        <p>
+        </p>
+        <h2></h2>
+        <p>
+        </p>
+        <h2></h2>
+        <p>
+        </p>
+        <h2></h2>
+        <p>
+        </p>
+        <h2></h2>
+        <p>
+        </p>
+        <h2></h2>
+        <p>
+        </p>
+    </body>
+</html>
