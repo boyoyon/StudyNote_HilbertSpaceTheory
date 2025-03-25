@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
+        <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
         <meta charset="uft-8">
         <title>距離空間 (Metric Space)</title>
         <style type="text/css">
@@ -13,7 +15,51 @@
     <body>
         <h1>距離空間 (Metric Space)</h1>
         <p>
-            <a href="DistanceFunction.html">距離関数</a>が存在す集合を距離<a href="Space.html">空間</a>と呼ぶ。
+            <a href="DistanceFunction.html">距離関数</a>が存在す集合を距離<a href="Space.html">空間</a>と呼ぶ。<br>
+            任意の2要素間に遠近の概念が与えられた集合。
+        </p>
+        <h2>距離空間の例</h2>
+        <h3>●実数の集合</h3>
+        <p>
+            実数の集合 \(R\) は距離関数 \(d(x,y)=|x-y|\) の存在により距離関数である。
+        </p>
+        <h3>●複素数の集合</h3>
+        <p>
+            複素数の集合 \(C=\{x=x+iy|\forall x,y\in R\}\equiv R+iR\) は距離関数<br>
+            \(d(z,w)=|z-w|\) の存在により距離空間である。
+        </p>
+        <h3>●実数の集合の \(n\) 次のべき集合(1)</h3>
+        <p>
+            実数の集合の \(n\)次のべき集合<br>
+            \(R^n=R × R × ･･･ × R=\{(x_{1},x_{2},･･･,x_{n})|\forall x_{1},x_{2},･･･,x_{n}\in R\}\)<br>
+            は, 距離関数<br>
+            \(d(x,y)=\sqrt{\displaystyle \sum_{j=1}^n (x_{j}-y_{j})^2}\)<br>
+            の存在により距離空間である。
+        </p>
+        <h3>●実数の集合の \(n\) 次のべき集合(2)</h3>
+        <p>
+            実数の集合の \(n\)次のべき集合 \(R^n\) は, 距離関数<br>
+            \(d(x,y)=\displaystyle \max_{1\leq j\leq n} \{|x_{j}-y_{j}|\}\)<br>
+            の存在により距離空間である。
+        </p>
+        <h3>●単位閉区間 \([0,1]=\{r\in R|0\leq r\leq 1\}\) 上で定義された連続関数の集合</h3>
+        <p>
+            \(\mathscr C[0,1]=\{x:[0,1]\to R|x(t)\)は\(0\leq r\leq 1\) で連続\(\}\)<br>
+            は距離関数<br>
+            \(d(x,y)=\displaystyle \max_{0\leq t\leq 1} |x(t)-y(t)|\)<br>
+            の存在により距離空間である。
+        </p>
+        <h3>任意の集合</h3>
+        <p>
+            任意の集合 \(\mathscr X\) は距離関数<br>
+            \(\begin{eqnarray}
+            d(x,y)=
+            \begin{cases}
+            0 & (x=y) \\
+            1 & (x\neq y)
+            \end{cases}
+            \end{eqnarray}\)<br>
+            の存在により距離空間である。この空間は特に離散距離空間と呼ばれる。
         </p>
     </body>
 </html>

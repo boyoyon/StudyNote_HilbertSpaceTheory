@@ -18,8 +18,24 @@
             <a href="UnitarySpace.html">ユニタリー空間</a>は<a href="NormedSpace.html">ノルム空間</a>である。<br>
             <br>
             (証明)<br>
-
-            (Q.E.D.)
+            \(\mathscr X\) をユニタリー空間とすると, 任意の2要素 \(x,y\in \mathscr X\) に対して<br>
+            内積 \((x|y)\in C\) が与えられる。内積の第4条件より, \((x|x)\geq 0\) となり<br>
+            写像 \(x\to \sqrt{(x|x)}\) は \(\mathscr X\) から実数の集合 \(R\) への写像であることがわかる。<br>
+            この写像を \(||x||\) とすれば、これはノルムの3条件を満たす。<br>
+            (Q.E.D.)<br>
+            <br>
+            (蛇足)<br>
+            ① \(||x||=\sqrt{(x|x)}\geq 0\)<br>
+            　　\(\sqrt{･}\) は定義より , ･ が非負なら非負の実数<br>
+            ② \(||\lambda x||=\sqrt{(\lambda x|\lambda x)}=\sqrt{\lambda \overline{\lambda}(x|x)}=\sqrt{|\lambda| ^2(x|x)}=|\lambda |\sqrt{(x|x)}=|\lambda |||x||\)<br>
+            　　\(\lambda \overline{\lambda}\)：偏角を足すと0なので, 大きさ \(|\lambda|^2\) の実数になる。<br> 
+            ③ \(||x+y||^2=(x+y|x+y)=(x|x)+(x|y)+(y|x)+(y|y)=(x|x)+(x|y)+\overline{(x|y)}+(y|y)\)<br>
+            　　\((x|y)+\overline{(x|y)}=2･real(x|y)\leq 2|(x|y)|\)　実部の大きさ≦複素数の大きさ<br>
+            　　\(|(x|y)|\leq ||x||||y||\)　コーシー・シュワルツの法則<br>
+           　　 → 定理14の特殊形をここで使ってよいのか？<br>
+            　　\(||x+y||^2\leq ||x||^2 + 2||x||||y||+||y||^2=(||x||+||y||)^2\)<br>
+            　　\(||x+y||\leq ||x||+||y||\)<br>
+           (蛇足終わり)
         </p>
     </body>
 </html>

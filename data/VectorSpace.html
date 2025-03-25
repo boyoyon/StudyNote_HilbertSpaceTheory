@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+        <meta charset="uft-8">
+        <title>ベクトル空間</title>
+        <style type="text/css">
+            p
+            {
+                padding-left: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>ベクトル空間 (Vector Spaces)</h1>
+        <p>
+            <a href="ScalarMultiple.html">スカラー倍</a>と<a href="VectorSum.html">ベクトル和</a>が存在する集合をベクトル空間という。<br>
+            <br>
+            (蛇足)　\(u,v,w\in V\)(ベクトル空間), \(a,b\in F\)(体)<br>
+            ①ベクトル和の結合律<br>
+            　\(u+(v+w)=(u+v)+w\)<br>
+            ②ベクトル和の可換律<br>
+            　\(u+v=v+u\)<br>
+            ③ベクトル和単位元の存在<br>
+            　零ベクトル \(0\in V\) が存在し, 任意の \(v\in V\) に対して \(v+0=v\)<br>
+            ④ベクトル和逆元の存在<br>
+            　任意の \(v\in V\) に対して、ベクトル和の逆元 \(-v\in V\) が存在し<br>
+            　\(v+(-v)=0\) となる<br>
+            ⑤スカラー倍の分配律<br>
+            　\(a(u+v)=au+av\)<br>
+            ⑥体の加法に対するスカラー倍の分配率<br>
+            　\((a+b)v=av+bv\)<br>
+            ⑦体の乗法とスカラー倍の両立条件<br>
+            　\(a(bv)=(ab)v\)<br>
+            ⑧スカラー倍の単位元の存在<br>
+            　\(1v=v\)　(左辺の1はFの乗法単位元)<br>
+            (蛇足終わり)<br>
+        </p>
+        <h2>ベクトル空間の例</h2>
+        <h3>実数の集合 \(R\)</h3>
+        <p>
+            実数の間の自然な積と和を<a href="ScalarMultiple.html">スカラー倍</a>と<a href="VectorSum.html">ベクトル和</a>と考えることにより,<br>
+            ベクトル空間となる。
+        </p>
+        <h3>複素数の集合 \(C\)</h3>
+        <p>
+            実数と複素数の積を<a href="ScalarMultiple.html">スカラー倍</a>とし、複素数の和を<a href="VectorSum.html">ベクトル和</a>と考えることにより, ベクトル空間となる。
+        </p>
+        <h3>実数の集合の\(n\)次のべき集合\(R^n\)</h3>
+        <p>
+            任意の要素 \(x=\{x_{1},x_{2},･･･,x_{n}\}\in R^n\) と任意の実数 \(\lambda\in R\) の<a href="ScalarMultiple.html">スカラー倍</a>を<br>
+            \(\lambda x\equiv (\lambda x_{1},\lambda x_{2},･･･,\lambda x_{n}\}\in R^n\)<br>
+            と定め, 他の任意の要素 \(y=\{y_{1},y_{2},･･･,y_{n}\}\in R^n\) との<a href="VectorSum.html">ベクトル和</a>を<br>
+            \(x+y\equiv(x_{1}+y_{1},x_{2}+y_{2},･･･,x_{n}+y_{n}\}\in R^n\)<br>
+            と定めることによりベクトル空間になる。
+        </p>
+        <h3>実数の集合 \(R\) からそれ自身への写像, つまり関数を要素とする集合</h3>
+        <p>
+            \(\mathscr F(R)=\{f|f:R\to R\}\) は実数と関数の積を<a href="ScalarMultiple.html">スカラー倍</a>, 関数と関数の和を<a href="VectorSum.html">ベクトル和</a>と考えると, ベクトル空間になる。
+        </p>
+    </body>
+</html>

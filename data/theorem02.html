@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+        <meta charset="uft-8">
+        <title>定理02</title>
+        <style type="text/css">
+            p
+            {
+                padding-left: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>定理2. グラムとシュミットの直交化法</h1>
+        <p>
+            \(\mathscr X\)を<a href="UnitarySpace.html">ユニタリー空間</a>とし, \(\mathscr L＝\{x_{1}, x_{2}, ･･･, x_{n}, ･･･\}⊂\mathscr X\)<br>
+            を<a href="Vector.html">ベクトル</a>の<a href="LinearIndependence.html">1次独立</a>な系列とする。このとき,\(\mathscr L\) に含まれる<a href="Vector.html">ベクトル</a>の<br>
+            1次結合で与えられる<a href="Vector.html">ベクトル</a>を選んで, 正規直交系<br>
+            \(\mathscr E＝\{e_{1}, e_{2}, ･･･, e_{n}, ･･･\}⊂\mathscr X\) を作ることができる。<br>
+            <br> 
+            (証明)<br>
+            \(n\) についての数学的帰納法を用いる。<br>
+            <br>
+            \(n=1\) の場合。<br>
+            　\(e_{1}\equiv \frac{1}{||x_{1}||}x_{1}\)<br>
+            　とおけば, \(||e_{1}||=1\) となる。<br>
+            <br>
+            \(1\leq j\leq ｎ\) の範囲のすべての \(j\) に対して<br>
+            　部分系列 \(\{x_{1},x_{2},･･･,x_{n}\}\) に含まれるベクトルの一次結合で<br>
+            　与えられるベクトルを\(n\)個選んで, 正規直交系 \(\{e_{1},e_{2},･･･,e_{n}\}\) が<br>
+            　作られた、と仮定する。<br>
+               <br>
+           \(n+1\) の場合<br>
+           <br>
+            　このとき, <br>
+            　\(y=x_{n+1}-\displaystyle \sum_{j=1}^n (e_{j}|x_{n+1})e_{j}\)<br>
+            　によって定まるベクトル \(y\) を考えると, <br>
+            　\((e_{k}|y)=(e_{k}|x_{n+1})-\displaystyle \sum_{j=1}^n (e_{j}|x_{n+1})(e_{k}|e_{j})\)<br>
+            　となる。<br>
+             　\(\{e_{1},e_{2},･･･,e_{n}\}\) は正規直交系なので, \(1\leq j, k\leq n\) に対して<br>
+             　\(\begin{eqnarray}
+                (e_{j}|e_{k})=
+                \begin{cases}
+                1 & (j=k)\\
+                0 & (j\neq k)
+                \end{cases} 
+                \end{eqnarray}\)<br>
+            　となり, 上の式は以下になり,<br>
+            　\((e_{k}|y)=(e_{k}|x_{n+1})-(e_{k}|x_{n+1})=0\)<br>
+            　\(y\) は \(\{e_{1},e_{2},･･･,e_{n}\}\) のすべてのベクトルと直交する。<br>
+            　そこで,<br>
+            　\(\displaystyle e_{n+1}\equiv \frac{1}{||y||}y\)<br>
+            　とおけば, \(e_{n+1}\) はノルム1となり, 部分系列 \(\{x_{1},x_{2}.･･･,x_{n+1}\}\)<br>
+             　に含まれるベクトルの一次結合で与えられるベクトルを \(n+1\) 個選んで,<br>
+            　正規直交系 \(\{e_{1},e_{2},････,e_{n+1}\}\) が作られることが示された。<br>
+            (Q.E.D.)
+        </p>
+    </body>
+</html>
