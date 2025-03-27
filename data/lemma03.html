@@ -4,7 +4,7 @@
         <script type="text/javascript" id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
         <meta charset="uft-8">
-        <title>補題03</title>
+        <title>補題3</title>
         <style type="text/css">
             p
             {
@@ -13,12 +13,48 @@
         </style>
     </head>
     <body>
-        <h1>補題3.</h2>
+        <h1>補題3</h2>
         <p>
-            収束列は基本列である。<br>
+            <a href="ConvergentSequence.html">収束列</a>は<a href="FundamentalSequence.html">基本列</a>である。<br>
             <br>
             (証明)<br>
-            (Q.E.D.)
+            距離空間 \(\mathscr X\) の収束列を \(\{x_{n}\}_{n=1}^\infty\) とし, \(x_{\infty}=\displaystyle\lim_{n\to\infty} x_{n}\in\mathscr X\) とする。<br>
+            収束列の定義より, \(\forall\epsilon^\prime\gt 0, \exists n^\prime(\epsilon^\prime)\) で \(n^\prime(\epsilon^\prime)\leq j\) なる任意の自然数<br>
+            \(j\) に対して<br>
+            \(d(x_{j}, x_{\infty})\lt \epsilon^\prime\)<br>
+            となる。従って, \(n^\prime(\epsilon^\prime)\leq j\leq k\) に対して三角不等式から<br>
+            \(d(x_{j},x_{k})\leq d(x_{j}, x_{\infty})+d(x_{\infty}, x_{k})\lt 2\epsilon^\prime\)<br>
+            を得る。\(\epsilon=2\epsilon^\prime, n^\prime(\epsilon^\prime)=n(\epsilon)\) とおけば, これは点列 \(\{x_{n}\}_{n=1}^\infty\) が<br>
+            基本列であることを示している。<br>
+            (Q.E.D.)<br>
+            <br>
+            一般に, この命題の逆は成り立たない。<br>
+        </p>
+        <h3>●例1. 有理数全体からなる集合</h3>
+        <p>
+            \(Q\) を有理数全体からなる集合とする。\(Q\) は距離関数<br>
+            \(d(r, s)=|r-s|　(\forall r,s\in Q)\)<br>
+            の存在によって距離空間である。このとき, \(Q\) の点列 \(\{x_{n}\}_{n=1}^\infty\) を<br>
+            \(x_{n}=\displaystyle\sum_{k=0}^n\frac{1}{k!}\)<br>
+            によって定めれば, これは基本列となる。しかし極限<br>
+            \(\displaystyle\lim_{n\to\infty} x_{n}=\displaystyle\sum_{k=0}^\infty\frac{1}{k!}\)<br>
+            は自然対数の底 \(e\) であり \(Q\) には存在しない。<br>
+            従って収束列ではない。<br>
+        </p>
+        <h3>●例2.</h3>
+        <p>
+            任意の正数 \(\delta\gt 0\) で \(\delta\lt 1\) となるものに対し, 閉区間 \([0, 1-\delta ]\)<br>
+            で定義された多項式関数の全体を \(\mathscr P[0, 1-\delta]\) とすると, <br>
+            \(\mathscr P[0, 1-\delta]\) は距離関数<br>
+            \(d(p,q)=\displaystyle\max_{0\leq t\leq 1-\delta} \{|p(t)-q(t)|\}\)<br>
+            の存在によって距離空間である。このとき, \(\mathscr P[0, 1-\delta]\) の点列<br>
+            \(\{p_{n}\}\) を<br>
+            \(p_{n}=p_{n}(t)\equiv\displaystyle\sum_{k=0}^n t^k\)<br>
+            なる多項式関数の列として定めれば, それは明らかに基本列となる。<br>
+            しかし,<br>
+             \(p_{\infty}:t\to p_{\infty}(t)=\displaystyle\lim_{n\to\infty} p_{n}(t)=\displaystyle\sum_{k=0}^\infty t^k\)<br>
+            は多項式関数とはならず, \(\mathscr P[0, 1-\delta]\) には存在しない。<br>
+            つまり, \(\mathscr P[0, 1-\delta]\) の基本列 \(\{p_{n}\}\) は収束列ではない。
         </p>
     </body>
 </html>

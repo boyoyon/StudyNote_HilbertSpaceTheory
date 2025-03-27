@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
+        <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
         <meta charset="uft-8">
         <title>ノルム空間 (Normed Space)</title>
         <style type="text/css">
@@ -13,7 +15,28 @@
     <body>
         <h1>ノルム空間 (Normed Space)</h1>
         <p>
-            <a href="Norm.html">ノルム</a>が存在する<a href="">ベクトル空間</a>をノルム<a href="Space.html">空間</a>と呼ぶ。
+            <a href="Norm.html">ノルム</a>が存在する<a href="VectorSpace.html">ベクトル空間</a>をノルム空間と呼ぶ。<br>
+            <br>
+            ベクトルの長さの概念が与えられたベクトル空間。
+        </p>
+        <h2>ノルム空間の例</h2>
+        <h3>●実数の集合 \(R\)</h3>
+        <p>
+            絶対値をノルムとするノルム空間である。<br>
+            \(||x||=|x|　(\forall x\in R)\)<br>
+        </p>
+        <h3>●実数の集合の \(n\) 次のべき集合 \(R^n\)</h3>
+        <p>
+            \(1\leq p\leq \infty\) の任意の定数 \(p\) に対して<br>
+            定まるノルム(\(p-\)ノルムという)<br>
+            \(||x||_{p}=\sqrt[p]{\displaystyle \sum_{j=1}^n |x_{j}|^p}　(\forall x=(x_{1},x_{2},･･･,x_{n})\in R^n)\)<br>
+            の存在によってノルム空間となる。
+        </p>
+        <h3>●単位閉区間 \([0,1]\) 上で定義された連続関数の集合 \(\mathscr C[0,1]\)</h3>
+        <p>
+            ノルム<br>
+            \(||x||=\displaystyle \max_{0\leq t\leq 1}|x(t)|　(\forall x\in\mathscr C[0,1])\)<br>
+            の存在によってノルム空間となる。
         </p>
     </body>
 </html>

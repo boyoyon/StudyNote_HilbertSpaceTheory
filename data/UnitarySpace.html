@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
+        <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
         <meta charset="uft-8">
         <title>ユニタリー空間</title>
         <style type="text/css">
@@ -15,6 +17,27 @@
         <p>
         <a href="HermitianInnerProduct.html">エルミート内積</a>が定義された<a href="ComplexVectorSpace.html">複素ベクトル空間</a>。<br>
         ユニタリー空間は, 複素ユークリッド空間とよばれることもある。<br>
+        <br>
+            ベクトルの向きの概念が与えられた複素ベクトル空間
+        </p>
+        <h2>ユニタリー空間の例</h2>
+        <h3>●複素数の集合 \(C\) の \(n\) 次べき集合 \(C^n\)</h3>
+        <p>
+            内積 \((w|z)=\displaystyle\sum_{j=1}^n\overline{w_{j}}z_{j}　(\forall z,w\in C^n)\)<br>
+            の存在によってユニタリー空間である。
+        </p>
+        <h3>●単位閉区間 \([0,1]\) 上で定義された複素数値連続関数の集合</h3>
+        <p>
+            \(\mathscr C_{C}[0,1]=\{\psi|\psi:[0,1]\to C\}\)<br>
+            は内積<br>
+            \((\varphi|\psi)=\displaystyle\int_0^1\overline{\varphi(t)}\psi(t) dt　(\forall \psi,\varphi\in\mathscr C_{C}[0,1])\)<br>
+            の存在によってユニタリー空間となる。
+        </p>
+        <h3>●複素数列 \(\alpha=\{\alpha_{1},\alpha_{2},\alpha_{3},･･･\}\equiv\{\alpha_{j}\}_{j=1}^\infty\)</h3>
+        <p>
+            \(\displaystyle\sum_{j=1}^\infty |\alpha_{j}|^2\lt \infty\) となるものの全体からなる集合を \(l^2\) とすると,<br>
+            これは内積 \((\beta|\alpha)=\displaystyle\sum_{j=1}^\infty\overline{\beta_{j}}\alpha_{j}　(\forall \alpha,\beta\in l^2)\)<br>
+            の存在によりユニタリー空間となる。
         </p>
     </body>
 </html>
