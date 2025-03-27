@@ -17,15 +17,16 @@
         <p>
             <a href="ConvergentSequence.html">収束列</a>は<a href="FundamentalSequence.html">基本列</a>である。<br>
             <br>
-            (証明)<br>
+        <h2>証明</h2>
+        <p>
             距離空間 \(\mathscr X\) の収束列を \(\{x_{n}\}_{n=1}^\infty\) とし, \(x_{\infty}=\displaystyle\lim_{n\to\infty} x_{n}\in\mathscr X\) とする。<br>
             収束列の定義より, \(\forall\epsilon^\prime\gt 0, \exists n^\prime(\epsilon^\prime)\) で \(n^\prime(\epsilon^\prime)\leq j\) なる任意の自然数<br>
-            \(j\) に対して<br>
-            \(d(x_{j}, x_{\infty})\lt \epsilon^\prime\)<br>
-            となる。従って, \(n^\prime(\epsilon^\prime)\leq j\leq k\) に対して三角不等式から<br>
+            \(j\) に対して \(d(x_{j}, x_{\infty})\lt \epsilon^\prime\) となる。<br>
+            従って, \(n^\prime(\epsilon^\prime)\leq j\leq k\) に対して三角不等式から<br>
             \(d(x_{j},x_{k})\leq d(x_{j}, x_{\infty})+d(x_{\infty}, x_{k})\lt 2\epsilon^\prime\)<br>
             を得る。\(\epsilon=2\epsilon^\prime, n^\prime(\epsilon^\prime)=n(\epsilon)\) とおけば, これは点列 \(\{x_{n}\}_{n=1}^\infty\) が<br>
             基本列であることを示している。<br>
+            <br>
             (Q.E.D.)<br>
             <br>
             一般に, この命題の逆は成り立たない。<br>
