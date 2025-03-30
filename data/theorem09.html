@@ -20,7 +20,16 @@
         </p>
         <h2>証明</h2>
         <p>
-
+            \(\{x_{n}\}_{n=1}^\infty\subset\mathscr B[0,1]\) が \(x\in\mathscr B[0,1]\) に一様収束する, すなわち<br>
+            \(\forall\epsilon\gt 0, \exists n\) で \(\displaystyle ||x_{j}-x||\lt\frac{\epsilon}{3}　(\forall j\geq n)\) となる。<br>
+            <br>
+            このとき, \(t\in[0,1]\) を固定して考えると \(t\) での関数 \(x_{j}\) の連続性<br>
+            から, \(\exists\delta\gt 0, |s-t|\lt\delta\) なる任意の \(s\) に対して<br>
+            \(\displaystyle |x_{j}(s)-x_{j}(t)|\lt\frac{\epsilon}{3}\) となる。これにより<br>    
+            \(\displaystyle |x(s)-x(t)|\leq |x(s)-x_{j}(s)|+|x_{j}(s)-x_{j}(t)|+|x_{j}(t)-x(t)|\)<br>
+            　　　　　　　\(\displaystyle\leq||x-x_{j}||+\frac{\epsilon}{3}+||x_{j}-x||\)<br>
+            　　　　　　　\(\displaystyle\lt\frac{\epsilon}{3}+\frac{\epsilon}{3}+\frac{\epsilon}{3}=\epsilon\)<br>
+            を得る。故に, 関数 \(x\) も \(t\)で連続。\(t\) は任意だったから, \(x\) は連続関数。<br>
             <br>
             (Q.E.D.)
         </p>

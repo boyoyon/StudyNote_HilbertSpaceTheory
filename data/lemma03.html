@@ -16,7 +16,7 @@
         <h1>補題3</h2>
         <p>
             <a href="ConvergentSequence.html">収束列</a>は<a href="FundamentalSequence.html">基本列</a>である。<br>
-            <br>
+        </p>
         <h2>証明</h2>
         <p>
             距離空間 \(\mathscr X\) の収束列を \(\{x_{n}\}_{n=1}^\infty\) とし, \(x_{\infty}=\displaystyle\lim_{n\to\infty} x_{n}\in\mathscr X\) とする。<br>
@@ -31,6 +31,7 @@
             <br>
             一般に, この命題の逆は成り立たない。<br>
         </p>
+
         <h3>●例1. 有理数全体からなる集合</h3>
         <p>
             \(Q\) を有理数全体からなる集合とする。\(Q\) は距離関数<br>
@@ -42,6 +43,7 @@
             は自然対数の底 \(e\) であり \(Q\) には存在しない。<br>
             従って収束列ではない。<br>
         </p>
+
         <h3>●例2.</h3>
         <p>
             任意の正数 \(\delta\gt 0\) で \(\delta\lt 1\) となるものに対し, 閉区間 \([0, 1-\delta ]\)<br>
@@ -56,6 +58,16 @@
              \(p_{\infty}:t\to p_{\infty}(t)=\displaystyle\lim_{n\to\infty} p_{n}(t)=\displaystyle\sum_{k=0}^\infty t^k\)<br>
             は多項式関数とはならず, \(\mathscr P[0, 1-\delta]\) には存在しない。<br>
             つまり, \(\mathscr P[0, 1-\delta]\) の基本列 \(\{p_{n}\}\) は収束列ではない。
+        </p>
+
+        <h3>蛇足</h3>
+        <img src="images/Convergent_vs_Fundamental.svg">
+        <p>
+            基本列は収束先(極限)が, 距離空間の中に存在しない場合がある。<br>
+            一見, 弱点のようなこの性質により, 距離空間内の点からなる点列を<br>
+            使って, 距離空間の外の点を指し示すことができる。→ <a href="theorem06.html">定理6</a>, <a href="theorem07.html">定理7</a><br>
+            <br>
+            (蛇足終わり)
         </p>
     </body>
 </html>

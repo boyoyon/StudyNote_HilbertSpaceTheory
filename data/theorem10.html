@@ -15,15 +15,24 @@
     <body>
         <h1>定理10.</h1>
         <p>
-            完備距離空間 \(\mathscr X\) から完備距離空間 \(\mathscr Z\) への写像 \(T：\mathscr X→\mathscr Z\)<br>
-            が点 \(x∈\mathscr X\) で連続ならば、\(x\) に収束する任意の点列\(\{x_{n}\}_{n=1}^∞⊂\mathscr X\)<br>
-            に対して点列 \(\{Tx_{n}\}_{n=1}^∞\subset \mathscr Z\) は点 \(Tx\) に収束する。<br>
+            <a href="CompleteMetricSpace.html">完備距離空間</a> \(\mathscr X\) から<a href="CompleteMetricSpace.html">完備距離空間</a> \(\mathscr Z\) への写像 \(T：\mathscr X→\mathscr Z\)<br>
+            が点 \(x∈\mathscr X\) で<a href="Continuous.html">連続</a>ならば、\(x\) に収束する任意の<a href="PointSequence.html">点列</a>\(\{x_{n}\}_{n=1}^∞⊂\mathscr X\)<br>
+            に対して<a href="PointSequence.html">点列</a> \(\{Tx_{n}\}_{n=1}^∞\subset \mathscr Z\) は点 \(Tx\) に収束する。<br>
             また, 逆も成り立つ。<br>
         </p>
         <h2>証明</h2>
         <p>
-
+            \(T\) の連続性から, \(\forall\epsilon, \exists\delta\) に対して, \(d(x,y)\lt\delta\) となる点 \(y\in\mathscr X\)<br>
+            について \(\rho(Tx,Ty)\lt\epsilon\) となる。\(x\in\mathscr X\) に収束する点列 \(\{x_{n}\}_{n=1}^\infty\)<br>
+            \(\subset\mathscr X\) をとると, \(\exists n\) に対し \(m\gt n\) なる全ての \(m\) について \(d(x_{m},x)\)<br>
+            \(\lt\delta\) となる。従って, \(T\) の連続性から \(\rho(Tx_{m},Tx)\lt\epsilon\) を得るが, <br>
+            これは点列 \(\{Tx_{n}\}_{n=1}^\infty\subset\mathscr Z\) が点 \(Tx\) で収束することを意味した。<br>
             <br>
+            　逆については, 背理法を用いる。もし結論が成り立たないとすると, <br>
+            すなわち \(T\) が \(x\) で連続でないとすると, 何らかの正数 \(\epsilon\) が存在して,<br>
+            任意の正数 \(\delta\) について \(d(y,x)\lt\delta\) かつ \(\rho(Ty,Tx)\geq\epsilon\) となる点<br>
+            \(y\in\mathscr X\) が存在しなくてはならない。そこで, \(\displaystyle\delta=\frac{1}{n}\) とおいたとき,<br>
+            \(d(x_{n},x)\lt\frac{1}{n}\) かつ \(\rho(Tx_{n}, Tx)\geq\epsilon\) となる点を \(x_{n}
             (Q.E.D.)
         </p>
     </body>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+        <meta charset="uft-8">
+        <title>連続</title>
+        <style type="text/css">
+            p
+            {
+                padding-left: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>連続 (Continuous)</h1>
+        <h2>関数の連続</h2>
+        <p>
+            実数の部分集合 \(A\subset R\) から実数の集合 \(R\) への写像を<br>
+            <strong>関数</strong>という。<br>
+            <br>
+            任意の正数 \(\epsilon\) に対し, ある正数 \(\delta\) が存在し \(|x-y|\lt\delta\)<br>
+            となる全ての実数 \(y\) について \(|f(x)-f(y)|\lt\epsilon\) となる<br>
+            とき, 関数 \(f\) は \(x\in\mathscr D(f)\) で<strong>連続</strong>という。
+        </p>
+        <h2>写像の連続</h2>
+        <p>
+            \(\mathscr X\) を<a href="DistanceFunction.html">距離関数</a> \(d\) が与えられた<a href="CompleteMetricSpace.html">完備距離空間</a>とし, \(\mathscr Z\) を<br>
+            <a href="DistanceFunction.html">距離関数</a> \(\rho\) が与えられた<a href="CompleteMetricSpace.html">完備距離空間</a>とする。2つの<br>
+            <a href="CompleteMetricSpace.html">完備距離空間</a> \(\mathscr X\) と \(\mathscr Z\) の間の写像 \(T:\mathscr X\to\mathscr Z\) を考える。<br>
+            写像 \(T\) による \(x\in\mathscr X\) の像を \(Tx\) で表す。<br>
+            <br>
+            任意の正数 \(\epsilon\) に対し, ある正数 \(\delta\) が存在し \(d(x-y)\lt\delta\)<br>
+            となる全ての点 \(y\in\mathscr X\) について \(\rho(Tx, Ty)\lt\epsilon\) となる<br>
+            とき, 写像 \(T\) は点 \(x\in\mathscr X\) で<strong>連続</strong>という。
+        </p>
+    </body>
+</html>

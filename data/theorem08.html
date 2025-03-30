@@ -33,16 +33,32 @@
                 \(||f||\equiv\sup\mathscr R(f)\equiv\displaystyle\sup_{0\leq t\leq 1}|f(t)|\)<br>
                 によってノルム空間となり, ノルムから誘導される距離関数<br>
                 \(d(f,g)\equiv||f-g||\) によって距離空間になる。<br>
+                (このノルムを<a href="UniformNorm.html">一様ノルム</a>という。)
             </p>
             <h2>証明</h2>
             <p>
-                \(\{x_{n}\}_{n=1}^\infty\) を \(\mathscr B[0,1]\) の任意の基本列とする。すなわち \(\forall x\gt 0\)<br>
+                \(\{x_{n}\}_{n=1}^\infty\) を \(\mathscr B[0,1]\) の任意の基本列とする。すなわち \(\forall\epsilon\gt 0\)<br>
                 \(\exists n\) で \(k\geq j\geq n\) なる任意の \(j, k\) に対して \(||x_{j}-x_{k}||\lt\epsilon\)<br>
-                となる。このとき, \(t\in[0,1]\) を固定して考えると<br>
-                 \(|x_{j}(t)-x_{k}(t)|\leq||x_{j}-x_{k}||\le\epsilon\)<br>
-                 となるため, \(\{x_{n}(t)\}_{n=1}^\infty\) は実数の基本列になる。その極限<br>
-                 \(\displaystyle\lim_{n\to\infty} x_{n}(t)\) を \(x(t)\) とおく。<br>
+                となる。<br>
+                <br>
 
+                このとき, \(t\in[0,1]\) を固定して考えると<br>
+                 \(|x_{j}(t)-x_{k}(t)|\leq||x_{j}-x_{k}||\le\epsilon\)<br>
+                 となるため, \(\{x_{n}(t)\}_{n=1}^\infty\) は実数の基本列になる。実数の集合 \(R\) は<br>
+                 完備距離空間であったから, 基本列 \(\{x_{n}(t)\}_{n=1}^\infty\) は収束列となる。<br>
+                 その極限 \(\displaystyle\lim_{n\to\infty} x_{n}(t)\) を \(x(t)\) とおく。<br>
+                 <br>
+                 \(\{x_{n}\}_{n=1}^\infty\) が収束列であることから, \(\forall\epsilon\gt 0,\exists n\) で<br>
+                 \(\displaystyle |x_{j}(t)-x(t)|\lt\epsilon　(\forall j\geq n)\)　となる。<br>
+                <br>
+                両辺の上界をとれば<br>
+                (\(t\in[0,1]\)を変化させて極限を求め, \(x_{j}(t)\)との差の上界を探せば)<br>   
+                \(||x_{j}-x||=||x-x_{j}||\le\epsilon　(\forall j\gt n)\)<br>
+                を得る。これから関数 \(x-x_{j}\) が有界関数になることがわかり<br>
+                恒等式 \(x=x_{j}+(x-x_{j})\) から, 各点での極限によって定められた<br>
+                関数 \(x\) も有界関数になり, \(\mathscr B[0,1]\)は完備距離空間となる。<br>
+            <br>
+            (Q.E.D.)
             </p>
     </body>
 </html>
