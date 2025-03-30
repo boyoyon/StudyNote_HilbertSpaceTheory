@@ -37,7 +37,7 @@
         <p>
             \(\mathscr X\) を<a href="data/UnitarySpace.html">ユニタリー空間</a>とし, \(\{e_{1}, e_{2},･･･, e_{n}\}⊂\mathscr X\) を<br>
             \(\mathscr X\) の<a href="data/OrthonormalSystem.html">正規直交系</a>とする。このとき, \(∀x∈\mathscr X\) に対して<br>
-            \(\sum_{j=1}^{n}|(e_{j}|x)|^2≦||x||^2\) となる。
+            \(\displaystyle\sum_{j=1}^{n}|(e_{j}|x)|^2≦||x||^2\) となる。
         </p>
         <h2><a href="data/theorem04.html">定理4.</a> ピタゴラスの定理</h2>
         <p>
@@ -71,18 +71,18 @@
         </p>
         <h2><a href="data/theorem08.html">定理8.</a></h2>
         <p>
-            有界関数全体からなる集合 \(\mathscr B[0,1]\) は<a href="data/CompleteMetricSpace.html">完備距離空間</a>である。
+            <a href="data/BoundedFunction.html">有界関数</a>全体からなる集合 \(\mathscr B[0,1]\) は<a href="data/CompleteMetricSpace.html">完備距離空間</a>である。
         </p>
         <h2><a href="data/theorem09.html">定理9.</a></h2>
         <p>
-            関数列 \(\{x_{n}\}_{n=1}^∞⊂\mathscr B[0,1]\) が \(x∈\mathscr B[0,1]\) に一様収束し, <br>
-            全ての関数 \(x_{n}\) が連続関数なら, 極限 \(x=\displaystyle \lim_{n \to \infty} x_{n}\) も連続関数になる。
+            関数列 \(\{x_{n}\}_{n=1}^∞⊂\mathscr B[0,1]\) が \(x∈\mathscr B[0,1]\) に<a href="data/UniformConvergence.html">一様収束</a>し, <br>
+            全ての関数 \(x_{n}\) が<a href="data/ContinuousFunction.html">連続関数</a>なら, 極限 \(x=\displaystyle \lim_{n \to \infty} x_{n}\) も<a href="data/ContinuousFunction.html">連続関数</a>になる。
         </p>
         <h2><a href="data/theorem10.html">定理10.</a></h2>
         <p>
             <a href="data/CompleteMetricSpace.html">完備距離空間</a> \(\mathscr X\) から<a href="data/CompleteMetricSpace.html">完備距離空間</a> \(\mathscr Z\) への写像 \(T：\mathscr X→\mathscr Z\)<br>
-            が点 \(x∈\mathscr X\) で連続ならば、\(x\) に収束する任意の点列\(\{x_{n}\}_{n=1}^∞⊂\mathscr X\)<br>
-            に対して点列 \(\{Tx_{n}\}_{n=1}^∞\subset \mathscr Z\) は点 \(Tx\) に収束する。<br>
+            が点 \(x∈\mathscr X\) で連続ならば、\(x\) に収束する任意の<a href="data/PointSequence.html">点列</a> \(\{x_{n}\}_{n=1}^∞⊂\mathscr X\)<br>
+            に対して<a href="data/PointSequence.html">点列</a> \(\{Tx_{n}\}_{n=1}^∞\subset \mathscr Z\) は点 \(Tx\) に収束する。<br>
             また, 逆も成り立つ。
         </p>
         <h2><a href="data/theorem11.html">定理11.</a> 不動点定理</h2>
@@ -95,9 +95,9 @@
         <p>
             関数 \(f:R^2\ni (x,y)\to f(x,y)\in R\) は領域 \(D⊂R^2\) で連続であり<br>
             かつ何らかの正数 \(k\gt 0\) が存在して任意の \((x,y),(x,z)\in D\) に対して<br>
-            不等式 \(|f(x,y)－f(x,z)|≦k|y－z|\) が満たされるとき, <br>
-            任意の \(y_{0}∈R\) についての初期条件 \(y(x_{0})＝y_{0}\) を満足する<br>
-            微分方程式 \(\frac{dy}{dx}＝f(x,y)\) の解は \(x_{0}\) の適当な近傍で一意に存在する。
+            不等式 \(|f(x,y)－f(x,z)|\leq k|y－z|\) (<strong>リプシッツ条件</strong>)が満たされるとき, <br>
+            任意の \(y_{0}∈R\) についての初期条件 \(y(x_{0})＝y_{0}\) を満足する微分方程式<br>
+            \(\displaystyle\frac{dy}{dx}＝f(x,y)\) の解は \(x_{0}\) の適当な近傍で一意に存在する。
         </p>
         <h2><a href="data/theorem13.html">定理13.</a> ワイエルシュトラス</h2>
         <p>
@@ -109,7 +109,7 @@
         <p>
             実数 \(p＞1\) に対して \(\frac{1}{p}+\frac{1}{q}＝1\) となる \(q＞1\) を考える。<br>
             このとき, \(f∈L^q[0,1], g∈L^q[0,1]\) ならば<br>
-            \(\int_{0}^1|f(r)g(r)|dr≦\sqrt[p]{\int_{0}^1|f(r)|^pdr}\sqrt[q]{\int_{0}^1|g(r)|^qdr}\)<br>
+            \(\displaystyle\int_{0}^1|f(r)g(r)|dr≦\sqrt[p]{\int_{0}^1|f(r)|^pdr}\sqrt[q]{\int_{0}^1|g(r)|^qdr}\)<br>
             が成り立つ。<br>
             特に \(p=q=2\) のとき、このヘルダーの不等式は<br>
             コーシー・シュワルツの不等式と呼ばれる。
@@ -120,21 +120,21 @@
         </p>
         <h2><a href="data/theorem16.html">定理16.</a></h2>
         <p>
-            ノルム空間 \(\mathscr X\) からノルム空間 \(\mathscr Z\) への有界線形写像全体からなる集合<br>
+            <a href="data/NormedSpace.html">ノルム空間</a> \(\mathscr X\) から<a href="data/NormedSpace.html">ノルム空間</a> \(\mathscr Z\) への有界線形写像全体からなる集合<br>
             \(\mathscr L(\mathscr X,\mathscr Z)\equiv \{T|T:\mathscr X\to \mathscr Z, 有界線形写像\}\)<br>
-            は, 写像限界 \(||T||\) をノルムとするノルム空間になる。
+            は, 写像限界 \(||T||\) を<a href="data/Norm.html">ノルム</a>とする<a href="data/NormedSpace.html">ノルム空間</a>になる。
         </p>
         <h2><a href="data/theorem17.html">定理17.</a></h2>
         <p>
-            共役ノルム空間 \(\mathscr X^*\) はバナッハ空間, すなわち完備なノルム空間である。
+            共役ノルム空間 \(\mathscr X^*\) は<a href="data/BanachSpace.html">バナッハ空間</a>, すなわち<a href="data/Complete.html">完備</a>な<a href="data/NormedSpace.html">ノルム空間</a>である。
         </p>
         <h2><a href="data/theorem18.html">定理18.</a></h2>
         <p>
-            ヒルベルト空間の中の直交部分空間は閉部分空間である。
+            <a href="data/HilbertSpace.html">ヒルベルト空間</a>の中の直交部分空間は閉部分空間である。
         </p>
         <h2><a href="data/theorem19.html">定理19.</a> 直和分解</h2>
         <p>
-            \(\mathscr M\) をヒルベルト空間 \(\mathscr H\) の任意の閉部分空間とする。<br>
+            \(\mathscr M\) を<a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) の任意の閉部分空間とする。<br>
             このとき, 任意のベクトル \(x\in \mathscr H\) は \(\mathscr M\) に属する ベクトル \(y\) と<br>
             \(\mathscr M\) の直交部分空間 \(\mathscr M^\perp\) に属するベクトル \(z\) によってベクトル和<br>
             \(x=y+z\)<br>
@@ -142,19 +142,19 @@
             また, 直交部分空間 \(\mathscr M^\perp\) は閉部分空間 \(\mathscr M\) の直交補空間と呼ばれ, <br>
             直和分解 \(x=y+z\) が全ての \(x\in \mathscr H\) について定まる事実を<br>
             \(\mathscr H=\mathscr M\oplus \mathscr M^\perp\)<br>
-            と書いて, ヒルベルト空間 \(\mathscr H\) は閉部分集合 \(\mathscr M\) とその直交補空間 \(\mathscr M^\perp\) <br>
+            と書いて, <a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) は閉部分集合 \(\mathscr M\) とその直交補空間 \(\mathscr M^\perp\) <br>
             とに直和分解されるという。
         </p>
         <h2><a href="data/theorem20.html">定理20.</a> リースの定理</h2>
         <p>
-            \(\varphi\) をヒルベルト空間 \(\mathscr H\) 上の有界線形汎関数とする。<br>
+            \(\varphi\) を<a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) 上の有界線形汎関数とする。<br>
             このとき, 何らかのベクトル \(y_{\varphi}\in \mathscr H\) が唯一つ存在して, \(\forall x\in \mathscr H\) に対して<br>
             \(\varphi(x)=(y_{\varphi}|x)\)<br>
             となる。
         </p>
         <h2><a href="data/lemma04.html">補題4.</a></h2>
         <p>
-            \(\varphi\) をヒルベルト空間 \(\mathscr H\) 上の有界線形汎関数とし,  \(y_{\varphi}\in \mathscr H\) を<br>
+            \(\varphi\) を<a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) 上の有界線形汎関数とし,  \(y_{\varphi}\in \mathscr H\) を<br>
            リースの定理により, \(\forall x\in \mathscr H\) に対して<br>
             \(\varphi(x)=(y_{\varphi}|x)\)<br>
             となるように定まるベクトルとする。このとき, <br>
@@ -163,13 +163,13 @@
         </p>
         <h2><a href="data/theorem21.html">定理21.</a></h2>
         <p>
-            ヒルベルト空間 \(\mathscr H\) が可分ならば, 少なくとも1つの完全正規直交系<br>
+            <a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) が可分ならば, 少なくとも1つの完全正規直交系<br>
             が存在し, どの完全正規直交系に属するベクトルの数(濃度)も同じである。<br>
-            これをヒルベルト空間 \(\mathscr H\) の次元と呼び, \(dim(\mathscr H)\) と記す。
+            これを<a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) の次元と呼び, \(dim(\mathscr H)\) と記す。
         </p>
         <h2><a href="data/theorem22.html">定理22.</a></h2>
         <p>
-            \(\mathscr S=\{e_{n}\}_{n=1}^\infty\) をヒルベルト空間 \(\mathscr H\) の完全正規直交系とする。<br>
+            \(\mathscr S=\{e_{n}\}_{n=1}^\infty\) を<a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) の完全正規直交系とする。<br>
             このとき, \(\forall x\in \mathscr H\) に対して<br>
             \(x=\displaystyle \sum_{n=1}^\infty(e_{n}|x)e_{n}\)<br>
             という一般フーリエ級数展開が成り立つ。\((e_{n}|x)\) を一般フーリエ係数と<br>
@@ -181,7 +181,7 @@
         </p>
         <h2><a href="data/theorem23.html">定理23.</a> 同型定理</h2>
         <p>
-            任意のヒルベルト空間 \(l^2\) 空間は同型である。すなわち, <br>
+            任意の<a href="data/HilbertSpace.html">ヒルベルト空間</a> \(l^2\) 空間は同型である。すなわち, <br>
             両者の間に線形演算と内積を保存する１対１の対応が存在する。
         </p>
         <h2><a href="data/theorem24.html">定理24.</a></h2>
@@ -191,7 +191,7 @@
         </p>
         <h2><a href="data/theorem25.html">定理25.</a></h2>
         <p>
-            ヒルベルト空間上の任意の有界線形作用素 \(T\) は<br>
+            <a href="data/HilbertSpace.html">ヒルベルト空間</a>上の任意の有界線形作用素 \(T\) は<br>
             \(T=X+iY\)<br>
             と一意に分解できる。ここで, \(X,Y\) は自己共役作用素である。
         </p>
@@ -211,7 +211,7 @@
         <p>
             \(P\in \mathscr B(\mathscr H)\) が射影作用素のとき, その値域<br>
             \(\mathscr R(P)\equiv\{y=Px|\forall x\in \mathscr H\}\)<br>
-            はヒルベルト空間 \(\mathscr H\) の閉部分空間となり, それを \(\mathscr M\) とおいた直和分解<br>
+            は<a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) の閉部分空間となり, それを \(\mathscr M\) とおいた直和分解<br>
             \(x=x_{\mathscr M}+x_{\mathscr M^\perp }　(\forall x\in \mathscr H, x_{\mathscr M}, x_{\mathscr M^\perp }\in \mathscr M^\perp)\)<br>
             に対して<br>
             \(Px=x_{\mathscr M}\)<br>
@@ -239,7 +239,7 @@
         </p>
         <h2><a href="data/theorem32.html">定理32.</a></h2>
         <p>
-            \(T\in\mathscr B(\mathscr H)\) がヒルベルト空間上の正規作用素ならば, <br>
+            \(T\in\mathscr B(\mathscr H)\) が<a href="data/HilbertSpace.html">ヒルベルト空間</a>上の正規作用素ならば, <br>
             有界線形作用素としての一意分解<br>
             \(T=X+iY\)<br>
             において, 自己共役作用素 \(X,Y\) は可換<br>
@@ -273,35 +273,35 @@
         </p>
         <h2><a href="data/theorem37.html">定理37.</a></h2>
         <p>
-            \(T\) をヒルベルト空間 \(\mathscr H\) 上の完全連続作用素とし, \(0\neq\lambda\in C\)<br>
+            \(T\) を<a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) 上の完全連続作用素とし, \(0\neq\lambda\in C\)<br>
             をその固有値とすると, 固有部分空間<br>
             \(\mathscr N_{T}(\lambda)=\{x\in \mathscr H|(T-\lambda I)x=0\}\)<br>
             は有限次元である。
         </p>
         <h2><a href="data/theorem38.html">定理38.</a></h2>
         <p>
-            \(T\) をヒルベルト空間 \(\mathscr H\) 上の完全連続作用素とする。このとき<br>
+            \(T\) を<a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) 上の完全連続作用素とする。このとき<br>
             \(0\neq\lambda\in C\) が \(T\) の近似固有値ならば, それは固有値である。
         </p>
         <h2><a href="data/theorem39.html">定理39.</a> 固有値の存在定理</h2>
         <p>
-            ヒルベルト空間 \(\mathscr H\) 上の完全連続作用素 \(T\neq0\) が<br>
+            <a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) 上の完全連続作用素 \(T\neq0\) が<br>
             正規作用素となるなら, 少なくとも1つの固有値が存在する。
         </p>
         <h2><a href="data/theorem40.html">定理40.</a></h2>
         <p>
-            ヒルベルト空間 \(\mathscr H\) 上の完全連続作用素 \(T\) が正規作用素<br>
+            <a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) 上の完全連続作用素 \(T\) が正規作用素<br>
             となるなら, その固有値は高々加算無限個しか存在しない。
         </p>
         <h2><a href="data/lemma05.html">補題5.</a></h2>
         <p>
-            ヒルベルト空間 \(\mathscr H\) 上の完全連続正規作用素 \(T\) のすべての<br>
+            <a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) 上の完全連続正規作用素 \(T\) のすべての<br>
             固有値 \(\{\lambda_{m}\}_{m=1}^\infty\) に対して, \(x\perp\mathscr N_{T}(\lambda_{m})\) となる \(x\in\mathscr H\) は<br>
             \(x=0\) しかない。
         </p>
         <h2><a href="data/theorem41.html">定理41.</a> スペクトル分解</h2>
         <p>
-            ヒルベルト空間 \(\mathscr H\) 上の完全連続正規作用素 \(T\) のスペクトルを<br>
+            <a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) 上の完全連続正規作用素 \(T\) のスペクトルを<br>
             \(\sigma(T)=\{\lambda_{m}\}_{m=1}^\infty\) とし, 固有値 \(\lambda_{m}\) に属する<br>
             固有部分空間 \(\mathscr N_{T}(\lambda_{m})\) への射影作用素を \(P_{m}\) とする。このとき,<br>
             \(T=\displaystyle \sum_{m=1}^\infty \lambda_{m}P_{m}\)<br>
