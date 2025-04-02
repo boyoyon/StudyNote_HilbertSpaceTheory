@@ -19,9 +19,100 @@
         </p>
         <h2>証明</h2>
         <p>
-
+            いま, \(\{\varphi_n\}_{n=1}^\infty\subset\mathscr X^*\) を任意の基本列とすると, \(\forall \varepsilon\gt 0, \exists N\in\mathit N\) で
+        </p>
+        <p>
+            <center>\(\displaystyle ||\varphi_j-\varphi_k||\lt\varepsilon　(j\geq k\geq N)\)</center>
+        </p>
+        <p>
+            が成立している。\(x\in\mathscr X\) を任意に選んで固定すると, \(\{\varphi_n(x)\}_{n=1}^\infty\subset C\) は複素数の数列となり, 
+        </p>
+        <p>
+            <center>\(\displaystyle |\varphi_j(x)-\varphi_k(x)|=|(\varphi_j-\varphi_k)(x)|\)</center><br>
+            <center>\(　　　　　　　　\displaystyle \leq||\varphi_j-\varphi_k||||x||\)</center><br>
+            <center>\(　　　　　　　　\displaystyle \lt\varepsilon　(j\geq k\geq N)\)</center>
+        </p>
+        <p>
+            から基本列であることがわかる。複素数の全体 \(C\) は完備だから, この基本列は極限 \(\displaystyle\varphi(x)\equiv\lim_{n\to\infty}\varphi_n(x)\) に収束する。このとき, 
+        </p>
+        <p>
+            <center>\(\displaystyle \varphi:\mathscr X\to C\)</center>
+        </p>
+        <p>
+            は \(\mathscr X\) の上の汎関数であるが,
+        </p>
+        <p>
+            <center>\(\displaystyle \varphi(x+y)=\lim_{n\to\infty}\varphi_n(x+y)\)</center><br>
+            <center>\(　　　　　　　　\displaystyle =\lim_{n\to\infty}(\varphi_n(x)+\varphi_n(y))\)</center><br>
+            <center>\(　　　\displaystyle =\varphi(x)+\varphi(y)\)</center>
+        </p>
+        <p>
+        </p>
+        <p>
+            <center>\(\displaystyle \)</center>
+        </p>
+        <p>
+            から加法性,
+        </p>
+        <p>
+            <center>\(\displaystyle \varphi(\lambda x)=\lim_{n\to\infty}\varphi_n(\lambda x)\)</center><br>
+            <center>\(　　　　\displaystyle =\lim_{n\to\infty}(\lambda\varphi_n(x))\)</center><br>
+            <center>\(　　　\displaystyle =\lambda\lim_{n\to\infty}\varphi_n(x)\)</center><br>
+            <center>\(\displaystyle =\lambda\varphi(x)\)</center>
+        </p>
+        <p>
+            から斉次性が明らかとなる。<br>
+            　また,
+        </p>
+        <p>
+            <center>\(\displaystyle |\varphi_j(x)-\varphi_k(x)|\leq||\varphi_j-\varphi_k||||x||\)</center><br>
+            <center>\(　　　　　　　　　　　\displaystyle \leq\varepsilon||x||　(j\geq k\geq N)\)</center>
+        </p>
+        <p>
+            から
+        </p>
+        <p>
+            <center>\(\displaystyle |(\varphi-\varphi_j)(x)|=|\varphi(x)-\varphi_j(x)|\)</center><br>
+            <center>\(　　　　　　　\displaystyle \leq\varepsilon||x||　(k\gt N)\)</center>
+        </p>
+        <p>
+            となり, \(\varphi-\varphi_j\) が有界であることがわかる。\(\varphi=\varphi_j+(\varphi-\varphi_j)\) より \(\varphi\) も有界。<br>
+            　以上により, 有界線形汎関数の任意の基本列が収束し, 極限も有界線形汎関数となることが示された。<br>
             <br>
             (Q.E.D.)
+        </p>
+        <p>
+            <strong>課題10</strong>　\(\mathscr C[0,1]\) 上の有界線形汎関数
+        </p>
+        <p>
+            <center>\(\displaystyle \varphi:\mathscr C[0,1]\ni x\to\int_0^1 x(r)dr\in R\)</center>
+        </p>
+        <p>
+            の写像限界 \(||\varphi||\) を求めよ。
+        </p>
+        <p>
+            <strong>課題11</strong>　\(p\gt 1\) に対して \(L^p\) 空間 \(L^p[0,1]\) はノルム
+        </p>
+        <p>
+            <center>\(\displaystyle ||f||_p\equiv\sqrt[p]{\int_0^1 |f(r)|^p dr}\)</center>
+        </p>
+        <p>
+            についてノルム空間であった。\(q\gt 1\) を \(\displaystyle\frac{1}{p}+\frac{1}{q}=1\) によって定め, \(g\in L^p[0,1]\) を1つ固定する。このとき, 
+        </p>
+        <p>
+            <center>\(\displaystyle \varphi:L^p[0,1]\ni f\to\int_0^1 g(x)f(x) dx\)</center>
+        </p>
+        <p>
+            は \(L^p[0,1]\) 上の有界線形汎関数となることを示せ。
+        </p>
+        <p>
+            <strong>課題12</strong>　ノルム空間 \(\mathscr X\) からノルム空間 \(\mathscr Z\) への有界線形写像全体からなるノルム空間
+        </p>
+        <p>
+            <center>\(\displaystyle \mathscr L(\mathscr X, \mathscr Z)\equiv\{T\mid T:\mathscr X\to \mathscr Z, 有界線形写像\}\)</center>
+        </p>
+        <p>
+            がバナッハ空間となることを証明せよ。
         </p>
     </body>
 </html>

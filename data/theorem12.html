@@ -15,17 +15,179 @@
     <body>
         <h1>定理12. 存在定理</h2>
         <p>
-            関数 \(f:R^2\ni (x,y)\to f(x,y)\in R\) は領域 \(D⊂R^2\) で連続であり<br>
-            かつ何らかの正数 \(k\gt 0\) が存在して任意の \((x,y),(x,z)\in D\) に対して<br>
-            不等式 \(|f(x,y)－f(x,z)|\leq k|y－z|\) (<strong>リプシッツ条件</strong>)が満たされるとき, <br>
-            任意の \(y_{0}∈R\) についての初期条件 \(y(x_{0})＝y_{0}\) を満足する微分方程式<br>
-            \(\displaystyle\frac{dy}{dx}＝f(x,y)\) の解は \(x_{0}\) の適当な近傍で一意に存在する。<br>
+            関数 \(f:R^2\ni (x,y)\to f(x,y)\in R\) は領域 \(D⊂R^2\) で連続であり, かつ何らかの正数 \(k\gt 0\) が存在して任意の \((x,y),(x,z)\in D\) に対して不等式
+        </p>
+        <p>
+            <center>\(|f(x,y)－f(x,z)|\leq k|y－z|\) (<strong>リプシッツ条件</strong>)</center>
+        </p>
+        <p>
+            が満たされるとき, 任意の \(y_{0}∈R\) についての初期条件
+        </p>
+        <p>
+            <center>\(y(x_{0})＝y_{0}\)</center> 
+        </p>
+        <p>
+            を満足する<strong>微分方程式</strong>
+        </p>
+        <p>
+            <center>\(\displaystyle\frac{dy}{dx}＝f(x,y)\)</center>
+        </p>
+        <p>
+            の解は \(x_{0}\) の適当な近傍で一意に存在する。<br>
         </p>
         <h2>証明</h2>
         <p>
-
+            まず, 微分方程式の初期値問題が<strong>積分方程式</strong>
+        </p>
+        <p>
+            <center>\(y(x)=y_{0}+\displaystyle\int_{x_{0}}^x f(r,y(r)) dr\)</center>
+        </p>
+        <p>
+            に同値であることを示す。関数 \(y=\varphi(x)\) が初期値問題の解とする。即ち, \(x_{0}\) のある近傍 \(\mathscr N(x_{0})\) があって, \(\forall x\in\mathscr N(x_{0})\) に対して
+        </p>
+        <p>
+            <center>\(\displaystyle\frac{d\varphi}{dx}=f(x,\varphi(x))\)</center>
+        </p>
+        <p>
+            かつ, \(\varphi(x_{0})=y_{0}\) を得る。両辺を積分すると
+        </p>
+        <p>
+            <center>\(\displaystyle\int_{x_{0}}^x\frac{d\varphi}{dr}dr=\int_{x_{0}}^x f(r,\varphi(r))dr\)</center>
+        </p>
+        <p>
+            となり, 左辺の積分を実行すると
+        </p>
+        <p>
+            <center>\(\varphi(x)-\varphi(x_{0})=\displaystyle\int_{x_{0}}^x f(r, \varphi(r)) dr\)</center>
+        </p>
+        <p>
+            となって, \(y=\varphi(x)\) が積分方程式の解になっていることがわかる。<br>
+            　逆に, \(y=\varphi(x)\) が積分方程式の解であるから, 
+        </p>
+        <p>
+            <center>\(\varphi(x)=y_{0}+\displaystyle\int_{x_{0}}^x f(r,\varphi(r)) dr\)</center>
+        </p>
+        <p>
+            を満たす。両辺を微分すれば, \(y=\varphi(x)\) が微分方程式の解であり, 初期条件も満足することがわかる。<br>
+            　次に, 2正数 \(\delta_{z}\gt 0, \alpha\gt 0\) を長方形領域
+        </p>
+        <p>
+            <center>\(\mathscr R\equiv\{(x,y)\mid |x-x_{0}|\leq\delta_{1},|y-y_{0}|\leq a\}\subset R^2\)</center>
+        </p>
+        <p>
+            が領域 \(\mathscr D\) の内部に含まれるように定める。<br>
+            　リプシッツ条件により \(\exists k\gt 0, \forall(x,y), (x,z)\in\mathscr D\) で
+        </p>
+        <p>
+            <center>\(|f(x,y)-f(x,z)|\leq k|y-z|\)</center>
+        </p>
+        <p>
+            となる。また, \(f=f(x.y)\) が \(\mathscr D\) で連続だから有界となり, \(\exists M\gt 0\) で
+        </p>
+        <p>
+            <center>\(|f(x,y)|\leq M　(\forall(x,y)\in\mathscr D)\)</center>
+        </p>
+        <p>
+            となる。<br>
+            　そこで, \(\delta\equiv\min\displaystyle\{\delta_{1},\frac{a}{M},\frac{1}{2k}\}\) とし, 閉区間 \(I\equiv [x_{0}-\delta,x+\delta ]\) 上の連続関数の集合
+        </p>
+        <p>
+            <center>\(\mathscr C(I)=\mathscr C[x_{0}-\delta, x_{0}+\delta ]\)</center>
+        </p>
+        <p>
+            を考える。\(\forall\varphi\in\mathscr C(I)\) のノルムを
+        </p>
+        <p>
+            <center>\(||\varphi||\equiv\displaystyle\max_{r\in I}|\varphi(r)|\)</center>
+        </p>
+        <p>
+            によって導入すると, \(\mathscr C(I)\) が完備距離空間となることは \(\mathscr C[0,1]\) の完備性と同様明らか。<br>
+            　いま, 
+        </p>
+        <p>
+            <center>\(\mathscr S\equiv\{\varphi\in\mathscr C(I)\mid ||\varphi-y_{0}||\leq a\}\subset\mathscr C(I)\)</center>
+        </p>
+        <p>
+            とおくと, \(\mathscr S\) は閉部分空間となり, それ自身で完備距離空間となっている。なぜなら, \(\{\varphi_{n}\}_{n=1}^\infty\subset\mathscr S\) を \(\mathscr S\) の任意の基本列とすると, それは完備距離空間 \(\mathscr C(I)\) に含まれるから, 極限 \(\varphi\) が \(\mathscr C(I)\) の中に存在する。即ち, \(\displaystyle\lim_{n\to\infty}\varphi_{n}=\varphi\) となる。ここで, \(\forall x\in I\) で
+        </p>
+        <p>
+            <center>\(|\varphi_{n}(x)-y_{0}|\leq||\varphi_{n}-y_{0}||\leq a\)</center>
+        </p>
+        <p>
+            となり, \(|\varphi(x)-y_{0}|\leq a\) から \(\varphi\in\mathscr S\) となる。<br>
+            　次に, 写像 \(T:\mathscr S\to\mathscr S\) を
+        </p>
+        <p>
+            <center>\((T\varphi)(x)=y_{0}+\displaystyle\int_{x_{0}}^x f(r,\varphi(r)) dr　(\forall x\in I)\)</center>
+        </p>
+        <p>
+            として定義する。この写像 \(T\) の値域が \(\mathscr S\) となっていることは自明ではないが
+        </p>
+        <p>
+            <center>\(||T\varphi-y_{0}||=\displaystyle\max_{x\in I}|(T\varphi)(x)-y_{0}|\)</center><br>
+            <center>\(　　　　　　　=\displaystyle\max_{x\in I}\left|\int_{x_{0}}^x f(r, \varphi(r)) dr\right|\)</center><br>
+            <center>\(　　　　　　　　\leq\displaystyle\max_{x\in I}\left|\int_{x_{0}}^x |f(r,\varphi(r))|dr\right|\)</center>
+        </p>
+        <p>
+            という評価から
+        </p>
+        <p>
+            <center>\(　||T\varphi-y_{0}||\leq M\displaystyle\max_{x\in I}\left|\int_{x_{0}}^xdr\right|\)</center><br>
+            <center>\(　　　　　　　=M\displaystyle\max_{x\in I}|x-x_{0}|\)</center><br>
+            <center>\(　\leq M\delta\)</center><br>
+            <center>\(\leq a\)</center>
+        </p>
+        <p>
+            のように示される。<br>
+            　次いで, \(T\) が完備距離空間 \(\mathscr S\) からそれ自身への縮小写像となっていることを示す。そのために \(\varphi, \psi\in\mathscr S\) を任意にとる。このとき
+        </p>
+        <p>
+            <center>\(d(T\varphi,Y\psi)　　　　　　　　　　　　　　　　　　　　　　　　　\)</center><br>
+            <center>\(=\displaystyle\max_{x\in I}|(T\varphi)(x)-(T\psi)(x)| 　　　　　　　　　　　　　　　　　　\)</center><br>
+            <center>\(=\displaystyle\max_{x\in I}\left|\Bigg\{y_{0}+\int_{x_{0}}^x f(r,\varphi(r)) dr\Bigg\}-\Bigg\{y_{0}+\int_{x_{0}}^x f(r,\psi(r))dr\Bigg\}\right|\)</center><br>
+            <center>\(=\displaystyle\max_{x\in I}\left|\int_{x_{0}}^x \{f(r,\varphi(r))dr-f(r,\psi(r))dr\}\right|　　　　　　　　　　\)</center><br>
+            <center>\(=\displaystyle\max_{x\in I}\left|\int_{x_{0}}^x|f(r,\varphi(r))-f(r,\psi(r))|dr\right|　　　　　　　　　　　\)</center>
+        </p>
+        <p>
+            において, リップシッツ条件により, 
+        </p>
+        <p>
+            <center>\(d(T\varphi,T\psi)\leq\displaystyle\max_{x\in I}\left|\int_{x_{0}}^x k|\varphi(r)-\psi(r)|dr\right|　　　　\)</center><br>
+            <center>\(\leq\displaystyle\max_{x\in I} \left|k\int_{x{0}}^x ||\varphi-\psi||dr\right|\)</center><br>
+            <center>\(\leq\displaystyle\max_{x\in I} k||\varphi-\psi|||x-x_{0}|\)</center><br>
+            <center>\(\leq k\delta d(\varphi,\psi)　　　　　　　\)</center><br>
+            <center>\(\displaystyle\leq\frac{1}{2}d(\varphi,\psi)　　　　　　　\)</center>
+        </p>
+        <p>
+            を得る。これは \(T\) が縮小写像であることを示す。<br>
+            　完備距離空間 \(\mathscr S\) からそれ自身への縮小写像 \(T\) に不動点定理を用いるならば, \(\mathscr S\) には \(T\) の不動点 \(\varphi\) が一意に存在し, 
+        </p>
+        <p>
+            <center>\(\varphi=T\varphi\)</center>
+        </p>
+        <p>
+            となることがわかる。この等式を \(T\) の定義に遡って書き表すと
+        </p>
+        <p>
+            <center>\(\varphi(x)=(T\varphi)(x)　　　　　　　　　　　　　　　\)</center><br>
+            <center>\(=y_{0}+\displaystyle\int_{x_{0}}^x f(r,\varphi(r))dr　(\forall x\in I)\)</center>
+        </p>
+        <p>
+            を得る。即ち, \(\varphi\) は積分方程式の一意解であり, 従って微分方程式の初期値問題についての一意解となる。<br>
             <br>
             (Q.E.D.)
+        </p>
+        <p>
+            　解の存在を示すために縮小写像 \(T\) を利用した手法は<strong>ピカールの逐次近似法</strong>と呼ばれる。\(T\) という写像を繰り返し組み合わせていくことにより, 組み合わせの回数が有限回のちきは近似解を与え, 無限回の極限で真の解を与える。
+        </p>
+        <p>
+            <strong>課題7</strong>　微分方程式
+        </p>
+        <p>
+            <center>\(\displaystyle\frac{dy}{dx}=y\)</center>
+        </p>
+        <p>
+            を初期条件 \(y(0)=1\) の下で解け。
         </p>
     </body>
 </html>

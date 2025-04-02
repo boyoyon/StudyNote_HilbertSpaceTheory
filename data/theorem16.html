@@ -14,14 +14,147 @@
     </head>
     <body>
         <h1>定理16</h1>
-<p>
-            ノルム空間 \(\mathscr X\) からノルム空間 \(\mathscr Z\) への有界線形写像全体からなる集合<br>
-            \(\mathscr L(\mathscr X,\mathscr Z)\equiv \{T|T:\mathscr X\to \mathscr Z, 有界線形写像\}\)<br>
-            は, 写像限界 \(||T||\) をノルムとするノルム空間になる。<br>
+        <p>
+            ノルム空間 \(\mathscr X\) からノルム空間 \(\mathscr Z\) への有界線形写像全体からなる集合
+        </p>
+        <p>
+            <center>\(\mathscr L(\mathscr X,\mathscr Z)\equiv \{T|T:\mathscr X\to \mathscr Z, 有界線形写像\}\)</center>
+       </p>
+        <p>
+            は, 写像限界 \(||T||\) をノルムとするノルム空間になる。
         </p>
         <h2>証明</h2>
         <p>
-
+            まず, \(\mathscr L(\mathscr X, \mathscr Z)\) がベクトル空間となることを示す。即ち, \(\forall S,T\in\mathscr L(\mathscr X, \mathscr Z), \forall x,y\in\mathscr X, \forall\lambda\in C\) に対して, 有界線形写像のベクトル和 
+        </p>
+        <p>
+            <center>\(\displaystyle (S+T)x\equiv Sx+Tx\)</center>
+        </p>
+        <p>
+            とスカラー倍
+        </p>
+        <p>
+            <center>\(\displaystyle (\lambda S)x\equiv \lambda Sx\)</center>
+        </p>
+        <p>
+            として定められる写像 \(S+T\) と \(\lambda S\) について, 加法性, 斉次性, 有界性が満たされることを示すが \(\lambda S\)については自明であろう。<br>
+            　\(S+T\) について加法性は
+        </p>
+        <p>
+            <center>\(\displaystyle (S+T)(x+y)=S(x+y)+T(x+y)\)</center><br>
+            <center>\(　　　　　　　　　　\displaystyle =(Sx+Sy)+(Tx+Ty)\)</center><br>
+            <center>\(　　　　　　　　　　\displaystyle =(Sx+Tx)+(Sy+Ty)\)</center><br>
+            <center>\(　　　　　　　　　\displaystyle =(S+T)x+(S+T)y\)</center>
+        </p>
+        <p>
+            より明らか。斉次性についても, 
+        </p>
+        <p>
+            <center>\(\displaystyle (S+T)(\lambda x)=S(\lambda x)+T(\lambda x)\)</center><br>
+            <center>\(　　　　　\displaystyle =\lambda Sx+\lambda Tx\)</center><br>
+            <center>\(　　　　　\displaystyle =\lambda(S+T)x\)</center>
+        </p>
+        <p>
+            となり, また有界性についても
+        </p>
+        <p>
+            <center>\(\displaystyle ||(S+T)x||=||Sx+Tx||\)</center><br>
+            <center>\(　　　　　　　　\displaystyle \leq||Sx||+||Tx||\)</center><br>
+            <center>\(　　　　　　　　　　\displaystyle \leq||S||||x||+||T||||x||\)</center><br>
+            <center>\(　　　　　　　　　\displaystyle =(||S||+||T||)||x||\)</center>
+        </p>
+        <p>
+            となって, \(\mathscr L(\mathscr X, \mathscr Z)\) がベクトル空間になることがわかる。<br>
+            　次に, \(\mathscr L(\mathscr X, \mathscr Z)\) が写像限界をノルムとするノルム空間となることを示す。即ち, 
+        </p>
+        <p>
+            <center>\(　　　　　　　　　　\displaystyle ||T||\geq 0　(||T||=0\iff T=0)\)</center><br>
+            <center>\(\displaystyle ||\lambda T||=|\lambda |||T||\)</center><br>
+            <center>\(　　　　\displaystyle ||S+T||\leq||S||+||T||\)</center>
+        </p>
+        <p>
+            を示すが, 最後の三角不等式については \(S+T\) の有界性の証明によって明らか。そこで, 第２の条件から見ていく。
+        </p>
+        <p>
+            <center>\(\displaystyle ||(\lambda T)x||=||\lambda Tx||\)</center><br>
+            <center>\(　　　　　\displaystyle =|\lambda|||Tx||\)</center><br>
+            <center>\(　　　　　　\displaystyle \leq|\lambda|||T||||x~~\)</center>
+        </p>
+        <p>
+            より
+        </p>
+        <p>
+            <center>\(\displaystyle ||\lambda T||\leq|\lambda|||T||\)</center>
+        </p>
+        <p>
+            を得る。<br>
+            　いま, \(||\lambda T||\lt |\lambda|||T||\) と仮定すると,
+        </p>
+        <p>
+            <center>\(\displaystyle ||\lambda T||=\inf\{c\gt 0\mid ||(\lambda T)x||\leq c||x||\}\)</center>
+            <center>\(\displaystyle |\lambda|||T||=|\lambda|\inf\{c\gt 0\mid ||Tx||\leq x||x||\}\)</center>
+        </p>
+        <p>
+            で
+        </p>
+        <p>
+            <center>\(\displaystyle ||\lambda T||\lt d\lt |\lambda|||T||\)</center>
+        </p>
+        <p>
+            となる \(d\gt 0\) が存在する。従って, \(d\gt\exists c_{0}\gt 0, \forall x\in\mathscr X\) に対し
+        </p>
+        <p>
+            <center>\(\displaystyle ||\lambda Tx||\leq c_{0}||x||\)</center>
+        </p>
+        <p>
+            となる。<br>
+            　これから,
+        </p>
+        <p>
+            <center>\(\displaystyle ||\lambda Tx||=|\lambda|||Tx||\)</center><br>
+            <center>\(　　\displaystyle \leq c_{0}||x||\)</center>
+        </p>
+        <p>
+            を得,
+        </p>
+        <p>
+            <center>\(\displaystyle ||Tx||\leq\frac{c_{0}}{|\lambda|}||x||\)</center><br>
+        </p>
+        <p>
+            から
+        </p>
+        <p>
+            <center>\(\displaystyle |\lambda|||T||\leq c_{0}\lt d\)</center>
+        </p>
+        <p>
+            を得るが, これは \(d\lt |\lambda|||T||\) に矛盾する。即ち, 仮定が不適当であった。よって, 
+        </p>
+        <p>
+            <center>\(\displaystyle ||\lambda T||=|\lambda|||T||\)</center>
+        </p>
+        <p>
+            が示された。<br>
+            　第１の条件について, \(T=0\implies ||T||=0\) は自明。逆に \(||T||=0\) ならば
+        </p>
+        <p>
+            <center>\(\displaystyle 0=\inf\{c\gt 0\mid ||Tx||\leq c||x||, \forall x\in\mathscr X\}\)</center>
+        </p>
+        <p>
+            故 \(\forall \varepsilon\gt 0\) に対して
+        </p>
+        <p>
+            <center>\(\displaystyle ||Tx||\leq \varepsilon||x||　(\forall x\in\mathscr X)\)</center>
+        </p>
+        <p>
+            となる。<br>
+            　いま, \(T\neq 0\) と仮定すると, \(\exists x_{0}\in\mathscr X, x_{0}\neq 0\) に対し \(Tx_{0}\neq 0\) となる。そこで, \(||Tx_{0}||=k\neq 0\) とおくと, \(x_{0}\neq0, ||x_{0}||\neq 0\) だから \(\exists \varepsilon_{0}\gt 0\) に対して \(\varepsilon_{0}||x_{0}||\lt k\) となる。従って, 
+        </p>
+        <p>
+            <center>\(\displaystyle ||Tx_{0}||=k\)</center><br>
+            <center>\(　　　　　　\displaystyle \gt\varepsilon_{0}||x_{0}||\)</center>
+        </p>
+        <p>
+            となり, これは上の条件に反する。よって, \(T=0\) であることがわかる。<br>
             <br>
             (Q.E.D.)
         </p>

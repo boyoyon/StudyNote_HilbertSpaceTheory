@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+        <meta charset="uft-8">
+        <title>共役作用素</title>
+        <style type="text/css">
+            p
+            {
+                padding-left: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>共役作用素 (Conjugate Operators)</h1>
+        <p>
+            \(T\) をヒルベルト空間 \(\mathscr H\) の上の有界線形作用素とする。\(y\in\mathscr H\) を固定し, 写像
+        </p>
+        <p>
+            <center>\(\mathscr H\ni x\to(y\mid Tx)\in C\)</center>
+        </p>
+        <p>
+            を考えると, これはヒルベルト空間 \(\mathscr H\) 上の有界線形汎関数となる。従って, リースの定理により \(z\in\mathscr H\) が一意に存在し, 
+        </p>
+        <p>
+            <center>\((y\mid Tx)=(z\mid x)\)</center>
+        </p>
+        <p>
+            となる。<br>
+            　このとき, 写像 \(T^*\) を
+        </p>
+        <p>
+            <center>\(T^*:y\to z\)</center>
+        </p>
+        <p>
+            によって定めれば, これはやはり \(\mathscr H\) 上の有界線形作用素となり, 有界線形作用素 \(T\) の<strong>共役作用素</strong>とよばれる。<br>
+            　\(z=T^*x\) だから, 上の共役作用素の定義式は
+        </p>
+        <p>
+            <center>\((y\mid Tx)=(T^*y\mid x)\)</center>
+        </p>
+        <p>
+            となることは, いうまでもない。
+             　共役作用素については, 以下の性質が成り立つ。<br>
+             <br>
+             ● \((T^*)^*=T\)<br>
+             ● \((S+T)^*=S^*+T^*\)<br>
+             ● \((\lambda T)^*=\overline{\lambda}T^*\)<br>
+             ● \((ST)^*=T^*S^*\)<br>
+             ● \(||T^*||=||T||\)<br>
+             ● \(||T^*T||=||T||^2\)<br>
+             ● \(T^*T=0\) と \(T=0\) は同値<br>
+            <br>
+            ここで, \(T,S\) は任意の有界線形作用素であり, \(\lambda\) は任意の複素数である。
+        </p>
+        <p>
+            <strong>課題</strong>　上の性質が成り立つことを証明せよ。
+        </p>
+
+    </body>
+</html>

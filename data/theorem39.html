@@ -15,14 +15,180 @@
     <body>
         <h1>定理39. 固有値の存在定理</h1>
         <p>
-            ヒルベルト空間 \(\mathscr H\) 上の完全連続作用素 \(T\neq0\) が<br>
-            正規作用素となるなら, 少なくとも1つの固有値が存在する。<br>
+            ヒルベルト空間 \(\mathscr H\) 上の完全連続作用素 \(T\neq0\) が正規作用素となるなら, 少なくとも1つの固有値が存在する。<br>
         </p>
         <h2>証明</h2>
         <p>
-
+            <center>\(S\equiv T^*T\)</center>
+        </p>
+        <p>
+            とおくと, \(S\) は自己共役な完全連続作用素となる。また, \(T\neq 0\) だから
+        </p>
+        <p>
+            <center>\(||S||\gt 0\)</center>
+        </p>
+        <p>
+            となる。<br>
+            　作用素限界の定義から, 点列 \(\{x_{n}\}_{n=1}^[\infty, ||x_{n}||=1\) で
+        </p>
+        <p>
+            <center>\(\displaystyle\lim_{n\to\infty}||Tx_{n}||=||T||\)</center>
+        </p>
+        <p>
+            となるものが存在する。これに対して, 
+        </p>
+        <p>
+            <center>\(||S||=||T^*T||=||T||^2=\displaystyle\lim_{n\to\infty}||Tx_{n}||^2\)</center><br>
+            <center>\(　　　　　　　　　　　　　　　=\displaystyle\lim_{n\to\infty}(Tx_{n}\mid Tx_{n})\)</center><br>
+            <center>\(　　　　　　　　　　　　　　　=\displaystyle\lim_{n\to\infty}(x_{n}\mid T^*Tx_{n})\)</center><br>
+            <center>\(　　　　　　　　　　　　　　　=\displaystyle\lim_{n\to\infty}(x_{n}\mid Sx_{n})\)</center>
+        </p>
+        <p>
+            を得る。<br>
+            　一方, \(T\) は完全連続作用素で, \(\{x_{n}\}_{n=1}^\infty\) は有界列だから, 収束部分列が存在する。よって, \(\displaystyle\lim_{n\to\infty}x_{n}=y\) としても一般性を失わない。<br>
+            　\(\alpha\equiv||S||\) とおくと,
+        </p>
+        <p>
+            <center>\(||Sx_{n}-\alpha x_{n}||^2=||Sx_{n}||^2-2\alpha(xx_{n}\mid Sx_{n})+\alpha^2\)</center>
+            <center>\(　　　　\leq\alpha^2-2\alpha(x_{n}\mid Sx_{n})+\alpha^2\)</center>
+            <center>\(　　　　\to\alpha^2-2\alpha(x_{n}\mid Sx_{n})+\alpha^2\)</center>
+            <center>\(=0　(n\to\infty)\)</center>
+        </p>
+        <p>
+            を得る。即ち, \(\{x_{n}\}_{n=1}^\infty, ||x_{n}||=1\) で
+        </p>
+        <p>
+            <center>\(\displaystyle\lim_{n\to\infty}||(S-\alpha)x_{n}||=0\)</center>
+        </p>
+        <p>
+            となる。従って, \(\alpha\) は \(S\) の近似固有値である。<br>
+            　また,
+        </p>
+        <p>
+            <center>\(Sx_{n}=T^*Tx_{n}\to T^*y\)</center>
+        </p>
+        <p>
+            より
+        </p>
+        <p>
+            <center>\(\alpha x_{n}=(\alpha x_{n}-Sx_{n})+Sx_{n}\to 0+T^*=T^*\)</center>
+        </p>
+        <p>
+            となって,
+        </p>
+        <p>
+            <center>\(x_{n}\to\displaystyle\frac{1}{\alpha}T^*y\equiv z\)</center>
+        </p>
+        <p>
+            なる極限が存在する。このとき, \(\forall n\) で\((||x_{n}||=1\) だから \(||z||=1\) を得る。 <br>
+            　すると,
+        </p>
+        <p>
+            <center>\(Sz=\displaystyle\lim_{n\to\infty}Sx_{n}=T^*y=\alpha z\)</center>
+        </p>
+        <p>
+            となり, \(\alpha\) が \(S\) の固有値で, \(z\) が固有べクトルとなることがわかる。<br>
+            　さらに, \(S\) は完全連続作用素で, \(\alpha\) が固有値だから
+        </p>
+        <p>
+            <center>\(\mathscr N_{S}(\alpha)=\{x\in\mathscr H\mid (S-\alpha I)x=0\}\)</center>
+        </p>
+        <p>
+            は, ヒルベルト空間 \(\mathscr H\) の有限次元部分空間となる。これについての直和分解
+        </p>
+        <p>
+            <center>\(\mathscr H=\mathscr N_{S}(\alpha)\oplus\mathscr N_{S}(\alpha)^\perp\)</center>
+        </p>
+        <p>
+            を考え, \(P\) を \(\mathscr N_{s}(\alpha)\) への射影作用素とする。<br>
+            　すると, \(P\) は \(\mathscr N_{S}(\alpha)\) 上の正規作用素となり, 有限次元部分空間上の正規作用素が固有値を持つことから, \(P\) が少なくとも1つの固有値 \(\lambda\) を持ち, \(x\in\mathscr N_{S}(\alpha),||x||=1\) なる固有ベクトルに対し
+        </p>
+        <p>
+            <center>\(Px=\lambda x\)</center>
+        </p>
+        <p>
+            となる。<br>
+            　また, \(T\) は正規作用素だから \(T\) と \(T^*\) は可換であり,
+        </p>
+        <p>
+            <center>\(TS=ST\)</center>
+        </p>
+        <p>
+            及び
+        <p>
+        </p>
+        <p>
+            <center>\(T^*S=ST^*\)</center>
+        </p>
+        <p>
+            を得る。これから, \(\forall x\in\mathscr N_{S}(\alpha)\) について,
+        </p>
+        <p>
+            <center>\(Sx=\alpha x\)</center>
+        </p>
+        <p>
+            より
+        </p>
+        <p>
+            <center>\(TSx=STx=\alpha x\)</center>
+        </p>
+        <p>
+            となって, \(Tx\in\mathscr N_{S}(\alpha)\) がわかる。同様に, \(T^*x\in\mathscr N_{S}(\alpha)\) でもある。<br>
+            　さらに, \(x\in\mathscr N_{S}(\alpha)\) では \(P\) は \(T\) そのものだから
+        </p>
+        <p>
+            <center>\(Tx=\lambda x\)</center>
+        </p>
+        <p>
+            を得る<br>
             <br>
             (Q.E.D.)
+        </p>
+        <p>
+            この定理の証明で存在が示された固有値 \(\lambda\) について, 実は次のようにして大きさを評価することができる。
+        </p>
+        <p>
+            <center>\(Tx=\lambda x\)</center>
+        </p>
+        <p>
+            から
+        </p>
+        <p>
+            <center>\(T^*x=\overline{\lambda}x\)</center>
+        </p>
+        <p>
+            となり, 
+        </p>
+        <p>
+            <center>\(Sx=T^*Tx=\lambda T^*x=|\lambda|^2x\)</center>
+        </p>
+        <p>
+            を得る。<br>
+            　ところが, \(x\in\mathscr N_{S}(\alpha)\) より
+        </p>
+        <p>
+            <center>\(Sx=\alpha x\)</center>
+        </p>
+        <p>
+            だから
+        </p>
+        <p>
+            <center>\(|\lambda|^2=\alpha=||S||=||T||^2\)</center>
+        </p>
+        <p>
+            となる。これより, 
+        </p>
+        <p>
+            <center>\(|\lambda|=||T||\)</center>
+        </p>
+        <p>
+            と評価される。
+        </p>
+        <p>
+            <strong>課題20</strong>　ヒルベルト空間 \(\mathscr H\) 上の有限次元作用素の集合 \(\mathscr F(\mathscr H)\) が閉じていないことを示せ。
+        </p>
+        <p>
+            <strong>課題21</strong>　\(T\in\mathscr C(\mathscr H)\) が正規作用素のとき, <strong>相異なった固有値に属する固有ベクトルは互いに直交する</strong>ことを証明せよ。
         </p>
     </body>
 </html>

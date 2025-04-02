@@ -15,24 +15,14 @@
     <body>
         <h1>定理10.</h1>
         <p>
-            <a href="CompleteMetricSpace.html">完備距離空間</a> \(\mathscr X\) から<a href="CompleteMetricSpace.html">完備距離空間</a> \(\mathscr Z\) への写像 \(T：\mathscr X→\mathscr Z\)<br>
-            が点 \(x∈\mathscr X\) で<a href="Continuous.html">連続</a>ならば、\(x\) に収束する任意の<a href="PointSequence.html">点列</a>\(\{x_{n}\}_{n=1}^∞⊂\mathscr X\)<br>
-            に対して<a href="PointSequence.html">点列</a> \(\{Tx_{n}\}_{n=1}^∞\subset \mathscr Z\) は点 \(Tx\) に収束する。<br>
-            また, 逆も成り立つ。<br>
+            <a href="CompleteMetricSpace.html">完備距離空間</a> \(\mathscr X\) から<a href="CompleteMetricSpace.html">完備距離空間</a> \(\mathscr Z\) への写像 \(T：\mathscr X→\mathscr Z\) が点 \(x∈\mathscr X\) で<a href="Continuous.html">連続</a>ならば、\(x\) に収束する任意の<a href="PointSequence.html">点列</a>\(\{x_{n}\}_{n=1}^∞⊂\mathscr X\) に対して<a href="PointSequence.html">点列</a> \(\{Tx_{n}\}_{n=1}^∞\subset \mathscr Z\) は点 \(Tx\) に収束する。また, 逆も成り立つ。
         </p>
         <h2>証明</h2>
         <p>
-            \(T\) の連続性から, \(\forall\epsilon, \exists\delta\) に対して, \(d(x,y)\lt\delta\) となる点 \(y\in\mathscr X\)<br>
-            について \(\rho(Tx,Ty)\lt\epsilon\) となる。\(x\in\mathscr X\) に収束する点列 \(\{x_{n}\}_{n=1}^\infty\)<br>
-            \(\subset\mathscr X\) をとると, \(\exists n\) に対し \(m\gt n\) なる全ての \(m\) について \(d(x_{m},x)\)<br>
-            \(\lt\delta\) となる。従って, \(T\) の連続性から \(\rho(Tx_{m},Tx)\lt\epsilon\) を得るが, <br>
-            これは点列 \(\{Tx_{n}\}_{n=1}^\infty\subset\mathscr Z\) が点 \(Tx\) で収束することを意味した。<br>
+            \(T\) の連続性から, \(\forall\varepsilon, \exists\delta\) に対して, \(d(x,y)\lt\delta\) となる点 \(y\in\mathscr X\) について \(\rho(Tx,Ty)\lt\varepsilon\) となる。\(x\in\mathscr X\) に収束する点列 \(\{x_{n}\}_{n=1}^\infty\) \(\subset\mathscr X\) をとると, \(\exists n\) に対し \(m\gt n\) なる全ての \(m\) について \(d(x_{m},x)\) \(\lt\delta\) となる。従って, \(T\) の連続性から \(\rho(Tx_{m},Tx)\lt\varepsilon\) を得るが, これは点列 \(\{Tx_{n}\}_{n=1}^\infty\subset\mathscr Z\) が点 \(Tx\) で収束することを意味した。<br>
             <br>
-            　逆については, 背理法を用いる。もし結論が成り立たないとすると, <br>
-            すなわち \(T\) が \(x\) で連続でないとすると, 何らかの正数 \(\epsilon\) が存在して,<br>
-            任意の正数 \(\delta\) について \(d(y,x)\lt\delta\) かつ \(\rho(Ty,Tx)\geq\epsilon\) となる点<br>
-            \(y\in\mathscr X\) が存在しなくてはならない。そこで, \(\displaystyle\delta=\frac{1}{n}\) とおいたとき,<br>
-            \(d(x_{n},x)\lt\frac{1}{n}\) かつ \(\rho(Tx_{n}, Tx)\geq\epsilon\) となる点を...(つづく)<br>
+            　逆については, 背理法を用いる。もし結論が成り立たないとすると, 即ち \(T\) が \(x\) で連続でないとすると, 何らかの正数 \(\varepsilon\) が存在して, 任意の正数 \(\delta\) について \(d(y,x)\lt\delta\) かつ \(\rho(Ty,Tx)\geq\varepsilon\) となる点 \(y\in\mathscr X\) が存在しなくてはならない。そこで, \(\displaystyle\delta=\frac{1}{n}\) とおいたとき, \(\displaystyle d(x_{n},x)\lt\frac{1}{n}\) かつ \(\rho(Tx_{n}, Tx)\geq\varepsilon\) となる点を \(x_{n}\) とすると, \(\displaystyle d(x_{n},x)\lt\frac{1}{n}\) から点列 \(\{x_{n}\}_{n=1}^\infty\) は点 \(z\) に収束する。ところが, \(\rho(Tx_{n}, Tx)\geq\varepsilon\) から点列 \(\{Tx_{n}\}_{n=1}^\infty\) は点 \(Tx\) に収束しない。これは仮定に反する<br>
+            <br>
             (Q.E.D.)
         </p>
     </body>

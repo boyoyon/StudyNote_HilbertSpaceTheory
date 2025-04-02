@@ -15,12 +15,59 @@
     <body>
         <h1>定理38</h1>
         <p>
-            \(T\) をヒルベルト空間 \(\mathscr H\) 上の完全連続作用素とする。このとき<br>
-            \(0\neq\lambda\in C\) が \(T\) の近似固有値ならば, それは固有値である。<br>
+            \(T\) をヒルベルト空間 \(\mathscr H\) 上の完全連続作用素とする。このとき \(0\neq\lambda\in C\) が \(T\) の近似固有値ならば, それは固有値である。<br>
         </p>
         <h2>証明</h2>
         <p>
-
+            \(0\neq\lambda\in C\) が \(T\) の近似固有値だから, \(\{x_{n}\}_{n=1}^\infty, ||x_{n}||=1\) なる点列で
+        </p>
+        <p>
+            <center>\(\displaystyle\lim_{n\to\infty}||(T-\lambda I)x_{n}||=0\)</center>
+        </p>
+        <p>
+            となるものが存在する。さらに, \(T\) が完全連続作用素だから, \(\{Tx_{n}\}_{n=1}^\infty, ||x_{n}||=1\) は収束部分列を含む。それを \(\{x'_{n}\}_{n=1}^\infty\) とする。<br>
+            　このとき, \(\forall\varepsilon '\gt 0\) に対して正数 \(K\gt 0\) が存在して, \(j\gt k\gt K\) なる \(j,k\) の全てで
+        </p>
+        <p>
+            \(||Tx'_{j}-Tx'_{k}||=||\lambda x'_{j}-\lambda x'_{k}||\)<br>
+            \(　　　　　　　 =||\lambda x'_{j}-Tx'_{j}+Tx'_{j}-Tx'_{k}+Tx'_{k}-\lambda x'_{k}||\)<br>
+            \(　　　　　　　\leq||\lambda x'_{j}-Tx'_{j}||+||Tx'_{j}-Tx'_{k}||+||Tx'_{k}-\lambda x'_{k}||\)<br>
+            \(　　　　　　　\lt\varepsilon '\)
+        </p>
+        <p>
+            となる。
+            　従って,
+        </p>
+        <p>
+            <center>\(||x'_{j}-x'_{k}||\lt\displaystyle\frac{\varepsilon '}{\lambda}\equiv\varepsilon\)</center>
+        </p>
+        <p>
+            が \(\forall\varepsilon\gt 0\) で成り立つ。即ち, \(\{x'_{k}\}\) は基本列であり, ヒルベルト空間の完備性から極限 \(\displaystyle\lim_{k\to\infty}x'_{k}\) を持つ。これから,
+        </p>
+        <p>
+            <center>\(\displaystyle\lim_{k\to\infty}||(T-\lambda I)x'_{k}||=||(T-\lambda I)x||\)</center>
+        </p>
+        <p>
+        </p>
+        <p>
+            <center>\(\)</center>
+        </p>
+        <p>
+            となるが, 左辺は全ての \(k\) で \(0\) となるため,
+        </p>
+        <p>
+            <center>\(||(T-\lambda Ix||=0\)</center>
+        </p>
+        <p>
+            となる。つまり,
+        </p>
+        <p>
+            <center>\((T-\lambda I)x=0\)</center>
+        </p>
+        <p>
+            が満たされる。<br>
+            　また, \(||x'_{k}||=1　(k=1,2,3,･･･)\) から \(||x||=1\) でなければならないため, \(x\neq 0\) を得る。<br>
+            　以上より, \(\lambda\) は \(T\) の固有値であることがわかった。<br>
             <br>
             (Q.E.D.)
         </p>

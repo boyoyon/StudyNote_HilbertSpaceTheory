@@ -15,15 +15,167 @@
     <body>
         <h1>定理13. ワイエルシュトラス</h1>
         <p>
-            閉区間 \([a,b]⊂R\) で定義された任意の連続関数 \(f∈C[a,b]\) とする。<br>
-            このとき、任意の正数 \(ε>0\) に対し, 何らかの多項式関数 \(p=p(x)\) <br>
-            が存在して \(||f-p||＜ε\) となる。<br>
+            閉区間 \([a,b]⊂R\) で定義された任意の連続関数 \(f\in\mathscr C[a,b]\) とする。このとき、任意の正数 \(\varepsilon\gt 0\) に対し, 何らかの多項式関数 \(p=p(x)\) が存在して
+        </p>
+        <p>
+            <center>\(||f-p||\lt \varepsilon\)</center>
+        </p>
+        <p>
+           となる。
         </p>
         <h2>証明</h2>
         <p>
-
+            閉区間 \([a,b]\) を \([0,1]\) としても一般性を失わない。そこで, \(\forall f\in\mathscr C[0,1]\) に対し, n次の多項式関数 \(B_{n}:[0,1]\ni x\to B_{n}(x)\) を 
+        </p>
+        <p>
+            <center>\(B_{n}(x)\equiv\displaystyle\sum_{k=0}^\infty{}_nC_k x^k(1-x)^{n-k}f(\frac{k}{n})\)</center>
+        </p>
+        <p>
+            によって定める。この多項式関数は<strong>ベルンシュタインの多項式</strong>と呼ばれる。<br>
+            　恒等式 \((x+(1-x))^n=1^n=1\) から得られる展開式
+        </p>
+        <p>
+            <center>\(1=\displaystyle\sum_{k=0}^n {}_n C_k x^k (1-x)^{n-k}\)</center>
+        </p>
+        <p>
+            の両辺を \(x\) で微分すると
+        </p>
+        <p>
+            <center>\(0=\displaystyle\sum_{k=0}^n {}_n C_k \{kx^{k-1}(1-x)^{n-k}-(n-k)x^k(1-x)^{n-k-1}\}\)</center><br>
+            <center>\(=\displaystyle\sum_{k=0}^n{}_nC_kx^{k-1}(1-x)^{n-k-1}\{k(1-x)-(n-k)x\}　\)</center><br>
+            <center>\(=\displaystyle\sum_{k=0}^n{}_nC_kx^{k-1}(1-x)^{n-k-1}(k-nx)\}　　　　　　　　\)</center>
+        </p>
+        <p>
+            を得る。両辺に \(x(1-x)\) を乗じて得られる恒等式
+        </p>
+        <p>
+            <center>\(0=\displaystyle\sum_{k=0}^n{}_nC_kx^k(1-x)^{n-k}\{k-nx\}\)</center>
+        </p>
+        <p>
+            の両辺を再度 \(x\) で部分すると
+        </p>
+        <p>
+            <center>\(0=\displaystyle\sum_{k=0}^n{}_nC_k\big\{-nx^k(1-x)^{n-k}+x^{k-1}(1-x)^{n-k-1}(k-nx)^2\big\}　　　　\)</center><br>
+            <center>\(=-n\displaystyle\sum_{k=0}^n{}_nC_kx^k(1-x)^{n-k}+\sum_{k=0}^n{}_nC_kx^{k-1}(1-x)^{n-k-1}(k-nx)^2\)</center><br>
+            <center>\(=-n+\displaystyle\sum_{k=0}^n{}_nC_kx^{k-1}(1-x)^{n-k-1}(k-nx)^2　　　　　　　　　　　\)</center>
+        </p>
+        <p>
+            となり
+        </p>
+        <p>
+            <center>\(\displaystyle\sum_{k=0}^n{}_nC_kx^{k-1}(1-x)^{n-k-1}(k-nx)^2=n\)</center>
+        </p>
+        <p>
+            を得る。両辺に \(x(1-x)\) を乗じて \(n^2\) で割ると, 恒等式
+        </p>
+        <p>
+            <center>\(\displaystyle\sum_{k=0}^n{}_nC_kx^k(1-x)^{n-k}(x-\frac{k}{n})^2=\frac{x(1-x)}{n}\)</center>
+        </p>
+        <p>
+            が成り立つことがわかる。<br>
+            　関数 \(f\) は \([0,1]\) で連続であるから, \([0,1]\) で一様連続でもある。即ち, 任意の正数 \(\epsilon\gt 0\) に対し何らかの整数 \(\delta\gt 0\) が存在し, \(|x-y|\lt 0\) なる任意の \(x,y\in[0,1]\) について
+        </p>
+        <p>
+            <center>\(\displaystyle |f(x)-f(y)|\lt\frac{\varepsilon}{2}\)</center>
+        </p>
+        <p>
+            となる。これは, \(f\in\mathscr C[0,1]\) が各 \(x\in[0,1]\) で連続だから, 各 \(x\) について任意の \(\epsilon\gt 0\) に対して選ばれる \(\delta\gt 0\) の最小値を \(\delta\) とすれば, それを用いて上記の一様連続性条件が満たされることがわかる。<br>
+            　また, \(f\in\mathscr C[0,1]\) は \([0,1]\) で有界だから, 何らかの正数 \(M\gt 0\) が存在して
+        </p>
+        <p>
+            <center>\(|f(x)|\leq M　(\forall x\in[0,1])\)</center>
+        </p>
+        <p>
+            となる。<br>
+            　ここで, 
+        </p>
+        <p>
+            <center>\(f(x)-B_{n}(x)　　　　　　　　　　　　　　　　　　　　\)</center><br>
+            <center>\(=f(x)1-B_{n}(x)　　　　　　　　　　　　　　　　　　　　　\)</center><br>
+            <center>\(=f(x)\displaystyle\sum_{k=0}^n{}_nC_kx^k(1-x)^{n-k}-\sum_{k=0}^n{}_nC_kx^k(1-x)^{n-k}f(\varepsilon{k}{n})\)</center><br>
+            <center>\(=\displaystyle\sum_{k=0}^n{}_nC_kx^k(1-x)^{n-k}\Bigg\{f(x)-f\left(\varepsilon{k}{n}\right)\Bigg\}　　　　　　　　\)</center>
+        </p>
+        <p>
+            より不等式
+        </p>
+        <p>
+            <center>\(|f(x)-B_{n}(x)|\leq\displaystyle\sum_{k=0}^n{}_nC_kx^k(1-x)^{n-k}\left|f(x)-f\left(\varepsilon{k}{n}\right)\right|\)</center>
+        </p>
+        <p>
+            を得る。<br>
+            　いま, 不等式右辺の \(k\) についての和を, \(k\) が \(\displaystyle\left|x-\frac{k}{n}\right|\lt\delta\) となっている項だけの部分和 \(\Sigma\) とそれ以外の部分和 \(\Sigma'\) とに分割する。
+        </p>
+        <p>
+            <center>\(|f(x)-B_{n}(x)|\leq\Sigma+\Sigma '\)</center>
+        </p>
+        <p>
+            このとき, \(\Sigma\) では \(\displaystyle\left|x-\frac{k}{n}\right|\lt\delta\) より \(\displaystyle\left|f(x)-f\left(\frac{k}{n}\right)\right|\lt\frac{\varepsilon}{2}\) となるため, 
+        </p>
+        <p>
+            <center>\(\Sigma=\displaystyle\sum_{|x-k/n|\lt\delta}{}nC_kx^k(1-x)^{n-k}\left|f(x)-f\left(\frac{k}{n}\right)\right|\)</center><br>
+            <center>\(\displaystyle\lt\frac{\varepsilon}{2}\sum_{|x-k/n|\lt\delta}{}_nC_kx^k(1-x)^{n-k}　　　　　　　\)</center><br>
+            <center>\(\displaystyle\lt\frac{\varepsilon}{2}\sum_{k=0}^n{}_nC_kx^k(1-x)^{n-k}　　　　　　　　　　\)</center><br>
+            <center>\(\displaystyle =\frac{\varepsilon}{2}　　　　　　　　　　　　　　　　　　　　　\)</center>
+        </p>
+        <p>
+            を得る。<br>
+            　また, \(\Sigma '\) では
+        </p>
+        <p>
+            <center>\(\displaystyle\Sigma '=\sum_{|x-k/n|\geq\delta}{}_nC_kx^k(1-x)^{n-k}\left|f(x)-f\left(\frac{k}{n}\right)\right|\)</center><br>
+            <center>\(\displaystyle\lt\sum_{|x-k/n|\geq\delta}{}_nC_kx^k(1-x)^{n-k}(M+M)　　　\)</center><br>
+            <center>\(\displaystyle\lt 2M\sum_{|x-k/n|\geq\delta}{}_nC_kx^k(1-x)^{n-k}　　　　　　\)</center>
+        </p>
+        <p>
+            となる。ここで, 
+        </p>
+        <p>
+            <center>\(\displaystyle\delta^2\sum_{|x-k/n|\geq\delta}{}_nC_kx^k(1-x)^{n-k}\leq\sum_{|x-k/n|\geq\delta}{}_nC_kx^k(1-x)^{n-k}\left(x-\frac{k}{n}\right)^2\)</center><br>
+            <center>\(　　　　　　　　　　　　\displaystyle\leq\sum_{k=0}^n{}_nC_kx^k(1-x)^{n-k}\left(x-\frac{k}{n}\right)^2\)</center><br>
+            <center>\(　\displaystyle\leq\frac{x(1-x)}{n}\)</center><br>
+            <center>\(\displaystyle\leq\frac{1}{4n}　　\)</center>
+        </p>
+        <p>
+            から
+        </p>
+        <p>
+            <center>\(\displaystyle\sum_{|x-k/n|\geq\delta}{}_nC_kx^k(1-x)-{n-k}\leq\frac{1}{4n\delta^2}\)</center>
+        </p>
+        <p>
+            を得るため, \(\Sigma '\) についての評価
+        </p>
+        <p>
+            <center>\(\displaystyle\Sigma '\leq2M\sum_{|x-k/n|\geq\delta}{}_nC_kx^k(1-x)^{n-k}\)</center><br>
+            <center>\(\displaystyle\leq\frac{2M}{4n\delta^2}　　　　　　　　　　　\)</center>
+        </p>
+        <p>
+            が求まる。そこで, \(\delta\gt 0\) に対して \(\displaystyle\frac{M}{2n\delta^2}\lt\frac{\varepsilon}{2}\) なる \(n\) をとると
+        </p>
+        <p>
+            <center>\(\displaystyle\Sigma '\lt\frac{\varepsilon}{2}\)</center>
+        </p>
+        <p>
+            となる。
+            　以上より,
+        </p>
+        <p>
+            <center>\(|f(x)-B_{n}(x)|\leq\Sigma+\Sigma '\)</center><br>
+            <center>\(　　　　　　　　\displaystyle\lt\frac{\varepsilon}{2}+\frac{\varepsilon}{2}\)</center><br>
+            <center>\(　　　　　=\varepsilon\)</center>
+        </p>
+        <p>
+            が示された。<br>
             <br>
             (Q.E.D.)
+        </p>
+        <p>
+            <strong>課題8</strong>　\(f\in\mathscr C[0,1]\) に対して
+        </p>
+        <p>
+            <center>\(\displaystyle\alpha_{m}(f)\equiv\int_{0}^1 f(r)r^mdr　(m=0,1,2,3,･･･)\)</center>
+        </p>
+        <p>
+            を \(f\) の \(m\)次の<strong>モーメント</strong>と呼ぶ。このとき, \(f,g\in\mathscr C[0,1]\) について, \(f=g\) ならば全ての次数 \(m\geq 0\) で \(\alpha_{m}(f)=\alpha_{m}(g)\) となり, 逆も正しいことを証明せよ。
         </p>
     </body>
 </html>

@@ -15,14 +15,104 @@
     <body>
         <h1>補題5</h2>
         <p>
-            ヒルベルト空間 \(\mathscr H\) 上の完全連続正規作用素 \(T\) のすべての<br>
-            固有値 \(\{\lambda_{m}\}_{m=1}^\infty\) に対して, \(x\perp\mathscr N_{T}(\lambda_{m})\) となる \(x\in\mathscr H\) は<br>
-            \(x=0\) しかない。<br>
+            ヒルベルト空間 \(\mathscr H\) 上の完全連続正規作用素 \(T\) のすべての固有値 \(\{\lambda_{m}\}_{m=1}^\infty\) に対して, 
+        </p>
+            <center>\(x\perp\mathscr N_{T}(\lambda_{m})\) となる \(x\in\mathscr H\) </center>
+        <p>
+            となる \(x\in\mathscr H\) は \(x=0\) しかない。
         </p>
         <h2>証明</h2>
         <p>
+            \(T\) の固有値の1つ \(\lambda\) を固定して考えると,
+        </p>
+            <center>\(\mathscr H=\mathscr N_{T}(\lambda)\oplus\mathscr N_{Y}(\lambda)^\perp\)</center>
+        <p>
+            なる直和分解が得られる。<br>
+            　\(\mathscr N_{T}(\lambda)\) への射影作用素を \(P_{\lambda}\) とすると，
+        </p>
+        <p>
+             <center>\(TP_{\lambda}=P_{\lambda}T\)</center>
+        </p>
+        <p>
+            及び
+        </p>
+        <p>
+             <center>\(T^*P_{\lambda}=P_{\lambda}T^*\)</center>
+        </p>
+        <p>
+            のように \(T,T^*\) は可換となる。<br>
+            　なぜなら, \(y\in\mathscr H\) についての直和分解
+        </p>
+        <p>
+            <center>\(y=y'+y''\)　\((y'\in\mathscr N_{T})\lambda), y''\in\mathscr N_{T}(\lambda)^\perp)\)</center>
+        </p>
+        <p>
+            から
+        </p>
+        <p>
+            <center>\(TP_{\lambda}y=Ty'\)</center>
+        </p>
+        <p>
+            となる。また，
+        </p>
+        <p>
+            <center>\(Ty=Ty'+Ty''\)</center>
+        </p>
+        <p>
+            でもある。<br>
+            　ここで, \(y'\in\mathscr N_{T}(\lambda)\) だから \(Ty'=\lambda y'\) となり \(Ty'\in\mathscr N_{T}(\lambda)\) を得る。<br>
+            　次に, \(\forall x\in\mathscr N_{T}(\lambda)\) に対し,
+        </p>
+        <p>
+            <center>\((Ty''\mid z)=(y''\mid T^*z)\)</center>
+        </p>
+        <p>
+            となるが, \(x\in\mathscr N_{T})\lambda)\) より \(Tz=\lambda z, T^*z=\overline{\lambda}z\) となり,
+        </p>
+        <p>
+            <center>\((Ty''\mid x)=\overline{\lambda}(y''\mid z)=0\)</center>
+        </p>
+        <p>
+            を得る。すなわち, \(Ty''\in\mathscr N_{T}\lambda)^\perp\) がいえる。<br>
+            　これから，
+        </p>
+        <p>
+            <center>\(P_{\lambda}Ty=Ty'=T_{\lambda}y\)</center>
+        </p>
+        <p>
+            となって,
+        </p>
+        <p>
+            <center>\(P_{\lambda}T=TP_{\lambda}\)</center>
+        </p>
+        <p>
+            を得る。\(T^*\) についても同様。<br>
+            　以上の結果は, どの固有値についても成り立つ。そこで\(\mathscr K\subset\mathscr H\) を全ての固有部分空間 \(N_{T}(\lambda)\)　\((\forall\lambda\in\sigma(T))\) を含む最小の部分空間とし, \(P\) を \(\mathscr K\) への射影作用素とする。このとき, 明らかに
+        </p>
+        <p>
+            <center>\(TP=PT\)</center>
+        </p>
+        <p>
+            及び
+        </p>
+        <p>
+            <center>\(T^*P=PT^*\)</center>
+        </p>
+        <p>
+            を得る。<br>
+            　これにより, \(\mathscr K^\perp=\{0\}\) がいえる。<br>
+            　なぜなら, 仮に \(0\neq z\in\mathscr K^\perp\) が1つ存在したとすると, \(Pz=0\) により
+        </p>
+        <p>
+            <center>\(PTz=TPz=0\)</center>
+        </p>
+        <p>
+            となるから, \(Tz\in\mathscr K^\perp\) となるが, これは \(Tz=\beta z\) を意味し, \(z\in\mathscr K\) とならなければならない。これは仮定に反する。<br>
             <br>
             (Q.E.D.)
+        </p>
+        <p>
+             完全連続正規作用素 \(T\) の全ての固有値からなる集合 \(\sigma(T)\equiv\{\lambda_{m}\}_{m=1}^\infty\) を, \(T\) の<strong>スペクトル</strong>と呼ぶ。
         </p>
     </body>
 </html>

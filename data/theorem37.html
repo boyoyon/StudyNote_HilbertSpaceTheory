@@ -15,16 +15,33 @@
     <body>
         <h1>定理37</h1>
         <p>
-            \(T\) をヒルベルト空間 \(\mathscr H\) 上の完全連続作用素とし, \(0\neq\lambda\in C\)<br>
-            をその固有値とすると, 固有部分空間<br>
-            \(\mathscr N_{T}(\lambda)=\{x\in \mathscr H|(T-\lambda I)x=0\}\)<br>
+            \(T\) をヒルベルト空間 \(\mathscr H\) 上の完全連続作用素とし, \(0\neq\lambda\in C\) をその固有値とすると, 固有部分空間
+        </p>
+        <p>
+            <center>\(\mathscr N_{T}(\lambda)=\{x\in \mathscr H|(T-\lambda I)x=0\}\)</center>
+        </p>
+        <p>
             は有限次元である。
         </p>
         <h2>証明</h2>
         <p>
-
+            背理法を用いる。仮に, 固有部分空間 \(\mathscr N_{T}(\lambda)\) が無限次元とする。すると, \(\mathscr N_{T}(\lambda)\) は1次独立なベクトルの列 \(\{x_{n}\}_{n=1}^\infty\) を含む。グラム-シュミットの直交化法により, \(\{x_{n}\}_{n=1}^\infty\) を正規直交系と考えることができる。<br>
+            　このとき,
+        </p>
+        <p>
+            \(||Tx_{m}-Tx_{n}||^2=||\lambda x_{m}-\lambda x_{n}||^2\)<br>
+            \(　　　　　　　　=|\lambda|^2||x_{m}-x_{n}||^2\)<br>
+            \(　　　　　　　　=|\lambda|^2(||x_{m}||^2+||x_{n}||^2)\)<br>
+            \(　　　　　　　　=2|\lambda|^2\)<br>
+            \(　　　　　　　　\gt 0\)
+        </p>
+        <p>
+            となり, \(\{Tx_{n}\}_{n=1}^\infty\) は収束部分列を持たない。これは, \(T\) が完全連続作用素であることに矛盾する。<br>
             <br>
             (Q.E.D.)
+        </p>
+        <p>
+            完全連続作用素 \(T\) の固有値 \(\lambda\) に属する固有部分空間 \(\mathscr N_{T}(\lambda)\) の次元が \(k\) であるとき, \(\lambda\) は<strong>重複度</strong> \(k\) の固有値ということがある。
         </p>
     </body>
 </html>

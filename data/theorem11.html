@@ -13,33 +13,46 @@
         </style>
     </head>
     <body>
-        <h1>定理11. 不動点定理</h2>
+        <h1>定理11. 不動点定理</h1>
         <p>
-            <a href="CompleteMetricSpace.html">完備距離空間</a> \(\mathscr X\) からそれ自身への写像 \(T:\mathscr X → \mathscr X\) が<br>
-            <a href="ReducedMapping.html">縮小写像</a>ならば \(Tx=x\) となる点 \(x∈X\) が唯一つ存在<br>
-            する。この点を縮小写像 \(T\) の不動点という。<br>
+            <a href="CompleteMetricSpace.html">完備距離空間</a> \(\mathscr X\) からそれ自身への写像 \(T:\mathscr X → \mathscr X\) が<a href="ReducedMapping.html">縮小写像</a>ならば
+        </p>
+        <p>
+            <center>\(Tx=x\)</center> 
+        </p>
+        <p>
+           となる点 \(x∈X\) が唯一つ存在する。この点を縮小写像 \(T\) の不動点という。
         </p>
         <h2>証明</h2>
         <p>
-            まず, 不動点が存在すれば, それは1つしかないことを示す。<br>
-            \(x\) と \(y\) をどちらも \(T\) の不動点とする。すなわち, \(Tx=x,\)<br>
-            \(Ty=y\)。このとき, \(d(x,y)=d(Tx,Ty)\) だが, \(T\) が縮小<br>
-            写像であることから \(d(x,y)=d(Tx,Ty)\leq kd(x,y)\) と<br>
-            なる。\(0\leq k\leq 1\) から, この不等式が成り立つのは \(d(x,y)\)<br>
-            \(=0\) に限る。すなわち, \(x=y\) でなければならない。<br>
+            まず, 不動点が存在すれば, それは1つしかないことを示す。\(x\) と \(y\) をどちらも \(T\) の不動点とする。すなわち, \(Tx=x, Ty=y\) を得る。このとき, \(d(x,y)=d(Tx,Ty)\) だが, \(T\) が縮小写像であることから 
+        </p>
+        <p>
+            <center>\(d(x,y)=d(Tx,Ty)\leq kd(x,y)\)</center>
+        </p>
+        <p>
+            となる。\(0\leq k\leq 1\) から, この不等式が成り立つのは \(d(x,y)=0\) に限る。即ち, \(x=y\) でなければならない。<br>
             <br>
             　次に不動点が存在することを示す。<br>
-            \(x_{1}\in\mathscr X\) を任意に選ぶ。これから,<br>
-            \(x_{2}\equiv Tx_{1}, x_{3}\equiv Tx_{2}, ･･･, x_{n+1}\equiv Tx_{n}, ･･･\)<br>
-            によって点列 \(\{X_{n}\}_{n=1}^\infty\subset\mathscr X\) を定めれば, これは明らか<br>
-            に基本列となる。\(\mathscr X\) は完備距離空間だから, この基本列は<br>
-            収束列となり, 極限 \(\displaystyle\lim_{n\to\infty} x_{n}=x\in\mathscr X\) が存在する。<br>
-            <br>
-            　点列 \(\{x_{n}\}_{n=1}^\infty\subset\mathscr X\) を定めた漸化式 \(x_{n+1}=Tx_{n}\) の<br>
-            \(n\to\infty\) 極限をとれば， \(T\) の連続性から \(Tx=x\) を得る。<br>
-            すなわち, \(x\in\mathscr X\) は縮小写像の不動点に他ならない。<br>
+            \(x_{1}\in\mathscr X\) を任意に選ぶ。これから,
+        </p>
+        <p>
+            <center>\(x_{2}\equiv Tx_{1}, x_{3}\equiv Tx_{2}, ･･･, x_{n+1}\equiv Tx_{n}, ･･･\)</center>
+        </p>
+        <p>
+            によって点列 \(\{X_{n}\}_{n=1}^\infty\subset\mathscr X\) を定めれば, これは明らかに基本列となる。\(\mathscr X\) は完備距離空間だから, この基本列は収束列となり, 極限 \(\displaystyle\lim_{n\to\infty} x_{n}=x\in\mathscr X\) が存在する。<br>
+            　点列 \(\{x_{n}\}_{n=1}^\infty\subset\mathscr X\) を定めた漸化式
+        </p>
+        <p>
+            <center>\(x_{n+1}=Tx_{n}\)</center>
+        </p>
+        <p>
+            の \(n\to\infty\) 極限をとれば， \(T\) の連続性から \(Tx=x\) を得る。即ち, \(x\in\mathscr X\) は縮小写像の不動点に他ならない。<br>
             <br>
             (Q.E.D.)
+        </p>
+        <p>
+            <strong>課題6</strong>　不動点定理の証明に出てきた点列 \(\{x_{n}\}_{n=1}^\infty\subset\mathscr X\) が基本列となっていることを示せ。 
         </p>
     </body>
 </html>

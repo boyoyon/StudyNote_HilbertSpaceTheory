@@ -15,16 +15,66 @@
     <body>
         <h1>定理36</h1>
         <p>
-            \(T\in\mathscr C(\mathscr H), A\in\mathscr B(\mathscr H)\) ならば \(AT\in\mathscr C(\mathscr H), TA\in\mathscr C(\mathscr H)\)<br>
-            であり, \(T_{n}\in\mathscr C(\mathscr H) (n=1,2,3,...)\) に対して<br>
-            \(\displaystyle \lim_{n\to\infty} ||T_{n}-T||=0\) <br>
+            \(T\in\mathscr C(\mathscr H), A\in\mathscr B(\mathscr H)\) ならば \(AT\in\mathscr C(\mathscr H), TA\in\mathscr C(\mathscr H)\) であり, \(T_{n}\in\mathscr C(\mathscr H) (n=1,2,3,...)\) に対して
+        </p>
+        <p>
+            <center>\(\displaystyle \lim_{n\to\infty} ||T_{n}-T||=0\)</center>
+        </p>
+        <p>
             となるなら, \(T\in\mathscr C(\mathscr H)\) である。<br>
         </p>
         <h2>証明</h2>
         <p>
-
+            \(\{x_{n}\}\) を任意の有界列とすると, \(\{Tx_{n}\}\) の部分列 \(\{Tx_{n_{k}}\}\) で収束列となるものが存在する。ところが, 有界線形作用素 \(A\) は連続だから \(\{ATx_{n_{k}}\}\) も収束列であり, \(\{ATx_{n}\}\) の部分列になっている。従って, \(AT\) は完全連続作用素である。\(TA\) についても同様。<br>
+            　次に, \(T_{n}\in\mathscr C(\mathscr H)　(n=1,2,3,･･･)\) に対して, まず \(\{T_{1}x_{n}\}_{n=1}^\infty\) は収束部分列をもつが, それを \(\{T_{1}x_{1k}\}_{k=1}^\infty\) と記すことにする。<br>
+            　すると, \(\{x_{1k}\}_{k=1}^\infty\) も有界列だから, \(\{T_{2}x_{1k}\}_{k=1}^\infty\) が収束部分列を持つ。それを \(\{T_{2}x_{2k}\}_{k=1}^\infty\) と記すことにする。<br>
+            　同様の議論を繰り返すことにより,
+        </p>
+        <p>
+            <center>\(\{x_{n}\}\supset\{x_{1k}\}\supset\{x_{2k}\}\supset･･･\)</center>
+        </p>
+        <p>
+            という有界な部分列の族が得られるが, 特に
+        </p>
+        <p>
+            <center>\(y_{k}\equiv x_{kk}\)</center>
+        </p>
+        <p>
+            とおくことにより, 有界な部分列 \(\{y_{k}\}_{k=1}^\infty\) を考える。<br>
+            　すると, \(\forall n\) に対して \(\{T_{n}y_{k}=T_{n}x_{kk}\}_{k=1}^\infty\) は収束列になるから, 極限
+        </p>
+        <p>
+            <center>\(\displaystyle\lim_{k\to\infty}T_{n}y_{k}\)</center>
+        </p>
+        <p>
+            が存在する。即ち, \(\forall\varepsilon\gt 0\) に対して何らかの整数 \(K\gt 0\) が存在して, \(j\gt k\gt K\) なる全ての \(j,k\) について
+        </p>
+        <p>
+            <center>\(||T_{n}y_{j}-T_{n}y_{k}||\lt\varepsilon\)</center>
+        </p>
+        <p>
+            となる。<br>
+            　このとき, 仮定より
+        </p>
+        <p>
+            <center>\(||T_{n}-T||\lt\varepsilon\)</center>
+        </p>
+        <p>
+            でもあるため,
+        </p>
+        <p>
+            \(||Ty_{j}-ty_{k}||=||Ty_{j}-T_{n}y_{j}||+||T_{n}y_{j}-T_{n}y_{k}||+||T_{n}y_{k}-Ty_{k}||\)<br>
+            \(　　　　　　　\leq||T-T_{n}||||y_{j}||+||T_{n}y_{j}-T_{n}y_{k}||+||T_{n}-T||||y_{k}||)\)<br>
+            \(　　　　　　　\lt 3\varepsilon\)
+        </p>
+        <p>
+            を得る。<br>
+            　よって, \(\{Ty_{k}\}_{k=1}^\infty\) は基本列となるが, ヒルベルト空間の完備性によって収束列となる。つまり, \(T\) は完全連続作用素である。<br>
             <br>
             (Q.E.D.)
+        </p>
+        <p>
+            ヒルベルト空間 \(\mathscr H\) 上の有限次元作用素の集合 \(\mathscr F(\mathscr H)\) は閉じていない。有限次元作用素の列の極限は, 完全連続作用素の集合 \(\mathscr C(\mathscr H)\) に含まれ, 上の定理から \(\mathscr C(\mathscr H)\) は閉じていることがわかる。この意味で, ヒルベルト空間上の完全連続作用素は重要な概念となっているが, 特に量子力学への応用にとって必要不可欠なものとなる。
         </p>
     </body>
 </html>

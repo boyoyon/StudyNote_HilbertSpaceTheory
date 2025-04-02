@@ -15,16 +15,97 @@
     <body>
         <h1>定理35</h1>
         <p>
-            \(T\in\mathscr B(\mathscr H)\) が \(|\lambda|=||T||\) となるような<br>
-            \(\lambda\in C\) を近似固有値として持つならば,<br>
-            \(\displaystyle \sup_{||x||=1} |(x|Tx)|=||T||\)<br>
+            \(T\in\mathscr B(\mathscr H)\) が
+        </p>
+        <p>
+            <center>\(|\lambda|=||T||\)</center>
+        </p>
+        <p>
+           となるような \(\lambda\in C\) を近似固有値として持つならば,
+        </p>
+        <p>
+            <center>\(\displaystyle \sup_{||x||=1} |(x|Tx)|=||T||\)</center>
+        </p>
+        <p>
             が成り立ち, また逆も正しい。<br>
         </p>
         <h2>証明</h2>
         <p>
-
+            近似固有値の定義より, 何らかの点列 \(\{x_{n}\}_{n=1}^\infty\subset\mathscr H, ||x_{n}||=1\) に対して
+        </p>
+        <p>
+            <center>\(\displaystyle\lim_{n\to\infty}||Tx_{n}-\lambda x_{n}||=0\)</center>
+        </p>
+        <p>
+            となる。このとき, 
+        </p>
+        <p>
+            \(|(x_{n}\mid Tx_{n})-\lambda|=|(x_{n}|Tx_{n})-\lambda(x_{n}\mid x_{n})|\)<br>
+            \(　　　　　　　　　=|(x_{n}\mid Tx_{n}-\lambda x_{n})|\)<br>
+            \(　　　　　　　　　\leq||Tx_{n}-\lambda x_{n}||||x_{n}||\)<br>
+            \(　　　　　　　　　=||Tx_{n}-\lambda x_{n}\)<br>
+            \(　　　　　　　　　\to 0　(n\to\infty)\)
+        </p>
+        <p>
+            から
+        </p>
+        <p>
+            <center>\(\displaystyle\lim_{n\to\infty}(x_{n}\mid Tx_{n})=\lambda\)</center>
+        </p>
+        <p>
+            となって
+        </p>
+        <p>
+            <center>\(\displaystyle\lim_{n\to\infty}|(x_{n}\mid Tx_{n})|=|\lambda|=||T||\)</center>
+        </p>
+        <p>
+            を得る。即ち, 
+        </p>
+        <p>
+            <center>\(\displaystyle\sup_{||x||=1}|(x|Tx)|=||T||\)</center>
+        </p>
+        <p>
+            となる。<br>
+            　逆に, 上式が成り立つとすると, 点列 \(\{x_{n}\}_{n=1}^\infty\subset\mathscr H,||x_{n}||=1\) で
+        </p>
+        <p>
+            <center>\(\displaystyle\lim_{n\to\infty}|(x_{n}\mid Tx_{n})|=||T||\)</center>
+        </p>
+        <p>
+            となるものが存在する。故に, \(\lambda\equiv||T||\) とおけば, 部分列 \(\{x_{n_{k}}\}_{k=1}^\infty\) を適当に選んで
+        </p>
+        <p>
+            <center>\(\displaystyle\lim_{k\to\infty}(x_{n_{k}}\mid Tx_{n_{k}})=\lambda\)</center>
+        </p>
+        <p>
+            とできる。<br>
+            　すると,
+        </p>
+        <p>
+            \(　　0\leq||Tx_{n_{k}}-\lambda x_{n_{k}}||^2\)<br>
+            \(　　　=(Tx_{n_{k}}-\lambda x_{n_{k}}\mid Tx_{n_{k}}-\lambda x_{n_{k}})\)<br>
+            \(　　　=||Tx_{n_{k}}||^2-\lambda(Tx_{n_{k}}\mid x_{n_{k}})-\overline{\lambda}(x_{n_{k}}\mid Tx_{n_{k}})+|\lambda|^2||x_{n_{k}}||^2\)<br>
+            \(　　　\leq||T||^2-\lambda(Tx_{n_{k}}\mid x_{n_{k}})-\overline{\lambda}(x_{n_{k}}\mid Tx_{n_{k}})+|\lambda|^2\)
+        </p>
+        <p>
+            となる。右辺は \(k\to\infty\) で
+        </p>
+        <p>
+            <center>\(\to||T||^2-\lambda\overline{\lambda}-\overline{\lambda}\lambda+|\lambda|^2=0\)</center>
+        </p>
+        <p>
+            となるから, 
+        </p>
+        <p>
+            <center>\(\displaystyle\lim_{k\to\infty}||Tx_{n_{k}}-\lambda x_{n_{k}}||=0\)</center>
+        </p>
+        <p>
+            となる。即ち, \(\lambda=||T||\) は近似固有値である。<br>
             <br>
             (Q.E.D.)
+        </p>
+        <p>
+            <strong>課題19</strong>　ヒルベルト空間上の有界線形作用素 \(T\) が自己共役ならば, \(||T||\) または \(-||T||\) が近似固有値になることを示せ。
         </p>
     </body>
 </html>

@@ -15,13 +15,50 @@
     <body>
         <h1>定理31</h1>
         <p>
-            \(T\in\mathscr B(\mathscr H)\) を正規作用素とすると, \(\forall x\in\mathscr H\) に対して<br>
-            \(||T^* x||=||Tx||\)<br>
-            となる。また, 逆も成り立つ。<br>
+            \(T\in\mathscr B(\mathscr H)\) を正規作用素とすると, \(\forall x\in\mathscr H\) に対して
+        </p>
+        <p>
+            \(　　　　||T^* x||=||Tx||\)
+        </p>
+        <p>
+            となる。また, 逆も成り立つ。
         </p>
         <h2>証明</h2>
         <p>
-
+            \(　　　　||T^*||^2=(T^*T\mid T^*T)\)<br>
+            \(　　　　　　　=(x\mid TT^*x\)<br>
+            \(　　　　　　　=(x\mid T^*Tx)\)<br>
+            \(　　　　　　　=(Tx\mid Tx)\)<br>
+            \(　　　　　　　=||Tx||^2\)<br>
+        </p>
+        <p>
+            　逆に, \(\forall x\in\mathscr H\) に対して \(||T^*x||=||Tx||\) とすると, \(||T^*x||^2=||Tx||^2\) となる。これから
+        </p>
+        <p>
+            \(　　　　(T^*x\mid T^*x)=(Tx\mid Tx)\)<br>
+            \(　　　　　　　　　　=(x\mid T^`Tx)\)<br>
+        </p>
+        <p>
+            を得る。一方, 左辺は \((x\mid TT^*x)\) に等しいため
+        </p>
+        <p>
+            \(　　　　(x\mid TT^*x)=(x\mid T^*Tx)\)<br>
+        </p>
+        <p>
+            となる。
+            　偏極公式により, \(\forall x,y\in\mathscr H\) に対し
+        </p>
+        <p>
+            \(　　　　(y\mid TT^*x)=(y\mid T^*Tx)\)<br>
+        </p>
+        <p>
+            を得, 最終的に
+        </p>
+        <p>
+            \(　　　　TT^*=T^*T\)<br>
+        </p>
+        <p>
+            を得る。<br>
             <br>
             (Q.E.D.)
         </p>

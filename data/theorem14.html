@@ -15,16 +15,89 @@
     <body>
         <h1>定理14. ヘルダーの不等式</h1>
         <p>
-            実数 \(p＞1\) に対して \(\frac{1}{p}+\frac{1}{q}＝1\) となる \(q＞1\) を考える。<br>
-            このとき, \(f∈L^q[0,1], g∈L^q[0,1]\) ならば<br>
-            \(\displaystyle\int_{0}^1|f(r)g(r)|dr≦\sqrt[p]{\int_{0}^1|f(r)|^pdr}\sqrt[q]{\int_{0}^1|g(r)|^qdr}\)<br>
+            実数 \(p＞1\) に対して
+        </p>
+        <p>
+            <center>\(\displaystyle\frac{1}{p}+\frac{1}{q}＝1\)</center>
+        </p>
+        <p>
+ となる \(q＞1\) を考える。<br>
+            このとき, \(f∈L^q[0,1], g∈L^q[0,1]\) ならば
+        </p>
+        <p>
+            <center>\(\displaystyle\int_{0}^1|f(r)g(r)|dr≦\sqrt[p]{\int_{0}^1|f(r)|^pdr}\sqrt[q]{\int_{0}^1|g(r)|^qdr}\)</center>
+        </p>
+        <p>
             が成り立つ。<br>
-            特に \(p=q=2\) のとき、このヘルダーの不等式は<br>
-            コーシー-シュワルツの不等式と呼ばれる。<br>
+            　特に \(p=q=2\) のとき、このヘルダーの不等式は<strong>コーシー-シュワルツの不等式</strong>と呼ばれる。
         </p>
         <h2>証明</h2>
         <p>
-
+            \(\alpha\gt 0\) に対して関数
+        </p>
+        <p>
+            <center>\(y=x^\alpha\)</center>
+        </p>
+        <p>
+            を変域 \(x\gt 0\) で考える。このとき, 
+        </p>
+        <p>
+            <center>\(\displaystyle\frac{dy}{dx}=\alpha x^{\alpha-1}\gt 0\)</center>
+        </p>
+        <p>
+            より, 変域 \(x\gt 0\) で単調増加関数となることがわかる。また, 関数 \(y=x^{\frac{1}{\alpha}}\) についても同様。<br>
+            　定積分
+        </p>
+        <p>
+            <center>\(\displaystyle S_{1}\equiv\int_{0}^1 x^\alpha dx=\left[\frac{x^{\alpha+1}}{\alpha+1}\right]_0^\xi =\frac{\xi^{\alpha+1}}{\alpha+1}\)</center>
+        </p>
+        <p>
+            と
+        </p>
+        <p>
+            <center>\(\displaystyle S_{2}\equiv\int_0^1 x^{\frac{1}{\alpha}}dx=\left[\frac{x^{\frac{1}{\alpha}+1}}{1/\alpha + 1}\right]_0^\eta =\frac{\eta^{\frac{1}{\alpha}+1}}{1/\alpha +1}\)</center>
+        </p>
+        <p>
+            を考えると, 明らかに不等式
+        </p>
+        <p>
+            <center>\(\displaystyle S_{1}+S_{2}=\frac{\xi^{\alpha +1}}{\alpha +1}+\frac{\eta^{\frac{1}{\alpha}+1}}{1/\alpha +1}\geq\xi\eta\)</center>
+        </p>
+        <p>
+            が成り立ち, 等号は \(\eta=\xi^\alpha\) のときのみ得られる。<br>
+            　\(\displaystyle p=\alpha +1\gt 1,q=\frac{1}{\alpha}+1\gt 1\) とおくと
+        </p>
+        <p>
+            <center>\(\displaystyle\frac{1}{p}+\frac{1}{q}=\frac{1}{\alpha +1}+\frac{1}{1/\alpha +1}=\frac{1+\alpha}{\alpha +1}=1\)</center>
+        </p>
+        <p>
+            を満たし, 上の不等式は
+        </p>
+        <p>
+            <center>\(\displaystyle\xi\eta\leq\frac{\xi^p}{p}+\frac{\eta^q}{q}\)</center>
+        </p>
+        <p>
+            と書ける。<br>
+            　そこで, \(f\in L^p[0,1], g\in L^q[0,1]\) に対し
+        </p>
+        <p>
+            <center>\(\displaystyle\xi=\frac{|f(x)|}{\sqrt[p]{\int_0^1 |f(x)|^p dx}},　\eta=\frac{|g(x)|}{\sqrt[q]{\int_0^1 |g(x)|^q dx}}\)</center>
+        </p>
+        <p>
+            とおいて代入すると
+        </p>
+        <p>
+            <center>\(\displaystyle\frac{|f(x)|}{\sqrt[p]{\int_0^1 |f(x)|^p dx}}\frac{|g(x)|}{\sqrt[q]{\int_0^1 |g(x)|^q dx}}\leq\frac{1}{p}\frac{|f(x)|^p}{\int_0^1 |f(x)|^p dx}+\frac{1}{q}\frac{|g(x)|^q}{\int_0^1 |g(x)|^q dx}\)</center>
+        </p>
+        <p>
+            となる。両辺を \([0,1]\) 区間で積分すると
+        </p>
+        <p>
+            <center>\(\displaystyle(\int_0^1 |f(x)g(x)| dx)\frac{1}{||f||_p||g||_q}\leq\frac{1}{p}\frac{\int_0^1 |f(x)|^p dx}{\int_0^1 |f(x)|^p dx}+\frac{1}{q}\frac{\int_0^1 |g(x)|^q dx}{\int_0^1 |g(x)|^q dx}\)</center><br>
+            <center>\(　　　　\displaystyle=\frac{1}{p}+\frac{1}{q}=1\)</center>
+        </p>
+        <p>
+            となり, ヘルダーの不等式を得る。<br>
             <br>
             (Q.E.D.)
         </p>

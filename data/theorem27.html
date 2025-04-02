@@ -16,12 +16,74 @@
         <h1>定理27</h1>
         <p>
             \(T\in \mathscr B(\mathscr H)\) が自己共役作用素ならば, <br>
-            \(||T||=sup\{|(x|Tx)| |\forall x\in \mathscr H, ||x||\leq1\}\)<br>
+        </p>
+            <center>\(||T||=sup\{|(x|Tx)| |\forall x\in \mathscr H, ||x||\leq1\}\)</center>
+     <p>
             が成り立つ。<br>
         </p>
         <h2>証明</h2>
         <p>
-
+            <center>\(|(x\mid Tx)|\leq||Tx||||x||\)</center><br>
+            <center>\(　　　　　\leq||T||||x||^2\)</center><br>
+            <center>\(　　　\leq||T||\)</center><br>
+        </p>
+        <p>
+            より, \(|(x\mid Tx)|\leq||T||\) を得る。<br>
+            　次に, ヒルベルト空間の任意のベクトル \(x\neq 0\) をとり, 
+        </p>
+        <p>
+            <center>\(\displaystyle c=\sqrt{\frac{||Tx||}{||x||}}\)</center><br>
+            <center>\(\displaystyle y=\frac{1}{c}Tx\)</center>
+        </p>
+        <p>
+            と定める。すると, 
+        </p>
+        <p>
+            <center>\(||Tx||^2=(Tx\mid Tx)　　　　　　　　　　　　　　　　　　　　　　　　　\)</center><br>
+            <center>\(=(Tx\mid cy)　　　　　　　　　　　　　　　　　　　　　\)</center><br>
+            <center>\(=(Tcx\mid y)　　　　　　　　　　　　　　　　　　　　　\)</center><br>
+            <center>\(\displaystyle =\frac{1}{4}(cx+y\mid T(cx+y))-\frac{1}{4}(cx-y\mid T(cx-y))\)</center>
+        </p>
+        <p>
+            となる。
+            　ここで,
+        </p>
+        <p>
+            <center>\(M=sup\{|(x\mid Tx)|\mid \forall x\in\mathscr H,||x||\leq1\}\)</center>
+        </p>
+        <p>
+            とおくと, 上の式から
+        </p>
+        <p>
+            <center>\(\displaystyle　　||Tx||^2\leq\frac{1}{4}M(||cx+y||^2+||cx-y||^2)\)</center><br>
+            <center>\(\displaystyle　　　　　=\frac{1}{2}M(||cx||^2+||y||^2)　　　　\)</center><br>
+            <center>\(\displaystyle　　　　　=\frac{1}{2}M(c^2||x||^2+\frac{1}{c^2}||Tx||^2)　\)</center>
+        </p>
+        <p>
+            を得る。ここで中線定理の結果を用いた。
+            　ところで, この式に\(\displaystyle c=\sqrt{\frac{||Tx||}{||x||}}\) を代入すると, 
+        </p>
+        <p>
+            <center>\(\displaystyle　　||Tx||^2\leq\frac{1}{2}M\left(\frac{||Tx||}{||x||}||x||^2+\frac{||x||}{||Tx||}{{Tx}}^2\right)\)</center><br>
+            <center>\(\displaystyle　　　　　=\frac{1}{2}M2{{x}}{{Tx}}　　　　　　　　　　　　　\)</center>
+        </p>
+        <p>
+            となる。従って, 
+        </p>
+        <p>
+            <center>\(||Tx||\leq M||x||\)</center>
+        </p>
+        <p>
+            から
+        </p>
+        <p>
+            <center>\(||T||\leq M\)</center>
+        </p>
+        <p>
+        </p>
+        <p>
+            を得る。
+             　\(|(x\mid Tx)|\leq||T||\) だったから, \(||T||=M\) となる。<br>
             <br>
             (Q.E.D.)
         </p>

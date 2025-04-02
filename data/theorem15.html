@@ -15,13 +15,69 @@
     <body>
         <h1>定理15. ミンコフスキーの不等式</h1>
         <p>
-            \(f,g\in L^p[0,1]\) ならば \(||f+g||_{p}\leq ||f||_{p}+||g||_{p}\) が成り立つ。<br>
+            \(f,g\in L^p[0,1]\) ならば
+        </p>
+        <p>
+            <center>\(||f+g||_{p}\leq ||f||_{p}+||g||_{p}\)</center>
+        </p>
+        <p>
+             が成り立つ。
         </p>
         <h2>証明</h2>
         <p>
-
+            <center>\(\displaystyle (|h|^{p-1})^q=|h|^{(p-1)\frac{p}{p-1}}\)</center><br>
+            <center>\(\displaystyle=|h|^p\)</center>
+        </p>
+        <p>
+            より, \(h\in L^p[0,1]\) ならば \(|h|^{p-1}\in L^q[0,1]\) であることがわかる。そこで, 積分 \(\displaystyle\int_0^1 |f(x)+g(x)|^p dx\) を考えると, 
+        </p>
+        <p>
+            <center>\(\displaystyle\int_0^1 |f(x)+g(x)|^p dx=\int_0^1 |f(x)+g(x)|^{p-1}|f(x)+g(x)|dx\)</center><br>
+            <center>\(　　　　　　　\displaystyle\leq\int_0^1 |f(x)+g(x)|^{p-1}|f(x)| dx\)</center><br>
+            <center>\(　　　　　　　\displaystyle +\int_0^1 |f(x)+g(x)|^{p-1}|g(x)| dx\)</center>
+        </p>
+        <p>
+            となるが, \(f+g\in L^p[0,1]\) から \(|f+g|^{p-1}\in L^q[0,1]\) 故ヘルダーの不等式を用いると
+        </p>
+        <p>
+            <center>\(\displaystyle\int_0^1 |f(x)+g(x)|^p dx\leq ||f||_p\sqrt[q]{\int_0^1 (|f(x)Lg(x)|^{p-1})^q dx}\)</center><br>
+            <center>\(　　　　　　　　　　　　　　　\displaystyle +||g||_p\sqrt[q]{\int_0^1 (|f(x)+g(x)|-{p-1})^q}\)</center><br>
+            <center>\(　　　　　　　　　\displaystyle =||f||_p\sqrt[q]{\int_0^1 |f(x)+g(x)|^p dx}\)</center><br>
+            <center>\(　　　　　　　　　　　\displaystyle +||g||_p\sqrt[q]{\int_0^1 |f(x)+g(x)|^p dx}\)</center><br>
+            <center>\(　　　　　　　　　　　　　　\displaystyle =(||f||_p+||g||_p)\sqrt[q]{\int_0^1 |f(x)+g(x)|^p dx}\)</center>
+        </p>
+        <p>
+            を得る。<br>
+            　この不等式の両辺を \(\displaystyle\sqrt[q]{\int_0^1 |f(x)+g(x)|^p dx}\) で割ると
+        </p>
+        <p>
+            <center>\(\displaystyle\sqrt[1-1/q]{\int_0^1 |f(x)+g(x)|^p dx\leq ||f||_p+||g||_q}\)</center>
+        </p>
+        <p>
+            となるが, 左辺は
+        </p>
+        <p>
+            <center>\(\displaystyle\sqrt[p]{\int_0^1 |f(x)+g(x)|^p dx}=||f+g||_p\)</center>
+        </p>
+        <p>
+            に等しい。<br>
             <br>
             (Q.E.D.)
+        </p>
+        <p>
+            <strong>課題9</strong>　\(p\gt 1\) に対して数列の集合
+        </p>
+        <p>
+            <center>\(\displaystyle l^p\equiv\Big\{x=\{x_{n}\}_{n=1}^\infty \Big|\sum_{n=1}^\infty |x_{n}|^p が収束\Big\}\)</center>
+        </p>
+        <p>
+            を考える。このとき, \(l^p\) はベクトル空間で, ノルム
+        </p>
+        <p>
+            <center>\(\displaystyle ||x||_p\equiv\sqrt[p]{\sum_{n=1}^\infty |x_{n}|^p}\)</center>
+        </p>
+        <p>
+            を導入するとノルム空間になることを示せ。
         </p>
     </body>
 </html>

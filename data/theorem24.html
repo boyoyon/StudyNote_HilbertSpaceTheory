@@ -15,12 +15,46 @@
     <body>
         <h1>定理24</h1>
         <p>
-            等長作用素はユニタリー作用素であり, 逆に<br>
-            ユニタリー作用素は等長作用素である。<br>
+            等長作用素はユニタリー作用素であり, 逆にユニタリー作用素は等長作用素である。<br>
         </p>
         <h2>証明</h2>
         <p>
-
+            \(T\) をヒルベルト空間 \(\mathscr H\) 上の等長作用素とすると, \(\forall x\in\mathscr H\) に対して
+        </p>
+        <p>
+            \(　　(x\mid T^*Tx)=(Tx\mid Tx)=||Tx||^2-||x||^2=(x\mid x)\)<br>
+            \(　　　　　　　　=(x\mid Ix)\)
+        </p>
+        <p>
+            となる。これから
+        </p>
+        <p>
+            <center>\((x\mid (T^*T-I)x)=0\)</center>
+        </p>
+        <p>
+            を得る。<br>
+            　任意の有界線形作用素 \(S\) についての恒等式(<strong>偏極公式</strong>と呼ぶ)
+        </p>
+        <p>
+            \(　4(y\mid Sx)=(x+y\mid S(x+y))-(x-y\mid S(x-y))\)<br>
+            \(　　　　　　+i(x+iy\mid S(x+iy))-i(x-iy\mid S(x-iy))\)<br>
+        </p>
+        <p>
+            から, \(\forall x\in\mathscr H\) に対して \((x\mid Sx)=0\) となるなら, \(\forall x,y\in\mathscr H\) に対して \(y\mid Sx)=0\) となることがわかる。
+            　従って,
+        </p>
+        <p>
+            <center>\(T^*T-I=0\)</center>
+        </p>
+        <p>
+            となるが, これは \(T\) がユニタリー作用素となることを意味する。<br>
+            　逆に, 任意のユニタリー作用素 \(T\) について \(T^*T=I\) より
+        </p>
+        <p>
+            <center>\((y\mid x)=(y\mid T^*Tx)=(Ty\mid Tx)\)</center>
+        </p>
+        <p>
+            を得る。ここで, \(x=y\) とおくと \((x\mid x)=(Tx\mid Tx)\) となり, \(||Tx||=||x||\) が満たされる。即ち, 等長作用素となっていることがわかる。<br>
             <br>
             (Q.E.D.)
         </p>

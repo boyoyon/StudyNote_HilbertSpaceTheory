@@ -15,14 +15,83 @@
     <body>
         <h1>定理40</h1>
         <p>
-            ヒルベルト空間 \(\mathscr H\) 上の完全連続作用素 \(T\) が正規作用素<br>
-            となるなら, その固有値は高々加算無限個しか存在しない。<br>
+            ヒルベルト空間 \(\mathscr H\) 上の完全連続作用素 \(T\) が正規作用素となるなら, その固有値は高々加算無限個しか存在しない。<br>
         </p>
+
         <h2>証明</h2>
         <p>
-
+            任意の正数 \(\varepsilon\) に対して, 
+        </p>
+        <p>
+            <center>\(D_{\varepsilon}\equiv\{\lambda\mid0\lt\varepsilon\leq|\lambda|\leq||T||\}\subset C\)</center>
+        </p>
+        <p>
+            なる複素平面上の円環領域を定める。すると, どの円環領域 \(D_{\varepsilon}\) の中にも, \(T\) の固有値は高々有限個しか存在しない。<br>
+            　なぜなら, もし無限に存在すると仮定すると, 以下のように矛盾がある。<br>
+            　固有値が無限にあるから, 可算無限個の相異なる固有値の系列
+        </p>
+        <p>
+            <center>\(\lambda_{1},\lambda_{2},\lambda_{3},･･･\)</center>
+        </p>
+        <p>
+            が存在する。これらの固有値に属する固有ベクトルを, それぞれ
+        </p>
+        <p>
+            <center>\(e_{1},e_{2},e_{3},･･･\)</center>
+        </p>
+        <p>
+            としておく。
+             　複素数列 \(\{\lambda_{m}\}_{m=1}^\infty\) が閉領域 \(D_{\varepsilon}\) 内の複素数 \(\lambda\) に収束する。このとき,
+        </p>
+        <p>
+            <center>\(\varepsilon\lt|\lambda|\leq||T||\)</center>
+        </p>
+        <p>
+            となる。<br>
+             　また, <strong>相異なった固有値に属する固有ベクトルは互いに直交する</strong>ため,
+        </p>
+        <p>
+            <center>\((e_{m}\mid e_{k})=\delta_{mk}\)</center>
+        </p>
+        <p>
+            の如く正規直交系となっていると考えてよい。\(T\) が完全連続作用素であることから, \(\{Te_{m}\}_{m=1}^\infty\) は収束部分列を含む。簡単のために, それを \(\{Te_{m}\}_{m=1}^\infty\) となるように番号付けしたりする。すると, \(\exists y\in\mathscr H\) に対し
+        </p>
+        <p>
+            <center>\(\displaystyle\lim_{m\to\infty}Te_{m}=y\)</center>
+        </p>
+        <p>
+            となるが, \(e_{m}\) は \(T\) の固有ベクトルなので
+        </p>
+        <p>
+            <center>\(\displaystyle\lim_{m\to\infty}\lambda_{m}e_{m}=y\)</center>
+        </p>
+        <p>
+            となる。<br>
+            　ところが, \(\lambda_{m}\to\lambda\) だから, 点列 \(\{e_{m}\}_{m=1}^\infty\) も収束列となる。他方, \(\{e_{m}\}_{m=1}^\infty\) は正規直交系だったから, \(\forall m\neq k\) で
+        </p>
+        <p>
+            <center>\(||e_{m}-e_{k}||^2=2\)</center>
+        </p>
+        <p>
+            となって, 収束列ではあり得ない。これは矛盾である。<br>
+            　これで, \(\forall\varepsilon\gt 0\) に対して, 複素平面上の円環領域 \(D_{\varepsilon}\) に含まれる \(T\) の固有値が高々有限個しかないことがわかったため, \(T\) の固有値は高々可算無限個しか存在しない。<br>
             <br>
             (Q.E.D.)
+        </p>
+        <p>
+            以上の証明により, 一般性を失うことなく, ヒルベルト空間上の完全連続積作用素の固有値は,
+        </p>
+        <p>
+            <center>\(||T||\geq|\lambda_{1}|\geq|\lambda_{2}|\geq ･･･\geq|\lambda_{M}|\)</center>
+        </p>
+        <p>
+            のように大小づけられた有限個しか存在しないか, あるいは
+        </p>
+        <p>
+            <center>\(||T||\geq|\lambda_{1}|\geq|\lambda_{2}|\geq|\lambda_{3}|\geq ･･･\)</center>
+        </p>
+        <p>
+            のように大小づけられた可算無限個存在するかのどちらかであると考えてよい。
         </p>
     </body>
 </html>

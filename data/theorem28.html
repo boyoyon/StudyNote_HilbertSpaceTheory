@@ -15,20 +15,56 @@
     <body>
         <h1>定理28</h1>
         <p>
-            \(P\in \mathscr B(\mathscr H)\) が射影作用素のとき, その値域<br>
-            \(\mathscr R(P)\equiv\{y=Px|\forall x\in \mathscr H\}\)<br>
-            はヒルベルト空間 \(\mathscr H\) の閉部分空間となり, それを \(\mathscr M\) とおいた直和分解<br>
-            \(x=x_{\mathscr M}+x_{\mathscr M^\perp }　(\forall x\in \mathscr H, x_{\mathscr M}, x_{\mathscr M^\perp }\in \mathscr M^\perp)\)<br>
-            に対して<br>
-            \(Px=x_{\mathscr M}\)<br>
-            となる。逆に, 任意の閉部分集合 \(\mathscr M\) に関する直和分解 \(\mathscr H=\mathscr M\oplus \mathscr M^\perp\)<br>
-            について, <br>
-            \(P:\mathscr H\ni x\to x_{\mathscr M}\in \mathscr M\)<br>
-            は射影作用素になる。<br>
+            \(P\in \mathscr B(\mathscr H)\) が射影作用素のとき, その値域
+        </p>
+        <p>
+            <center>\(\mathscr R(P)\equiv\{y=Px|\forall x\in \mathscr H\}\)</center>
+        </p>
+        <p>
+            はヒルベルト空間 \(\mathscr H\) の閉部分空間となり, それを \(\mathscr M\) とおいた直和分解
+        </p>
+        <p>
+            <center>\(x=x_{\mathscr M}+x_{\mathscr M^\perp }　(\forall x\in \mathscr H, x_{\mathscr M}, x_{\mathscr M^\perp }\in \mathscr M^\perp)\)</center>
+        </p>
+        <p>
+            に対して
+        </p>
+        <p>
+            <center>\(Px=x_{\mathscr M}\)</center>
+        </p>
+        <p>
+            となる。逆に, 任意の閉部分集合 \(\mathscr M\) に関する直和分解 \(\mathscr H=\mathscr M\oplus \mathscr M^\perp\)について, 
+        </p>
+        <p>
+            <center>\(P:\mathscr H\ni x\to x_{\mathscr M}\in \mathscr M\)</center>
+        </p>
+        <p>
+            は射影作用素になる。
         </p>
         <h2>証明</h2>
         <p>
-
+            \(P\) を射影作用素とするとき, 値域 \(\mathscr R(P)\) が線形部分空間となることは明らか。そこで, それが閉じていることを示す。<br>
+            　\(\{y_{n}\}_{n=1}^\infty\subset\mathscr R(P)\) を基本列とする。ヒルベルト空間の完備性から, この基本列の極限 \(y\in\mathscr H\) が存在し,
+        </p>
+        <p>
+            <center>\(\displaystyle\lim_{n\to\infty}y_{n}=y\)</center>
+        </p>
+        <p>
+            となる。このとき, \(P\) は有界だから連続となり,
+        </p>
+        <p>
+            <center>\(\displaystyle\lim_{n\to\infty}Py_{n}=Py\)</center>
+        </p>
+        <p>
+           となる。
+           　他方, \(y_{n}\in\mathscr R(P)\) だから, \(P^2=P\) より \(Py_{n}=y_{n}\) となるため, 
+        </p>
+        <p>
+            <center>\(\displaystyle\lim_{n\to\infty}y_{n}=Py\)</center>
+        </p>
+        <p>
+           でもある。従って, \(y=Py\) となって, 極限 \(y\) も値域 \(\mathscr R(P)\) に属することがわかる。<br>
+            　残りの部分は自明であろう。<br>
             <br>
             (Q.E.D.)
         </p>

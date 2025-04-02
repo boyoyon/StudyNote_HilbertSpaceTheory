@@ -15,17 +15,44 @@
     <body>
         <h1>定理41. スペクトル分解</h1>
         <p>
-            ヒルベルト空間 \(\mathscr H\) 上の完全連続正規作用素 \(T\) のスペクトルを<br>
-            \(\sigma(T)=\{\lambda_{m}\}_{m=1}^\infty\) とし, 固有値 \(\lambda_{m}\) に属する<br>
-            固有部分空間 \(\mathscr N_{T}(\lambda_{m})\) への射影作用素を \(P_{m}\) とする。このとき,<br>
-            \(T=\displaystyle \sum_{m=1}^\infty \lambda_{m}P_{m}\)<br>
-            なる恒等式が成立する。これを, 完全連続正規作用素 \(T\) のスペクトル分解と呼ぶ。<br>
+            ヒルベルト空間 \(\mathscr H\) 上の完全連続正規作用素 \(T\) のスペクトルを \(\sigma(T)=\{\lambda_{m}\}_{m=1}^\infty\) とし, 固有値 \(\lambda_{m}\) に属する固有部分空間 \(\mathscr N_{T}(\lambda_{m})\) への射影作用素を \(P_{m}\) とする。このとき,
         </p>
+            <center>\(T=\displaystyle \sum_{m=1}^\infty \lambda_{m}P_{m}\)</center>
+        <p>
+            なる恒等式が成立する。これを, 完全連続正規作用素 \(T\) の<strong>スペクトル分解</strong>と呼ぶ。
+        </p>
+
+        <h2>証明の前に</h2>
+        <p>
+            <strong>完全連続正規作用素の固有ベクトルはヒルベルト空間の完全正規直交系を形作る。</strong>いい換えれば, 完全連続正規作用素の固有ベクトル全体によって, 一般フーリエ級数展開が可能となる。この事実は, ディラックによる量子力学の定式化の基礎を与える。
+        </p>
+
         <h2>証明</h2>
         <p>
-
+            <a href="theorem40.html">定理40</a> と <a href="lemma05.html">補題5</a> より, <br>
+            <center>\(I=\displaystyle\sum_{m=1}^M P_{m}\)</center>
+        </p>
+        <p>
+           または <br>
+        </p>
+           <center>\(I=\displaystyle\sum_{m=1}^\infty P_{m}\)</center>
+        <p>
+           という恒等式が成り立つ。これを, <strong>単位の分解</strong>とよぶが, その意味は, ヒルベルト空間上の完全連続正規作用素の固有ベクトルが完全正規直交系になっていることに他ならない。<br>
+            　つまり, ヒルベルト空間 \(\mathscr H\) の任意のベクトル \(x\) に対して, 単位の分解を利用すると<br>
+        </p>
+            <center>\(x=Ix=\displaystyle\sum_{m=1}^\infty TP_{m}x\)</center><br>
+        <p>
+            と書けて,\(\forall m\) で \(P_{m}x\in\mathscr N_{T}(\lambda_{m})\) となる。<br>
+             　これから,
+        </p>
+            <center>\(Tx=\displaystyle\sum_{m=1}^\infty TP_{m}x=\sum_{m=1}^\infty\lambda_{m}P_{m}x\)</center></center>
+        <p>
+            を得る。<br>
             <br>
             (Q.E.D.)
+        </p>
+        <p>
+            　完全連続作用素のスペクトル分解定理は, 有限次元ユニタリー空間上の正規作用素と考えた正規行列が対角化できるという事実を, 無限次元のヒルベルト空間に拡張したものと考えられる。
         </p>
     </body>
 </html>
