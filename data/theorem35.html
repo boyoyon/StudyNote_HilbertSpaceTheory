@@ -40,11 +40,15 @@
             となる。このとき, 
         </p>
         <p>
-            \(|(x_{n}\mid Tx_{n})-\lambda|=|(x_{n}|Tx_{n})-\lambda(x_{n}\mid x_{n})|\)<br>
-            \(　　　　　　　　　=|(x_{n}\mid Tx_{n}-\lambda x_{n})|\)<br>
-            \(　　　　　　　　　\leq||Tx_{n}-\lambda x_{n}||||x_{n}||\)<br>
-            \(　　　　　　　　　=||Tx_{n}-\lambda x_{n}\)<br>
-            \(　　　　　　　　　\to 0　(n\to\infty)\)
+\[
+\begin{align}
+    |(x_{n}\mid Tx_{n})-\lambda| &=|(x_{n}|Tx_{n})-\lambda(x_{n}\mid x_{n})|\\
+    &=|(x_{n}\mid Tx_{n}-\lambda x_{n})|\\
+    &\leq||Tx_{n}-\lambda x_{n}||||x_{n}||\\
+    &=||Tx_{n}-\lambda x_{n}\\
+    &\to 0　(n\to\infty)
+\end{align}
+\]
         </p>
         <p>
             から
@@ -82,10 +86,14 @@
             　すると,
         </p>
         <p>
-            \(　　0\leq||Tx_{n_{k}}-\lambda x_{n_{k}}||^2\)<br>
-            \(　　　=(Tx_{n_{k}}-\lambda x_{n_{k}}\mid Tx_{n_{k}}-\lambda x_{n_{k}})\)<br>
-            \(　　　=||Tx_{n_{k}}||^2-\lambda(Tx_{n_{k}}\mid x_{n_{k}})-\overline{\lambda}(x_{n_{k}}\mid Tx_{n_{k}})+|\lambda|^2||x_{n_{k}}||^2\)<br>
-            \(　　　\leq||T||^2-\lambda(Tx_{n_{k}}\mid x_{n_{k}})-\overline{\lambda}(x_{n_{k}}\mid Tx_{n_{k}})+|\lambda|^2\)
+\[
+\begin{align}
+    0 &\leq||Tx_{n_{k}}-\lambda x_{n_{k}}||^2\\
+    &=(Tx_{n_{k}}-\lambda x_{n_{k}}\mid Tx_{n_{k}}-\lambda x_{n_{k}})\\
+    &=||Tx_{n_{k}}||^2-\lambda(Tx_{n_{k}}\mid x_{n_{k}})-\overline{\lambda}(x_{n_{k}}\mid Tx_{n_{k}})+|\lambda|^2||x_{n_{k}}||^2\\
+    &\leq||T||^2-\lambda(Tx_{n_{k}}\mid x_{n_{k}})-\overline{\lambda}(x_{n_{k}}\mid Tx_{n_{k}})+|\lambda|^2
+\end{align}
+\]
         </p>
         <p>
             となる。右辺は \(k\to\infty\) で

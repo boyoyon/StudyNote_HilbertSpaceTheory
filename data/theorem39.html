@@ -38,10 +38,14 @@
             となるものが存在する。これに対して, 
         </p>
         <p>
-            <center>\(||S||=||T^*T||=||T||^2=\displaystyle\lim_{n\to\infty}||Tx_{n}||^2\)</center><br>
-            <center>\(　　　　　　　　　　　　　　　=\displaystyle\lim_{n\to\infty}(Tx_{n}\mid Tx_{n})\)</center><br>
-            <center>\(　　　　　　　　　　　　　　　=\displaystyle\lim_{n\to\infty}(x_{n}\mid T^*Tx_{n})\)</center><br>
-            <center>\(　　　　　　　　　　　　　　　=\displaystyle\lim_{n\to\infty}(x_{n}\mid Sx_{n})\)</center>
+\[
+\begin{align}
+    ||S||=||T^*T||=||T||^2 &=\displaystyle\lim_{n\to\infty}||Tx_{n}||^2\\
+    &=\lim_{n\to\infty}(Tx_{n}\mid Tx_{n})\\
+    &=\lim_{n\to\infty}(x_{n}\mid T^*Tx_{n})\\
+    &=\lim_{n\to\infty}(x_{n}\mid Sx_{n})
+\end{align}
+\]
         </p>
         <p>
             を得る。<br>
@@ -49,10 +53,14 @@
             　\(\alpha\equiv||S||\) とおくと,
         </p>
         <p>
-            <center>\(||Sx_{n}-\alpha x_{n}||^2=||Sx_{n}||^2-2\alpha(xx_{n}\mid Sx_{n})+\alpha^2\)</center>
-            <center>\(　　　　\leq\alpha^2-2\alpha(x_{n}\mid Sx_{n})+\alpha^2\)</center>
-            <center>\(　　　　\to\alpha^2-2\alpha(x_{n}\mid Sx_{n})+\alpha^2\)</center>
-            <center>\(=0　(n\to\infty)\)</center>
+\[
+\begin{align}
+    ||Sx_{n}-\alpha x_{n}||^2 &=||Sx_{n}||^2-2\alpha(xx_{n}\mid Sx_{n})+\alpha^2\\
+    &\leq\alpha^2-2\alpha(x_{n}\mid Sx_{n})+\alpha^2\\
+    &\to\alpha^2-2\alpha(x_{n}\mid Sx_{n})+\alpha^2\\
+    &=0　(n\to\infty)
+\end{align}
+\]
         </p>
         <p>
             を得る。即ち, \(\{x_{n}\}_{n=1}^\infty, ||x_{n}||=1\) で

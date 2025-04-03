@@ -21,14 +21,15 @@
             <center>\(\displaystyle\frac{1}{p}+\frac{1}{q}＝1\)</center>
         </p>
         <p>
- となる \(q＞1\) を考える。<br>
-            このとき, \(f∈L^q[0,1], g∈L^q[0,1]\) ならば
+ となる \(q＞1\) を考える。このとき, \(f∈L^p[0,1], g∈L^q[0,1]\) ならば
         </p>
         <p>
             <center>\(\displaystyle\int_{0}^1|f(r)g(r)|dr≦\sqrt[p]{\int_{0}^1|f(r)|^pdr}\sqrt[q]{\int_{0}^1|g(r)|^qdr}\)</center>
         </p>
         <p>
-            が成り立つ。<br>
+            が成り立つ。
+        </p>
+        <p>
             　特に \(p=q=2\) のとき、このヘルダーの不等式は<strong>コーシー-シュワルツの不等式</strong>と呼ばれる。
         </p>
         <h2>証明</h2>
@@ -49,13 +50,13 @@
             　定積分
         </p>
         <p>
-            <center>\(\displaystyle S_{1}\equiv\int_{0}^1 x^\alpha dx=\left[\frac{x^{\alpha+1}}{\alpha+1}\right]_0^\xi =\frac{\xi^{\alpha+1}}{\alpha+1}\)</center>
+            <center>\(\displaystyle S_{1}\equiv\int_{0}^\xi x^\alpha dx=\left[\frac{x^{\alpha+1}}{\alpha+1}\right]_0^\xi =\frac{\xi^{\alpha+1}}{\alpha+1}\)</center>
         </p>
         <p>
             と
         </p>
         <p>
-            <center>\(\displaystyle S_{2}\equiv\int_0^1 x^{\frac{1}{\alpha}}dx=\left[\frac{x^{\frac{1}{\alpha}+1}}{1/\alpha + 1}\right]_0^\eta =\frac{\eta^{\frac{1}{\alpha}+1}}{1/\alpha +1}\)</center>
+            <center>\(\displaystyle S_{2}\equiv\int_0^\eta x^{\frac{1}{\alpha}}dx=\left[\frac{x^{\frac{1}{\alpha}+1}}{1/\alpha + 1}\right]_0^\eta =\frac{\eta^{\frac{1}{\alpha}+1}}{1/\alpha +1}\)</center>
         </p>
         <p>
             を考えると, 明らかに不等式
@@ -93,8 +94,12 @@
             となる。両辺を \([0,1]\) 区間で積分すると
         </p>
         <p>
-            <center>\(\displaystyle(\int_0^1 |f(x)g(x)| dx)\frac{1}{||f||_p||g||_q}\leq\frac{1}{p}\frac{\int_0^1 |f(x)|^p dx}{\int_0^1 |f(x)|^p dx}+\frac{1}{q}\frac{\int_0^1 |g(x)|^q dx}{\int_0^1 |g(x)|^q dx}\)</center><br>
-            <center>\(　　　　\displaystyle=\frac{1}{p}+\frac{1}{q}=1\)</center>
+\[
+\begin{align}
+    \Bigg(\int_0^1 |f(x)g(x)| dx\Bigg)\frac{1}{||f||_p||g||_q} &\leq\frac{1}{p}\frac{\int_0^1 |f(x)|^p dx}{\int_0^1 |f(x)|^p dx}+\frac{1}{q}\frac{\int_0^1 |g(x)|^q dx}{\int_0^1 |g(x)|^q dx}\\
+    &=\frac{1}{p}+\frac{1}{q}=1
+\end{align}
+\]
         </p>
         <p>
             となり, ヘルダーの不等式を得る。<br>

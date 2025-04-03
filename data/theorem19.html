@@ -36,8 +36,12 @@
             　次に, \(\forall x\in\mathscr H\) は \(x=y+z　(y\in\mathscr M, z\in\mathscr M^\perp)\) と書けることを示す。 
         </p>
         <p>
-            <center>\(\displaystyle \rho\equiv\inf\{||x-m||\mid\forall m\in\mathscr M\}\)</center><br>
-            <center>\(\displaystyle \geq 0　　　　　　　　　　　　\)</center>
+\[
+\begin{align}
+    \rho &\equiv\inf\{||x-m||\mid\forall m\in\mathscr M\}\\
+    &\geq 0
+\end{align}
+\]
         </p>
         <p>
             とおき, 閉部分空間 \(\mathscr M\) の中の点列 \(\{m_j\}_{j=1}^\infty\) で
@@ -55,10 +59,14 @@
             の右辺に中線定理を用いて
         </p>
         <p>
-            <center>\(\displaystyle ||m_j-m_k||^2=||(x-m_j)-(x-m_k)||^2　　　　　　　　\)</center><br>
-            <center>\(　　　　　　　　　　　\displaystyle =2(||x-m_j||^2+||x-m_k||^2)-||2x-(m_j-m_k)||^2\)</center><br>
-            <center>\(　　\displaystyle \leq 2(||x-m_j||^2+||x-m_k||^2)-4\rho^2\)</center><br>
-            <center>\(\displaystyle \to 0　(j,k\to\infty)　　　　　　　　\)</center>
+\[
+\begin{align}
+    ||m_j-m_k||^2 &=||(x-m_j)-(x-m_k)||^2\\
+    &=2(||x-m_j||^2+||x-m_k||^2)-||2x-(m_j-m_k)||^2\\
+    &\leq 2(||x-m_j||^2+||x-m_k||^2)-4\rho^2\\
+    &\to 0　(j,k\to\infty)
+\end{align}
+\]
         </p>
         <p>
             となるため, 点列 \(\{m_j\}_{j=1}^\infty\) は基本列になる。<br>
@@ -72,23 +80,72 @@
             　\(\mathfrak R\alpha\) を複素数 \(\alpha\) の実部を表す記号として, \(\forall m\in\mathscr M, ||m||=1, \forall\lambda\in C\) に対し, 
         </p>
         <p>
-            <center>\(\displaystyle ||(x-y)-\lambda m||^2=((x-y)-\lambda m\mid (x-y)-\lambda m)\)</center><br>
-            <center>\(　　　　　　　　　　　\displaystyle =||x-y||^2-2\mathfrak R\bar\lambda(x-y\mid m)+|\lambda|^2\)</center>
+\[
+\begin{align}
+    ||(x-y)-\lambda m||^2 &=((x-y)-\lambda m\mid (x-y)-\lambda m)\\
+    &=||x-y||^2-2\mathfrak R\bar\lambda(x-y\mid m)+|\lambda|^2
+\end{align}
+\]
         </p>
         <p>
             となるが, もし \((x-y\mid m)\neq 0\) とすると \((x-y\mid m)=|(x-y\mid m)|e^{i\theta}\) なる \(\theta\in R\) がとれる。そこで, \(t\in R\) について \(\lambda=te^{i\theta}\) とおくと
         </p>
         <p>
-            <center>\(\displaystyle \rho^2\leq||x-(y+\lambda m)||^2　　　　　　　　　\)</center><br>
-            <center>\(\displaystyle =||(x-y)-\lambda m||^2　　　　　　　　\)</center><br>
-            <center>\(\displaystyle =||x-y||^2-2t|(x-y\mid m)|+y^2\)</center><br>
-            <center>\(\displaystyle =\rho^2-2t|(x-y\mid m)|+t^2　　　　\)</center>
+\[
+\begin{align}
+    \rho^2 &\leq||x-(y+\lambda m)||^2\\
+    &=||(x-y)-\lambda m||^2\\
+    &=||x-y||^2-2t|(x-y\mid m)|+y^2\\
+    &=\rho^2-2t|(x-y\mid m)|+t^2
+\end{align}
+\]
         </p>
         <p>
         となる。ところが, 最後の右辺の \(t\) の2次式は \(t\) が 0 に近ければ負になるため, 右辺全体は \(\rho^2\) より小さい。これは矛盾である。<br>
             　従って, \((x-y\mid m)=0\) 即ち \(x-y\in\mathscr M^\perp\) となる。<br>
             <br>
             (Q.E.D.)
+        </p>
+        <p>
+            <strong>課題13</strong>　直和分解
+        </p>
+        <p>
+            <center>\(\displaystyle \mathscr H=\mathscr M\oplus\mathscr M^\perp\)</center>
+        </p>
+        <p>
+            即ち \(x=y+z\) において, <strong>ピタゴラスの定理</strong>
+        </p>
+        <p>
+            <center>\(\displaystyle ||x||^2=||y||^2+||z||^2\)</center>
+        </p>
+        <p>
+            が成り立つことを示せ。
+        </p>
+        <p>
+            <strong>課題14</strong>　直和分解
+        </p>
+        <p>
+            <center>\(\displaystyle \mathscr H=\mathscr H\oplus\{0\}\)</center>
+        </p>
+        <p>
+            が成り立つことを示せ。
+        </p>
+        <p>
+            <strong>課題15</strong>　ヒルベルト空間の閉部分空間への射影作用素の写像限界を求めよ
+        </p>
+        <p>
+            <strong>課題16</strong>　\(\mathscr S\) をヒルベルト空間 \(\mathscr H\) の部分集合とする。このとき
+        </p>
+        <p>
+\[
+\begin{align}
+    \mathscr S &\subset(\mathscr S^\perp)^\perp\\
+    &=\mathscr S^{\perp\perp}
+\end{align}
+\]
+        </p>
+        <p>
+            を証明せよ。この命題は, ヒルベルト空間の中の任意の部分集合を含む閉部分集合として直交部分空間の直交部分空間が存在することを主張する。
         </p>
     </body>
 </html>

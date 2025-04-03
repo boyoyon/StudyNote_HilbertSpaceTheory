@@ -19,45 +19,78 @@
         </p>
         <h2>証明</h2>
         <p>
-            距離空間 \(\mathscr X\) の収束列を \(\{x_{n}\}_{n=1}^\infty\) とし, \(x_{\infty}=\displaystyle\lim_{n\to\infty} x_{n}\in\mathscr X\) とする。<br>
-            収束列の定義より, \(\forall\varepsilon^\prime\gt 0, \exists n^\prime(\varepsilon^\prime)\) で \(n^\prime(\varepsilon^\prime)\leq j\) なる任意の自然数<br>
-            \(j\) に対して \(d(x_{j}, x_{\infty})\lt \varepsilon^\prime\) となる。<br>
-            従って, \(n^\prime(\varepsilon^\prime)\leq j\leq k\) に対して三角不等式から<br>
-            \(d(x_{j},x_{k})\leq d(x_{j}, x_{\infty})+d(x_{\infty}, x_{k})\lt 2\varepsilon^\prime\)<br>
-            を得る。\(\varepsilon=2\varepsilon^\prime, n^\prime(\varepsilon^\prime)=n(\varepsilon)\) とおけば, これは点列 \(\{x_{n}\}_{n=1}^\infty\) が<br>
-            基本列であることを示している。<br>
+            距離空間 \(\mathscr X\) の収束列を \(\{x_{n}\}_{n=1}^\infty\) とし, \(x_{\infty}=\displaystyle\lim_{n\to\infty} x_{n}\in\mathscr X\) とする。収束列の定義より, \(\forall\varepsilon^\prime\gt 0, \exists n^\prime(\varepsilon^\prime)\) で \(n^\prime(\varepsilon^\prime)\leq j\) なる任意の自然数 \(j\) に対して
+     </p>
+     <p>
+         <center>\(d(x_{j}, x_{\infty})\lt \varepsilon '\)</center>
+     </p>
+     <p>
+        となる。従って, \(n'(\varepsilon ')\leq j\leq k\) に対して三角不等式から
+     </p>
+     <p>
+         <center>\(d(x_{j},x_{k})\leq d(x_{j}, x_{\infty})+d(x_{\infty}, x_{k})\lt 2\varepsilon^\prime\)</center>
+     </p>
+     <p>
+         を得る。\(\varepsilon=2\varepsilon ', n'(\varepsilon ')=n(\varepsilon)\) とおけば, これは点列 \(\{x_{n}\}_{n=1}^\infty\) が基本列であることを示している。<br>
             <br>
             (Q.E.D.)<br>
             <br>
             一般に, この命題の逆は成り立たない。<br>
         </p>
 
-        <h3>●例1. 有理数全体からなる集合</h3>
-        <p>
-            \(Q\) を有理数全体からなる集合とする。\(Q\) は距離関数<br>
-            \(d(r, s)=|r-s|　(\forall r,s\in Q)\)<br>
-            の存在によって距離空間である。このとき, \(Q\) の点列 \(\{x_{n}\}_{n=1}^\infty\) を<br>
-            \(x_{n}=\displaystyle\sum_{k=0}^n\frac{1}{k!}\)<br>
-            によって定めれば, これは基本列となる。しかし極限<br>
-            \(\displaystyle\lim_{n\to\infty} x_{n}=\displaystyle\sum_{k=0}^\infty\frac{1}{k!}\)<br>
-            は自然対数の底 \(e\) であり \(Q\) には存在しない。<br>
-            従って収束列ではない。<br>
-        </p>
-
-        <h3>●例2.</h3>
-        <p>
-            任意の正数 \(\delta\gt 0\) で \(\delta\lt 1\) となるものに対し, 閉区間 \([0, 1-\delta ]\)<br>
-            で定義された多項式関数の全体を \(\mathscr P[0, 1-\delta]\) とすると, <br>
-            \(\mathscr P[0, 1-\delta]\) は距離関数<br>
-            \(d(p,q)=\displaystyle\max_{0\leq t\leq 1-\delta} \{|p(t)-q(t)|\}\)<br>
-            の存在によって距離空間である。このとき, \(\mathscr P[0, 1-\delta]\) の点列<br>
-            \(\{p_{n}\}\) を<br>
-            \(p_{n}=p_{n}(t)\equiv\displaystyle\sum_{k=0}^n t^k\)<br>
-            なる多項式関数の列として定めれば, それは明らかに基本列となる。<br>
-            しかし,<br>
-             \(p_{\infty}:t\to p_{\infty}(t)=\displaystyle\lim_{n\to\infty} p_{n}(t)=\displaystyle\sum_{k=0}^\infty t^k\)<br>
-            は多項式関数とはならず, \(\mathscr P[0, 1-\delta]\) には存在しない。<br>
-            つまり, \(\mathscr P[0, 1-\delta]\) の基本列 \(\{p_{n}\}\) は収束列ではない。
+    <h3>●例1. 有理数全体からなる集合</h3>
+    <p>
+        \(Q\) を有理数全体からなる集合とする。\(Q\) は距離関数
+    </p>
+    <p>
+        <center>\(d(r, s)=|r-s|　(\forall r,s\in Q)\)</center>
+    </p>
+    <p>
+        の存在によって距離空間である。このとき, \(Q\) の点列 \(\{x_{n}\}_{n=1}^\infty\) を
+    </p>
+    <p>
+        <center>\(x_{n}=\displaystyle\sum_{k=0}^n\frac{1}{k!}\)</center>
+    </p>
+    <p>
+        によって定めれば, これは基本列となる。しかし
+    </p>
+    <p>
+        <center>\(\displaystyle\lim_{n\to\infty} x_n=\sum_{k=0}^\infty\frac{1}{k!}\)</center>
+    </p>
+    <p>
+        は \(Q\) には存在せず, 従って収束列ではない。極限 \(\displaystyle\sum_{k=0}^\infty\frac{1}{k!}\) は自然対数の底 \(e\) であり,  有理数ではない。
+    </p>   
+    <h3>●例2.</h3>
+    <p>
+        任意の正数 \(\delta\gt 0\) で \(\delta\lt 1\) となるものに対し, 閉区間 \([0, 1-\delta ]\) で定義された多項式関数の全体を \(\mathscr P[0, 1-\delta]\) とすると, \(\mathscr P[0, 1-\delta]\) は距離関数
+    </p>
+    <p>
+        <center>\(d(p,q)=\displaystyle\max_{0\leq t\leq 1-\delta} \{|p(t)-q(t)|\}\)</center>
+    </p>
+    <p>
+        の存在によって距離空間である。このとき, \(\mathscr P[0, 1-\delta]\) の点列            \(\{p_{n}\}\) を
+    </p>
+    <p>
+\[
+\begin{align}
+    p_n &=p_n(t)\\
+    &\equiv\sum_{k=0}^n t^k
+\end{align}
+\]
+    </p>
+    <p>
+        なる多項式関数の列として定めれば, それは明らかに基本列となる。しかし,
+    </p>
+    <p>
+\[
+\begin{align}
+    p_{\infty}:t\to p_{\infty}(t) &=\lim_{n\to\infty} p_n(t)\\ 
+    &=\sum_{k=0}^\infty t^k
+\end{align}
+\]
+    </p>
+    <p>
+        は多項式関数とはならず, \(\mathscr P[0, 1-\delta]\) には存在しない。つまり, \(\mathscr P[0, 1-\delta]\) の基本列 \(\{p_{n}\}\) は収束列ではない。
         </p>
 
         <h3>蛇足</h3>

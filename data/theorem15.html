@@ -25,33 +25,45 @@
         </p>
         <h2>証明</h2>
         <p>
-            <center>\(\displaystyle (|h|^{p-1})^q=|h|^{(p-1)\frac{p}{p-1}}\)</center><br>
-            <center>\(\displaystyle=|h|^p\)</center>
+\[
+\begin{align}
+    (|h|^{p-1})^q &=|h|^{(p-1)\frac{p}{p-1}}\\
+    &=|h|^p
+\end{align}
+\]
         </p>
         <p>
             より, \(h\in L^p[0,1]\) ならば \(|h|^{p-1}\in L^q[0,1]\) であることがわかる。そこで, 積分 \(\displaystyle\int_0^1 |f(x)+g(x)|^p dx\) を考えると, 
         </p>
         <p>
-            <center>\(\displaystyle\int_0^1 |f(x)+g(x)|^p dx=\int_0^1 |f(x)+g(x)|^{p-1}|f(x)+g(x)|dx\)</center><br>
-            <center>\(　　　　　　　\displaystyle\leq\int_0^1 |f(x)+g(x)|^{p-1}|f(x)| dx\)</center><br>
-            <center>\(　　　　　　　\displaystyle +\int_0^1 |f(x)+g(x)|^{p-1}|g(x)| dx\)</center>
+\[
+\begin{align}
+    \int_0^1 |f(x)+g(x)|^p dx &=\int_0^1 |f(x)+g(x)|^{p-1}|f(x)+g(x)|dx\\
+    &\leq\int_0^1 |f(x)+g(x)|^{p-1}|f(x)| dx\\
+    &+\int_0^1 |f(x)+g(x)|^{p-1}|g(x)| dx
+\end{align}
+\]
         </p>
         <p>
             となるが, \(f+g\in L^p[0,1]\) から \(|f+g|^{p-1}\in L^q[0,1]\) 故ヘルダーの不等式を用いると
         </p>
         <p>
-            <center>\(\displaystyle\int_0^1 |f(x)+g(x)|^p dx\leq ||f||_p\sqrt[q]{\int_0^1 (|f(x)Lg(x)|^{p-1})^q dx}\)</center><br>
-            <center>\(　　　　　　　　　　　　　　　\displaystyle +||g||_p\sqrt[q]{\int_0^1 (|f(x)+g(x)|-{p-1})^q}\)</center><br>
-            <center>\(　　　　　　　　　\displaystyle =||f||_p\sqrt[q]{\int_0^1 |f(x)+g(x)|^p dx}\)</center><br>
-            <center>\(　　　　　　　　　　　\displaystyle +||g||_p\sqrt[q]{\int_0^1 |f(x)+g(x)|^p dx}\)</center><br>
-            <center>\(　　　　　　　　　　　　　　\displaystyle =(||f||_p+||g||_p)\sqrt[q]{\int_0^1 |f(x)+g(x)|^p dx}\)</center>
+\[
+\begin{align}
+    \int_0^1 |f(x)+g(x)|^p dx &\leq ||f||_p\sqrt[q]{\int_0^1 (|f(x)Lg(x)|^{p-1})^q dx}\\
+    &　+||g||_p\sqrt[q]{\int_0^1 (|f(x)+g(x)|^{p-1})^q dx}\\
+    &=||f||_p\sqrt[q]{\int_0^1 |f(x)+g(x)|^p dx}\\
+    &　+||g||_p\sqrt[q]{\int_0^1 |f(x)+g(x)|^p dx}\\
+    &=(||f||_p+||g||_p)\sqrt[q]{\int_0^1 |f(x)+g(x)|^p dx}
+\end{align}
+\]
         </p>
         <p>
             を得る。<br>
             　この不等式の両辺を \(\displaystyle\sqrt[q]{\int_0^1 |f(x)+g(x)|^p dx}\) で割ると
         </p>
         <p>
-            <center>\(\displaystyle\sqrt[1-1/q]{\int_0^1 |f(x)+g(x)|^p dx\leq ||f||_p+||g||_q}\)</center>
+            <center>\(\displaystyle\sqrt[1-1/q]{\int_0^1 |f(x)+g(x)|^p dx}\leq ||f||_p+||g||_q\)</center>
         </p>
         <p>
             となるが, 左辺は

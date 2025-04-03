@@ -16,17 +16,80 @@
         <h1>補題４</h2>
         <p>
             \(\varphi\) をヒルベルト空間 \(\mathscr H\) 上の有界線形汎関数とし,  \(y_{\varphi}\in \mathscr H\) を<br>
-           リースの定理により, \(\forall x\in \mathscr H\) に対して<br>
-            \(\varphi(x)=(y_{\varphi}|x)\)<br>
-            となるように定まるベクトルとする。このとき, <br>
-            \(||\varphi||=||y_{\varphi}||\)<br>
-            となる。<br>
-            </p>
+           リースの定理により, \(\forall x\in \mathscr H\) に対して
+        </p>
+        <p>
+            <center>\(\varphi(x)=(y_{\varphi}|x)\)</center>
+        </p>
+        <p>
+            となるように定まるベクトルとする。このとき, 
+        </p>
+        <p>
+            <center>\(||\varphi||=||y_{\varphi}||\)</center>
+        </p>
+        <p>
+            となる。
+        </p>
         <h2>証明</h2>
         <p>
-
+            \(\forall x\in\mathscr H\) で
+        </p>
+        <p>
+\[
+\begin{align}
+    |\varphi(x)| &=|(y_\varphi\mid x)|\\
+    &\leq||x||||y_\varphi||
+\end{align}
+\]
+        </p>
+        <p>
+            となるため
+        </p>
+        <p>
+            <center>\(\displaystyle ||\varphi||\leq||y_\varphi||\)</center>
+        </p>
+        <p>
+            を得る.<br>
+            　そこで, \(||\varphi||\lt||y_\varphi||\) と仮定すると
+        </p>
+        <p>
+\[
+\begin{align}
+    |\varphi(y_\varphi)| &\leq||\varphi||||y_\varphi||\\
+    &\lt||y_\varphi||^2
+\end{align}
+\]
+        </p>
+        <p>
+            となる。ところが,
+        </p>
+        <p>
+\[
+\begin{align}
+    |\varphi(y_\varphi)| &=|(y_\varphi\mid y_\varphi)|\\
+    &=||y_\varphi||^2
+\end{align}
+\]
+        </p>
+        <p>
+            となって矛盾する。従って, 仮定が正しくなかったわけだから
+        </p>
+        <p>
+            <center>\(\displaystyle ||\varphi||=||y_\varphi||\)</center>
+        </p>
+        <p>
+            となる。<br>
             <br>
             (Q.E.D.)
+        </p>
+        <p>
+            リースの定理とこの補題の主張によれば, ヒルベルト空間 \(\mathscr H\) の共役空間 \(\mathscr H^*\) はヒルベルト空間 \(\mathscr H\) と同一の構造を持っているため, 数学的には同一視される。即ち,
+        </p>
+        <p>
+            <center>\(\displaystyle \mathscr H^*=\mathscr H\)</center>
+        </p>
+        <p>
+            を得る。
         </p>
     </body>
 </html>

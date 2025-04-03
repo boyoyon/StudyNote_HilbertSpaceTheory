@@ -15,14 +15,117 @@
     <body>
         <h1>定理20. リースの定理</h1>
         <p>
-            \(\varphi\) をヒルベルト空間 \(\mathscr H\) 上の有界線形汎関数とする。<br>
-            このとき, 何らかのベクトル \(y_{\varphi}\in \mathscr H\) が唯一つ存在して, \(\forall x\in \mathscr H\) に対して<br>
-            \(\varphi(x)=(y_{\varphi}|x)\)<br>
-            となる。<br>
+            \(\varphi\) をヒルベルト空間 \(\mathscr H\) 上の有界線形汎関数とする。このとき, 何らかのベクトル \(y_{\varphi}\in \mathscr H\) が唯一つ存在して, \(\forall x\in \mathscr H\) に対して
+        </p>
+        <p>
+            <center>\(\varphi(x)=(y_{\varphi}|x)\)</center>
+        </p>
+        <p>
+            となる。
         </p>
         <h2>証明</h2>
         <p>
-
+            まず, 存在するとすれば唯一つしか存在しないことを示す。そこで, \(\exists y_\varphi,z_\varphi\in\mathscr H\) に対して \(\varphi(x)=(y_\varphi\mid x),\varphi(x)=(z_\varphi\mid x)\) となると仮定する。すると, \(\forall x\in\mathscr H\) で
+        </p>
+        <p>
+            <center>\(\displaystyle (y_\varphi\mid x)=(z_\varphi\mid x)\)</center>
+        </p>
+        <p>
+        故
+        </p>
+        <p>
+            <center>\(\displaystyle (y_\varphi-z_\varphi\mid x)=0\)</center>
+        </p>
+        <p>
+            となり, \(y_\varphi-z_\varphi\) から \(y_\varphi=z_\varphi\) がいえる。<br>
+            　次に, 存在を証明する。
+        </p>
+        <p>
+            <center>\(\displaystyle \mathscr N=\{x\in\mathscr H\mid\varphi(x)=0\}\)</center>
+        </p>
+        <p>
+            とおくと, \(\mathscr N\) は \(\mathscr H\) の閉部分空間となる。なぜなら, \(\forall y,z\in\mathscr N,\forall\alpha,\beta\in C\) について \(\varphi(y)=\varphi(z)=0\) 故
+        </p>
+        <p>
+            <center>\(\displaystyle \varphi(\alpha y+\beta z)=\alpha\varphi(x)+\beta\varphi(z)\)</center>
+        </p>
+        <p>
+            となって \(\alpha y+\beta z\in\mathscr N\) から部分空間となることがわかる。また, \(\{x_n\}_{n=1}^\infty\subset\mathscr N\) を基本列とし, その極限を \(\displaystyle x=\lim_{n\to\infty} x_n\in\mathscr H\) とする。有限線形汎関数は連続だから \(\displaystyle\varphi(x)=\lim_{n\to\infty} \varphi(x_n)=0\) となって \(\displaystyle x=\lim_{n\to\infty}x_n\in\mathscr N\)。即ち \(\mathscr N\) が閉じていることがわかる。<br>
+            　まず \(\mathscr N=\mathscr H\) のとき, \(y_\varphi=0\) とおけばよい。このとき, \(\forall x\in\mathscr H\) に対し
+        </p>
+        <p>
+            <center>\(\displaystyle \varphi(x)=0=(0\mid x)\)</center>
+        </p>
+        <p>
+            となる。<br>
+            　次に, \(\mathscr N\neq\mathscr H\) のとき \(\mathscr N^\perp\neq\{0\}\) となり, 直和分解
+        </p>
+        <p>
+            <center>\(\displaystyle \mathscr H=\mathscr N\oplus\mathscr N^\perp\)</center>
+        </p>
+        <p>
+            で \(\mathscr N\cap\mathscr N^\perp=\{0\}\) から \(\mathscr N^\perp\ni x\neq0\) が存在して
+        </p>
+        <p>
+            <center>\(\displaystyle \varphi(z)\neq 0\)</center>
+        </p>
+        <p>
+            となる。<br>
+            　そこで
+        </p>
+        <p>
+            <center>\(\displaystyle y=\frac{z}{\varphi(z)}\)</center>
+        </p>
+        <p>
+            とおくと \(y\in\mathscr N^\perp\) で \(\varphi(y)=1\) となる。\(x\in\mathscr H\) を任意にとり
+        </p>
+        <p>
+            <center>\(\displaystyle x-\varphi(x)y\)</center>
+        </p>
+        <p>
+            を考えると
+        </p>
+        <p>
+\[
+\begin{align}
+    \varphi(x-\varphi(x)y) &=\varphi(x)-\varphi(x)\varphi(y)\\
+    &=\varphi(x)-\varphi(x)\\
+    &=0
+\end{align}
+\]
+        </p>
+        <p>
+            となり \(x-\varphi(x)y\in\mathscr N\) を得る。これにより
+        </p>
+        <p>
+            <center>\(\displaystyle (y\mid x-\varphi(x)y)=0\)</center>
+        </p>
+        <p>
+            となり
+        </p>
+        <p>
+            <center>\(\displaystyle (y\mid x)-\varphi(x)(y\mid y)=0\)</center>
+        </p>
+        <p>
+            即ち
+        </p>
+        <p>
+\[
+\begin{align}
+    \varphi(x) &=\frac{(y\mid x)}{(y\mid y)}\\
+    &=\left(\frac{y}{(y\mid y)}\Bigg| x\right)
+\end{align}
+\]
+        </p>
+        <p>
+            がいえる。<br>
+            　いい換えれば, \(\displaystyle y_\varphi=\frac{y}{(y\mid y)}\in\mathscr H\) ととれば
+        </p>
+        <p>
+            <center>\(\displaystyle \varphi(x)=(y_\varphi\mid x)\)</center>
+        </p>
+        <p>
+            となる。<br>
             <br>
             (Q.E.D.)
         </p>

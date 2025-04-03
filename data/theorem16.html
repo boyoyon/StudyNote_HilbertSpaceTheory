@@ -41,44 +41,64 @@
             　\(S+T\) について加法性は
         </p>
         <p>
-            <center>\(\displaystyle (S+T)(x+y)=S(x+y)+T(x+y)\)</center><br>
-            <center>\(　　　　　　　　　　\displaystyle =(Sx+Sy)+(Tx+Ty)\)</center><br>
-            <center>\(　　　　　　　　　　\displaystyle =(Sx+Tx)+(Sy+Ty)\)</center><br>
-            <center>\(　　　　　　　　　\displaystyle =(S+T)x+(S+T)y\)</center>
+\[
+\begin{align}
+    (S+T)(x+y) &=S(x+y)+T(x+y)\\
+    &=(Sx+Sy)+(Tx+Ty)\\
+    &=(Sx+Tx)+(Sy+Ty)\\
+    &=(S+T)x+(S+T)y
+\end{align}
+\]
         </p>
         <p>
             より明らか。斉次性についても, 
         </p>
         <p>
-            <center>\(\displaystyle (S+T)(\lambda x)=S(\lambda x)+T(\lambda x)\)</center><br>
-            <center>\(　　　　　\displaystyle =\lambda Sx+\lambda Tx\)</center><br>
-            <center>\(　　　　　\displaystyle =\lambda(S+T)x\)</center>
+\[
+\begin{align}
+    (S+T)(\lambda x) &=S(\lambda x)+T(\lambda x)\\
+    &=\lambda Sx+\lambda Tx\\
+    &=\lambda(S+T)x
+\end{align}
+\]
         </p>
         <p>
             となり, また有界性についても
         </p>
         <p>
-            <center>\(\displaystyle ||(S+T)x||=||Sx+Tx||\)</center><br>
-            <center>\(　　　　　　　　\displaystyle \leq||Sx||+||Tx||\)</center><br>
-            <center>\(　　　　　　　　　　\displaystyle \leq||S||||x||+||T||||x||\)</center><br>
-            <center>\(　　　　　　　　　\displaystyle =(||S||+||T||)||x||\)</center>
+\[
+\begin{align}
+    ||(S+T)x|| &=||Sx+Tx||\\
+    &\leq||Sx||+||Tx||\\
+    &\leq||S||||x||+||T||||x||\\
+    &=(||S||+||T||)||x||
+\end{align}
+\]
         </p>
         <p>
             となって, \(\mathscr L(\mathscr X, \mathscr Z)\) がベクトル空間になることがわかる。<br>
             　次に, \(\mathscr L(\mathscr X, \mathscr Z)\) が写像限界をノルムとするノルム空間となることを示す。即ち, 
         </p>
         <p>
-            <center>\(　　　　　　　　　　\displaystyle ||T||\geq 0　(||T||=0\iff T=0)\)</center><br>
-            <center>\(\displaystyle ||\lambda T||=|\lambda |||T||\)</center><br>
-            <center>\(　　　　\displaystyle ||S+T||\leq||S||+||T||\)</center>
+\[
+\begin{align}
+    &||T||\geq 0　(||T||=0\iff T=0)\\
+    &||\lambda T||=|\lambda |||T||\\
+    &||S+T||\leq||S||+||T||
+\end{align}
+\]
         </p>
         <p>
             を示すが, 最後の三角不等式については \(S+T\) の有界性の証明によって明らか。そこで, 第２の条件から見ていく。
         </p>
         <p>
-            <center>\(\displaystyle ||(\lambda T)x||=||\lambda Tx||\)</center><br>
-            <center>\(　　　　　\displaystyle =|\lambda|||Tx||\)</center><br>
-            <center>\(　　　　　　\displaystyle \leq|\lambda|||T||||x~~\)</center>
+\[
+\begin{align}
+    ||(\lambda T)x|| &=||\lambda Tx||\\
+    &=|\lambda|||Tx||\\
+    &\leq|\lambda|||T||||x||
+\end{align}
+\]
         </p>
         <p>
             より
@@ -91,8 +111,12 @@
             　いま, \(||\lambda T||\lt |\lambda|||T||\) と仮定すると,
         </p>
         <p>
-            <center>\(\displaystyle ||\lambda T||=\inf\{c\gt 0\mid ||(\lambda T)x||\leq c||x||\}\)</center>
-            <center>\(\displaystyle |\lambda|||T||=|\lambda|\inf\{c\gt 0\mid ||Tx||\leq x||x||\}\)</center>
+\[
+\begin{align}
+    &||\lambda T||=\inf\{c\gt 0\mid ||(\lambda T)x||\leq c||x||\}\\
+    &|\lambda|||T||=|\lambda|\inf\{c\gt 0\mid ||Tx||\leq x||x||\}
+\end{align}
+\]
         </p>
         <p>
             で
@@ -111,8 +135,12 @@
             　これから,
         </p>
         <p>
-            <center>\(\displaystyle ||\lambda Tx||=|\lambda|||Tx||\)</center><br>
-            <center>\(　　\displaystyle \leq c_{0}||x||\)</center>
+\[
+\begin{align}
+    ||\lambda Tx|| &=|\lambda|||Tx||\\
+    &\leq c_{0}||x||
+\end{align}
+\]
         </p>
         <p>
             を得,
@@ -150,8 +178,12 @@
             　いま, \(T\neq 0\) と仮定すると, \(\exists x_{0}\in\mathscr X, x_{0}\neq 0\) に対し \(Tx_{0}\neq 0\) となる。そこで, \(||Tx_{0}||=k\neq 0\) とおくと, \(x_{0}\neq0, ||x_{0}||\neq 0\) だから \(\exists \varepsilon_{0}\gt 0\) に対して \(\varepsilon_{0}||x_{0}||\lt k\) となる。従って, 
         </p>
         <p>
-            <center>\(\displaystyle ||Tx_{0}||=k\)</center><br>
-            <center>\(　　　　　　\displaystyle \gt\varepsilon_{0}||x_{0}||\)</center>
+\[
+\begin{align}
+    ||Tx_{0}|| &=k\\
+    &\gt\varepsilon_{0}||x_{0}||
+\end{align}
+\]
         </p>
         <p>
             となり, これは上の条件に反する。よって, \(T=0\) であることがわかる。<br>

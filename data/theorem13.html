@@ -41,9 +41,13 @@
             の両辺を \(x\) で微分すると
         </p>
         <p>
-            <center>\(0=\displaystyle\sum_{k=0}^n {}_n C_k \{kx^{k-1}(1-x)^{n-k}-(n-k)x^k(1-x)^{n-k-1}\}\)</center><br>
-            <center>\(=\displaystyle\sum_{k=0}^n{}_nC_kx^{k-1}(1-x)^{n-k-1}\{k(1-x)-(n-k)x\}　\)</center><br>
-            <center>\(=\displaystyle\sum_{k=0}^n{}_nC_kx^{k-1}(1-x)^{n-k-1}(k-nx)\}　　　　　　　　\)</center>
+\[
+\begin{align}
+    0 &=\displaystyle\sum_{k=0}^n {}_n C_k \{kx^{k-1}(1-x)^{n-k}-(n-k)x^k(1-x)^{n-k-1}\}\\
+    &=\sum_{k=0}^n{}_nC_kx^{k-1}(1-x)^{n-k-1}\{k(1-x)-(n-k)x\\
+    &=\sum_{k=0}^n{}_nC_kx^{k-1}(1-x)^{n-k-1}(k-nx)
+\end{align}
+\]
         </p>
         <p>
             を得る。両辺に \(x(1-x)\) を乗じて得られる恒等式
@@ -55,9 +59,13 @@
             の両辺を再度 \(x\) で部分すると
         </p>
         <p>
-            <center>\(0=\displaystyle\sum_{k=0}^n{}_nC_k\big\{-nx^k(1-x)^{n-k}+x^{k-1}(1-x)^{n-k-1}(k-nx)^2\big\}　　　　\)</center><br>
-            <center>\(=-n\displaystyle\sum_{k=0}^n{}_nC_kx^k(1-x)^{n-k}+\sum_{k=0}^n{}_nC_kx^{k-1}(1-x)^{n-k-1}(k-nx)^2\)</center><br>
-            <center>\(=-n+\displaystyle\sum_{k=0}^n{}_nC_kx^{k-1}(1-x)^{n-k-1}(k-nx)^2　　　　　　　　　　　\)</center>
+\[
+\begin{align}
+    0 &=\sum_{k=0}^n{}_nC_k\big\{-nx^k(1-x)^{n-k}+x^{k-1}(1-x)^{n-k-1}(k-nx)^2\big\}\\
+    &=-n\sum_{k=0}^n{}_nC_kx^k(1-x)^{n-k}+\sum_{k=0}^n{}_nC_kx^{k-1}(1-x)^{n-k-1}(k-nx)^2\\
+    &=-n+\displaystyle\sum_{k=0}^n{}_nC_kx^{k-1}(1-x)^{n-k-1}(k-nx)^2
+\end{align}
+\]
         </p>
         <p>
             となり
@@ -90,10 +98,14 @@
             　ここで, 
         </p>
         <p>
-            <center>\(f(x)-B_{n}(x)　　　　　　　　　　　　　　　　　　　　\)</center><br>
-            <center>\(=f(x)1-B_{n}(x)　　　　　　　　　　　　　　　　　　　　　\)</center><br>
-            <center>\(=f(x)\displaystyle\sum_{k=0}^n{}_nC_kx^k(1-x)^{n-k}-\sum_{k=0}^n{}_nC_kx^k(1-x)^{n-k}f(\varepsilon{k}{n})\)</center><br>
-            <center>\(=\displaystyle\sum_{k=0}^n{}_nC_kx^k(1-x)^{n-k}\Bigg\{f(x)-f\left(\varepsilon{k}{n}\right)\Bigg\}　　　　　　　　\)</center>
+\[
+\begin{align}
+    &　　f(x)-B_{n}(x)\\
+    &=f(x)1-B_{n}(x)\\
+    &=f(x)\sum_{k=0}^n{}_nC_kx^k(1-x)^{n-k}-\sum_{k=0}^n{}_nC_kx^k(1-x)^{n-k}f(\frac{k}{n})\\
+    &=\sum_{k=0}^n{}_nC_kx^k(1-x)^{n-k}\Bigg\{f(x)-f\left(\frac{k}{n}\right)\Bigg\}
+\end{align}
+\]
         </p>
         <p>
             より不等式
@@ -112,28 +124,40 @@
             このとき, \(\Sigma\) では \(\displaystyle\left|x-\frac{k}{n}\right|\lt\delta\) より \(\displaystyle\left|f(x)-f\left(\frac{k}{n}\right)\right|\lt\frac{\varepsilon}{2}\) となるため, 
         </p>
         <p>
-            <center>\(\Sigma=\displaystyle\sum_{|x-k/n|\lt\delta}{}nC_kx^k(1-x)^{n-k}\left|f(x)-f\left(\frac{k}{n}\right)\right|\)</center><br>
-            <center>\(\displaystyle\lt\frac{\varepsilon}{2}\sum_{|x-k/n|\lt\delta}{}_nC_kx^k(1-x)^{n-k}　　　　　　　\)</center><br>
-            <center>\(\displaystyle\lt\frac{\varepsilon}{2}\sum_{k=0}^n{}_nC_kx^k(1-x)^{n-k}　　　　　　　　　　\)</center><br>
-            <center>\(\displaystyle =\frac{\varepsilon}{2}　　　　　　　　　　　　　　　　　　　　　\)</center>
+\[
+\begin{align}
+    \Sigma &=\displaystyle\sum_{|x-k/n|\lt\delta}{}nC_kx^k(1-x)^{n-k}\left|f(x)-f\left(\frac{k}{n}\right)\right|\\
+    &\lt\frac{\varepsilon}{2}\sum_{|x-k/n|\lt\delta}{}_nC_kx^k(1-x)^{n-k}\\
+    &\lt\frac{\varepsilon}{2}\sum_{k=0}^n{}_nC_kx^k(1-x)^{n-k}\\
+    &=\frac{\varepsilon}{2}
+\end{align}
+\]
         </p>
         <p>
             を得る。<br>
             　また, \(\Sigma '\) では
         </p>
         <p>
-            <center>\(\displaystyle\Sigma '=\sum_{|x-k/n|\geq\delta}{}_nC_kx^k(1-x)^{n-k}\left|f(x)-f\left(\frac{k}{n}\right)\right|\)</center><br>
-            <center>\(\displaystyle\lt\sum_{|x-k/n|\geq\delta}{}_nC_kx^k(1-x)^{n-k}(M+M)　　　\)</center><br>
-            <center>\(\displaystyle\lt 2M\sum_{|x-k/n|\geq\delta}{}_nC_kx^k(1-x)^{n-k}　　　　　　\)</center>
+\[
+\begin{align}
+    \Sigma ' &=\sum_{|x-k/n|\geq\delta}{}_nC_kx^k(1-x)^{n-k}\left|f(x)-f\left(\frac{k}{n}\right)\right|\\
+    &\lt\sum_{|x-k/n|\geq\delta}{}_nC_kx^k(1-x)^{n-k}(M+M)\\
+    &\lt 2M\sum_{|x-k/n|\geq\delta}{}_nC_kx^k(1-x)^{n-k}
+\end{align}
+\]
         </p>
         <p>
             となる。ここで, 
         </p>
         <p>
-            <center>\(\displaystyle\delta^2\sum_{|x-k/n|\geq\delta}{}_nC_kx^k(1-x)^{n-k}\leq\sum_{|x-k/n|\geq\delta}{}_nC_kx^k(1-x)^{n-k}\left(x-\frac{k}{n}\right)^2\)</center><br>
-            <center>\(　　　　　　　　　　　　\displaystyle\leq\sum_{k=0}^n{}_nC_kx^k(1-x)^{n-k}\left(x-\frac{k}{n}\right)^2\)</center><br>
-            <center>\(　\displaystyle\leq\frac{x(1-x)}{n}\)</center><br>
-            <center>\(\displaystyle\leq\frac{1}{4n}　　\)</center>
+\[
+\begin{align}
+    \delta^2\sum_{|x-k/n|\geq\delta}{}_nC_kx^k(1-x)^{n-k} &\leq\sum_{|x-k/n|\geq\delta}{}_nC_kx^k(1-x)^{n-k}\left(x-\frac{k}{n}\right)^2\\
+    &\leq\sum_{k=0}^n{}_nC_kx^k(1-x)^{n-k}\left(x-\frac{k}{n}\right)^2\\
+    &\leq\frac{x(1-x)}{n}\\
+    &\leq\frac{1}{4n}
+\end{align}
+\]
         </p>
         <p>
             から
@@ -145,8 +169,12 @@
             を得るため, \(\Sigma '\) についての評価
         </p>
         <p>
-            <center>\(\displaystyle\Sigma '\leq2M\sum_{|x-k/n|\geq\delta}{}_nC_kx^k(1-x)^{n-k}\)</center><br>
-            <center>\(\displaystyle\leq\frac{2M}{4n\delta^2}　　　　　　　　　　　\)</center>
+\[
+\begin{align}
+    \Sigma ' &\leq2M\sum_{|x-k/n|\geq\delta}{}_nC_kx^k(1-x)^{n-k}\\
+    &\leq\frac{2M}{4n\delta^2}
+\end{align}
+\]
         </p>
         <p>
             が求まる。そこで, \(\delta\gt 0\) に対して \(\displaystyle\frac{M}{2n\delta^2}\lt\frac{\varepsilon}{2}\) なる \(n\) をとると
@@ -159,9 +187,13 @@
             　以上より,
         </p>
         <p>
-            <center>\(|f(x)-B_{n}(x)|\leq\Sigma+\Sigma '\)</center><br>
-            <center>\(　　　　　　　　\displaystyle\lt\frac{\varepsilon}{2}+\frac{\varepsilon}{2}\)</center><br>
-            <center>\(　　　　　=\varepsilon\)</center>
+\[
+\begin{align}
+    |f(x)-B_{n}(x)| &\leq\Sigma+\Sigma '\\
+    &\lt\frac{\varepsilon}{2}+\frac{\varepsilon}{2}\\
+    &=\varepsilon
+\end{align}
+\]
         </p>
         <p>
             が示された。<br>

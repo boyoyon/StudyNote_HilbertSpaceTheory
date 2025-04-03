@@ -22,18 +22,26 @@
             ヒルベルト空間の部分空間とは, 線形演算, 即ちベクトル和とスカラー倍で閉じている部分空間のことであるから, \(\mathscr S^\perp\) を直交部分空間として, \(\forall x,y\in\mathscr S^\perp, \forall\alpha,\beta\in C\) に対して \(\alpha x+\beta y\in\mathscr S^\perp\) となることを示せばよい。ところが, \(\forall z\in\mathscr S\) に対して \((z\mid x)=(z\mid y)=0\) 故
         </p>
         <p>
-            <center>\(\displaystyle (z\mid\alpha x+\beta y)=\alpha(z\mid x)+\beta(z\mid y)\)</center><br>
-            <center>\(\displaystyle =0　\)</center>
+\[
+\begin{align}
+    (z\mid\alpha x+\beta y) &=\alpha(z\mid x)+\beta(z\mid y)\\
+    &=0
+\end{align}
+\]
         </p>
         <p>
             即ち \(\alpha x+\beta y\in\mathscr S^\perp\) がいえる。<br>
             　ヒルベルト空間 \(\mathscr H\) の閉部分空間, つまり閉じた部分空間とは, その部分空間に含まれる任意の基本列の極限がやはりその部分空間に含まれるような部分空間のことをいう。従って, 基本列 \(\{x_n\}_{n=1}^\infty\subset\mathscr S^\perp\) が収束する極限を \(x\in\mathscr H\) とすると \(\displaystyle\lim_{n\to\infty}x_n=x\) となるが, \(\forall z\in\mathscr S\) に対して
         </p>
         <p>
-            <center>\(\displaystyle |(z\mid x)|\leq|(z\mid x)-(z\mid x_n)|\)</center><br>
-            <center>\(　\displaystyle =|(z\mid x-x_n)|\)</center><br>
-            <center>\(\displaystyle \leq ||x-x_n||||z||\)</center><br>
-            <center>\(　\displaystyle \to 0　(n\to\infty)\)</center>
+\[
+\begin{align}
+    |(z\mid x)| &\leq|(z\mid x)-(z\mid x_n)|\\
+    &=|(z\mid x-x_n)|\\
+    &\leq ||x-x_n||||z||\\
+    &\to 0　(n\to\infty)
+\end{align}
+\]
         </p>
         <p>
             となって

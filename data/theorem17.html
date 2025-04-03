@@ -28,9 +28,13 @@
             が成立している。\(x\in\mathscr X\) を任意に選んで固定すると, \(\{\varphi_n(x)\}_{n=1}^\infty\subset C\) は複素数の数列となり, 
         </p>
         <p>
-            <center>\(\displaystyle |\varphi_j(x)-\varphi_k(x)|=|(\varphi_j-\varphi_k)(x)|\)</center><br>
-            <center>\(　　　　　　　　\displaystyle \leq||\varphi_j-\varphi_k||||x||\)</center><br>
-            <center>\(　　　　　　　　\displaystyle \lt\varepsilon　(j\geq k\geq N)\)</center>
+\[
+\begin{align}
+    |\varphi_j(x)-\varphi_k(x)| &=|(\varphi_j-\varphi_k)(x)|\\
+    &\leq||\varphi_j-\varphi_k||||x||\\
+    &\lt\varepsilon　(j\geq k\geq N)
+\end{align}
+\]
         </p>
         <p>
             から基本列であることがわかる。複素数の全体 \(C\) は完備だから, この基本列は極限 \(\displaystyle\varphi(x)\equiv\lim_{n\to\infty}\varphi_n(x)\) に収束する。このとき, 
@@ -42,9 +46,13 @@
             は \(\mathscr X\) の上の汎関数であるが,
         </p>
         <p>
-            <center>\(\displaystyle \varphi(x+y)=\lim_{n\to\infty}\varphi_n(x+y)\)</center><br>
-            <center>\(　　　　　　　　\displaystyle =\lim_{n\to\infty}(\varphi_n(x)+\varphi_n(y))\)</center><br>
-            <center>\(　　　\displaystyle =\varphi(x)+\varphi(y)\)</center>
+\[
+\begin{align}
+    \varphi(x+y) &=\lim_{n\to\infty}\varphi_n(x+y)\\
+    &=\lim_{n\to\infty}(\varphi_n(x)+\varphi_n(y))\\
+    &=\varphi(x)+\varphi(y)
+\end{align}
+\]
         </p>
         <p>
         </p>
@@ -55,25 +63,37 @@
             から加法性,
         </p>
         <p>
-            <center>\(\displaystyle \varphi(\lambda x)=\lim_{n\to\infty}\varphi_n(\lambda x)\)</center><br>
-            <center>\(　　　　\displaystyle =\lim_{n\to\infty}(\lambda\varphi_n(x))\)</center><br>
-            <center>\(　　　\displaystyle =\lambda\lim_{n\to\infty}\varphi_n(x)\)</center><br>
-            <center>\(\displaystyle =\lambda\varphi(x)\)</center>
+\[
+\begin{align}
+    \varphi(\lambda x) &=\lim_{n\to\infty}\varphi_n(\lambda x)\\
+    &=\lim_{n\to\infty}(\lambda\varphi_n(x))\\
+    &=\lambda\lim_{n\to\infty}\varphi_n(x)\\
+    &=\lambda\varphi(x)
+\end{align}
+\]
         </p>
         <p>
             から斉次性が明らかとなる。<br>
             　また,
         </p>
         <p>
-            <center>\(\displaystyle |\varphi_j(x)-\varphi_k(x)|\leq||\varphi_j-\varphi_k||||x||\)</center><br>
-            <center>\(　　　　　　　　　　　\displaystyle \leq\varepsilon||x||　(j\geq k\geq N)\)</center>
+\[
+\begin{align}
+    |\varphi_j(x)-\varphi_k(x)| &\leq||\varphi_j-\varphi_k||||x||\\
+    &\leq\varepsilon||x||　(j\geq k\geq N)
+\end{align}
+\]
         </p>
         <p>
             から
         </p>
         <p>
-            <center>\(\displaystyle |(\varphi-\varphi_j)(x)|=|\varphi(x)-\varphi_j(x)|\)</center><br>
-            <center>\(　　　　　　　\displaystyle \leq\varepsilon||x||　(k\gt N)\)</center>
+\[
+\begin{align}
+    |(\varphi-\varphi_j)(x)| &=|\varphi(x)-\varphi_j(x)|\\
+    &\leq\varepsilon||x||　(k\gt N)
+\end{align}
+\]
         </p>
         <p>
             となり, \(\varphi-\varphi_j\) が有界であることがわかる。\(\varphi=\varphi_j+(\varphi-\varphi_j)\) より \(\varphi\) も有界。<br>

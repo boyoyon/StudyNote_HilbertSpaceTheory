@@ -124,29 +124,40 @@
             として定義する。この写像 \(T\) の値域が \(\mathscr S\) となっていることは自明ではないが
         </p>
         <p>
-            <center>\(||T\varphi-y_{0}||=\displaystyle\max_{x\in I}|(T\varphi)(x)-y_{0}|\)</center><br>
-            <center>\(　　　　　　　=\displaystyle\max_{x\in I}\left|\int_{x_{0}}^x f(r, \varphi(r)) dr\right|\)</center><br>
-            <center>\(　　　　　　　　\leq\displaystyle\max_{x\in I}\left|\int_{x_{0}}^x |f(r,\varphi(r))|dr\right|\)</center>
+\[
+\begin{align}
+    ||T\varphi-y_{0}|| &=\max_{x\in I}|(T\varphi)(x)-y_{0}|\\
+    &=\max_{x\in I}\left|\int_{x_{0}}^x f(r, \varphi(r)) dr\right|\\
+    &\leq\displaystyle\max_{x\in I}\left|\int_{x_{0}}^x |f(r,\varphi(r))|dr\right|
+\end{align}
+\]
         </p>
         <p>
             という評価から
         </p>
         <p>
-            <center>\(　||T\varphi-y_{0}||\leq M\displaystyle\max_{x\in I}\left|\int_{x_{0}}^xdr\right|\)</center><br>
-            <center>\(　　　　　　　=M\displaystyle\max_{x\in I}|x-x_{0}|\)</center><br>
-            <center>\(　\leq M\delta\)</center><br>
-            <center>\(\leq a\)</center>
+\[
+\begin{align}
+    ||T\varphi-y_{0}|| &\leq M\max_{x\in I}\left|\int_{x_{0}}^xdr\right|\\
+    &=M\displaystyle\max_{x\in I}|x-x_{0}|\\
+    &\leq M\delta\\
+    &\leq a
+\end{align}
+\]
         </p>
         <p>
             のように示される。<br>
             　次いで, \(T\) が完備距離空間 \(\mathscr S\) からそれ自身への縮小写像となっていることを示す。そのために \(\varphi, \psi\in\mathscr S\) を任意にとる。このとき
         </p>
         <p>
-            <center>\(d(T\varphi,Y\psi)　　　　　　　　　　　　　　　　　　　　　　　　　\)</center><br>
-            <center>\(=\displaystyle\max_{x\in I}|(T\varphi)(x)-(T\psi)(x)| 　　　　　　　　　　　　　　　　　　\)</center><br>
-            <center>\(=\displaystyle\max_{x\in I}\left|\Bigg\{y_{0}+\int_{x_{0}}^x f(r,\varphi(r)) dr\Bigg\}-\Bigg\{y_{0}+\int_{x_{0}}^x f(r,\psi(r))dr\Bigg\}\right|\)</center><br>
-            <center>\(=\displaystyle\max_{x\in I}\left|\int_{x_{0}}^x \{f(r,\varphi(r))dr-f(r,\psi(r))dr\}\right|　　　　　　　　　　\)</center><br>
-            <center>\(=\displaystyle\max_{x\in I}\left|\int_{x_{0}}^x|f(r,\varphi(r))-f(r,\psi(r))|dr\right|　　　　　　　　　　　\)</center>
+\[
+\begin{align}
+    d(T\varphi,Y\psi) &=\displaystyle\max_{x\in I}|(T\varphi)(x)-(T\psi)(x)|\\ 　　　　　　　　　　　　　　　　　　
+    &=\max_{x\in I}\left|\Bigg\{y_{0}+\int_{x_{0}}^x f(r,\varphi(r)) dr\Bigg\}-\Bigg\{y_{0}+\int_{x_{0}}^x f(r,\psi(r))dr\Bigg\}\right|\\
+    &=\max_{x\in I}\left|\int_{x_{0}}^x \{f(r,\varphi(r))dr-f(r,\psi(r))dr\}\right|\\
+    &=\max_{x\in I}\left|\int_{x_{0}}^x|f(r,\varphi(r))-f(r,\psi(r))|dr\right|
+\end{align}
+\]
         </p>
         <p>
             において, リップシッツ条件により, 
@@ -169,8 +180,12 @@
             となることがわかる。この等式を \(T\) の定義に遡って書き表すと
         </p>
         <p>
-            <center>\(\varphi(x)=(T\varphi)(x)　　　　　　　　　　　　　　　\)</center><br>
-            <center>\(=y_{0}+\displaystyle\int_{x_{0}}^x f(r,\varphi(r))dr　(\forall x\in I)\)</center>
+\[
+\begin{align}
+    \varphi(x) &=(T\varphi)(x)\\
+    &=y_{0}+\displaystyle\int_{x_{0}}^x f(r,\varphi(r))dr　(\forall x\in I)
+\end{align}
+\]
         </p>
         <p>
             を得る。即ち, \(\varphi\) は積分方程式の一意解であり, 従って微分方程式の初期値問題についての一意解となる。<br>

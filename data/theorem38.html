@@ -29,10 +29,14 @@
             　このとき, \(\forall\varepsilon '\gt 0\) に対して正数 \(K\gt 0\) が存在して, \(j\gt k\gt K\) なる \(j,k\) の全てで
         </p>
         <p>
-            \(||Tx'_{j}-Tx'_{k}||=||\lambda x'_{j}-\lambda x'_{k}||\)<br>
-            \(　　　　　　　 =||\lambda x'_{j}-Tx'_{j}+Tx'_{j}-Tx'_{k}+Tx'_{k}-\lambda x'_{k}||\)<br>
-            \(　　　　　　　\leq||\lambda x'_{j}-Tx'_{j}||+||Tx'_{j}-Tx'_{k}||+||Tx'_{k}-\lambda x'_{k}||\)<br>
-            \(　　　　　　　\lt\varepsilon '\)
+\[
+\begin{align}
+    ||Tx'_{j}-Tx'_{k}|| &=||\lambda x'_{j}-\lambda x'_{k}||\\
+    &=||\lambda x'_{j}-Tx'_{j}+Tx'_{j}-Tx'_{k}+Tx'_{k}-\lambda x'_{k}||\\
+    &\leq||\lambda x'_{j}-Tx'_{j}||+||Tx'_{j}-Tx'_{k}||+||Tx'_{k}-\lambda x'_{k}||\\
+    &\lt\varepsilon '
+\end{align}
+\]
         </p>
         <p>
             となる。
@@ -56,7 +60,7 @@
             となるが, 左辺は全ての \(k\) で \(0\) となるため,
         </p>
         <p>
-            <center>\(||(T-\lambda Ix||=0\)</center>
+            <center>\(||(T-\lambda I)x||=0\)</center>
         </p>
         <p>
             となる。つまり,

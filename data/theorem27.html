@@ -23,26 +23,38 @@
         </p>
         <h2>証明</h2>
         <p>
-            <center>\(|(x\mid Tx)|\leq||Tx||||x||\)</center><br>
-            <center>\(　　　　　\leq||T||||x||^2\)</center><br>
-            <center>\(　　　\leq||T||\)</center><br>
+\[
+\begin{align}
+    |(x\mid Tx)| &\leq||Tx||||x||\\
+    &\leq||T||||x||^2\\
+    &\leq||T||
+\end{align}
+\]
         </p>
         <p>
             より, \(|(x\mid Tx)|\leq||T||\) を得る。<br>
             　次に, ヒルベルト空間の任意のベクトル \(x\neq 0\) をとり, 
         </p>
         <p>
-            <center>\(\displaystyle c=\sqrt{\frac{||Tx||}{||x||}}\)</center><br>
-            <center>\(\displaystyle y=\frac{1}{c}Tx\)</center>
+\[
+\begin{align}
+    &c=\sqrt{\frac{||Tx||}{||x||}}\\
+    &y=\frac{1}{c}Tx
+\end{align}
+\]
         </p>
         <p>
             と定める。すると, 
         </p>
         <p>
-            <center>\(||Tx||^2=(Tx\mid Tx)　　　　　　　　　　　　　　　　　　　　　　　　　\)</center><br>
-            <center>\(=(Tx\mid cy)　　　　　　　　　　　　　　　　　　　　　\)</center><br>
-            <center>\(=(Tcx\mid y)　　　　　　　　　　　　　　　　　　　　　\)</center><br>
-            <center>\(\displaystyle =\frac{1}{4}(cx+y\mid T(cx+y))-\frac{1}{4}(cx-y\mid T(cx-y))\)</center>
+\[
+\begin{align}
+    ||Tx||^2 &=(Tx\mid Tx)\\
+    &=(Tx\mid cy)\\
+    &=(Tcx\mid y)\\
+    &=\frac{1}{4}(cx+y\mid T(cx+y))-\frac{1}{4}(cx-y\mid T(cx-y))
+\end{align}
+\]
         </p>
         <p>
             となる。
@@ -55,17 +67,25 @@
             とおくと, 上の式から
         </p>
         <p>
-            <center>\(\displaystyle　　||Tx||^2\leq\frac{1}{4}M(||cx+y||^2+||cx-y||^2)\)</center><br>
-            <center>\(\displaystyle　　　　　=\frac{1}{2}M(||cx||^2+||y||^2)　　　　\)</center><br>
-            <center>\(\displaystyle　　　　　=\frac{1}{2}M(c^2||x||^2+\frac{1}{c^2}||Tx||^2)　\)</center>
+\[
+\begin{align}
+    ||Tx||^2 &\leq\frac{1}{4}M(||cx+y||^2+||cx-y||^2)\\
+    &=\frac{1}{2}M(||cx||^2+||y||^2)\\
+    &=\frac{1}{2}M(c^2||x||^2+\frac{1}{c^2}||Tx||^2)
+\end{align}
+\]
         </p>
         <p>
-            を得る。ここで中線定理の結果を用いた。
+            を得る。ここで中線定理の結果を用いた。<br>
             　ところで, この式に\(\displaystyle c=\sqrt{\frac{||Tx||}{||x||}}\) を代入すると, 
         </p>
         <p>
-            <center>\(\displaystyle　　||Tx||^2\leq\frac{1}{2}M\left(\frac{||Tx||}{||x||}||x||^2+\frac{||x||}{||Tx||}{{Tx}}^2\right)\)</center><br>
-            <center>\(\displaystyle　　　　　=\frac{1}{2}M2{{x}}{{Tx}}　　　　　　　　　　　　　\)</center>
+\[
+\begin{align}
+    ||Tx||^2 &\leq\frac{1}{2}M\left(\frac{||Tx||}{||x||}||x||^2+\frac{||x||}{||Tx||}{{Tx}}^2\right)\\
+    &=\frac{1}{2}M2||x||||Tx||
+\end{align}
+\]
         </p>
         <p>
             となる。従って, 
