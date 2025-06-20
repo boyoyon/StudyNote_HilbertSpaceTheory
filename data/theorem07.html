@@ -17,59 +17,76 @@
         <p>
             任意の<a href="MetricSpace.html">距離空間</a>は<a href="CompleteMetricSpace.html">完備距離空間</a>の中に<a href="Dense.html">稠密</a>に埋め込むことができる。<br>
             <br>
-            集合 \(\mathscr X\) が距離関数 \(d\) について距離空間になっているとする。<br>
-            このとき, ある完備距離空間 \(\mathscr Y\) が存在し, その距離関数 \(ρ\) として,<br>
-            \(ρ(φ(x), φ(y))＝ d(x,y)　(∀x, y∈\mathscr X)\) を満足する<br>
-            \(φ：\mathscr X → \mathscr Y\)　(<a href="Isometry.html">等長写像</a>) が存在する。<br>
-            さらに, この等長写像 \(φ\) による \(\mathscr X\) の像 \(φ(\mathscr X)≡\{φ(x)|∀x∈\mathscr X\}\)<br>
-            は \(\mathscr Y\) で稠密である。<br>
+            集合 \(\mathscr X\) が距離関数 \(d\) について距離空間になっているとする。このとき, ある完備距離空間 \(\mathscr Y\) が存在し, その距離関数 \(ρ\) として,
+\[
+\rho(\varphi(x), \varphi(y))＝ d(x,y)　(\forall x, y\in\mathscr X)
+\]
+            を満足する<a href="Isometry.html">等長写像</a> \(φ：\mathscr X → \mathscr Y\) が存在する。さらに, この等長写像 \(\varphi\) による \(\mathscr X\) の像 \(\varphi(\mathscr X)\equiv\{\varphi(x)\mid\forall x\in\mathscr X\}\) は \(\mathscr Y\) で稠密である。
         </p>
+<h3>蛇足</h3>
+<p>
+実数全体の集合の完備性は定理7の前に証明されているものとする。<br>
+(そうしないと距離関数を安心して使えないので...)<br>
+(蛇足終わり)
+</p>
         <h2>証明</h2>
         <p>
-            \(\mathscr X\) の基本列の集合を \(\mathit\Phi\) とする。すなわち,<br>
-            \(\mathit\Phi\equiv\{\{x_{n}\}_{n=1}^\infty\subset\mathscr X\mid 点列\{x_{n}\}_{n=1}^\infty は基本列\}\)<br>
-            である。<br>
-             <br>
-            このとき, \(x=\{x_{n}\}_{n=1}^\infty, y=\{y_{n}\}_{n=1}^\infty\in\mathit\Phi\) が<br>
-            \(\displaystyle\lim_{n\to\infty}d(x_{n},y_{n})=0\)<br>
-            なる条件を満たすとき, \(x\) と \(y\) は関係 \(～\) があるといい, <br>
-            \(x～y\) と記し, この関係を<a href="EquivalenceRelation.html">同値関係</a>という。<br>
+            \(\mathscr X\) の基本列の集合を \(\mathit\Phi\) とする。すなわち,
+\[
+\mathit\Phi\equiv\{\{x_{n}\}_{n=1}^\infty\subset\mathscr X\mid 点列\{x_{n}\}_{n=1}^\infty は基本列\}
+\]
+            である。このとき, \(x=\{x_{n}\}_{n=1}^\infty, y=\{y_{n}\}_{n=1}^\infty\in\mathit\Phi\) が
+\[
+\lim_{n\to\infty}d(x_{n},y_{n})=0\
+\]
+            なる条件を満たすとき, \(x\) と \(y\) は<a href="EquivalenceRelation.html">同値関係</a> \(～\) であるといい, \(x～y\) と記す。<br>
+<br>
+(ここから蛇足)<br>
+\(\lim\limits_{n\to\infty}x_n\) や \(\lim\limits_{n\to\infty}y_n\) が \(\mathscr X\) に属さない場合でも \(\lim\limits_{n\to\infty} d(x_n, y_n)\) が0になるか否かは議論できる。<br>
+(ここまで蛇足)<br>
             <br>
-            任意の \(x=\{x_{n}\}_{n=1}^\infty\in\mathit\Phi\) に対して, これと同値関係にある<br>
-            \(y\in\mathit\Phi\) の全体を \(\gamma(x)\) とする。<br>
-            \(\gamma(x)=\gamma(x=\{x_{n}\}_{n=1}^\infty)=\{y\in\mathit\Phi\mid x～y\}\)<br>
+            任意の \(x=\{x_{n}\}_{n=1}^\infty\in\mathit\Phi\) に対して, これと同値関係にある \(y\in\mathit\Phi\) の全体を \(\gamma(x)\) とする。
+\[
+\begin{align}
+\gamma(x) &=\gamma(x=\{x_{n}\}_{n=1}^\infty) \\
+&=\{y\in\mathit\Phi\mid x～y\}
+\end{align}
+\]
             明らかに \(x\in\gamma(x)\) であり, \(\mathit\Phi\) は同値関係～で類別できる。<br>
             <br>
-            そこで, 集合 \(\mathscr Y\equiv\{\gamma(x)\mid\forall x\in\mathit\Phi\}\) を導入する。<br>
-            また, 写像 \(\rho:\mathscr Y^2\to R\) を<br>
-            \(\rho(\gamma(x), \gamma(y))\equiv\displaystyle\lim_{n\to\infty}d(x_{n}, y_{n})\)<br>
-            によって定めれば, これは距離関数の3条件を満たす。<br>
-            従って \(\mathscr Y\) は距離空間である。<br>
-             <br>
-             (???)<br>
-             <br>
-             　　\(d(x, y)\) は完備化前の距離空間用の距離関数なので<br>
-             　　完備化前の距離空間に収束しない点列の場合<br>
-             　　\(\displaystyle\lim_{n\to\infty}d(x_{n}, y_{n})\) がどうなるかは自明ではないのでは？<br>
-            　　<a href="https://ieyasu03.web.fc2.com/Mathmatics/139_completion_1.pdf">https://ieyasu03.web.fc2.com/Mathmatics/139_completion_1.pdf</a><br>
-             　　では, \(R\) が完備であることを理由に \(\displaystyle\lim_{n\to\infty}d(x_{n}, y_{n})\)<br>
-            　　 が収束列になるとしていた。<br>
-             　　その論法を使うには \(R\) が完備になることを定理7とは別に<br>
-             　　行っておく必要あり...<br>
-
-             <br>
-             (???終わり)<br>
-             <br>
-
-
-            そこで, この \(\mathscr Y\) の中に \(\mathscr X\) が稠密に埋め込まれることを示す。<br>
+            　そこで, 集合
+\[
+\mathscr Y\equiv\{\gamma(x)\mid\forall x\in\mathit\Phi\}
+\]
+            を導入する。また, 写像 \(\rho:\mathscr Y^2\to R\) を
+\[
+\rho(\gamma(x), \gamma(y))\equiv\lim_{n\to\infty}d(x_{n}, y_{n})
+\]
+            によって定めれば, これは距離関数の3条件を満たす。従って \(\mathscr Y\) は距離空間である。そこで, この \(\mathscr Y\) の中に \(\mathscr X\) が稠密に埋め込まれることを示す。<br>
             <br>
-            \(\mathscr X\) の任意の点 \(x\) に対し, \(x\) を極限とする収束列の１つを<br>
-            \(\{x_{n}\}_{n=1}^\infty\) とすると, \(x=\{x_{n}\}_{n=1}^\infty\in\mathit\Phi\) であるから<br>
-            \(\gamma(\{x_{n}\}_{n=1}^\infty)\) は \(x\in\mathscr X\) であるから \(\gamma(\{x_{n}\}_{n=1}^\infty)\in\mathscr Y\)<br>
-            となる。明らかに\(\gamma(\{x_{n}\}_{n=1}^\infty)\) は \(x\in\mathscr X\) を極限とする<br>
-            収束列の選び方に無関係に定まる。<br>
-            (つづく)<br>
+            　\(\mathscr X\) の任意の点 \(x\) に対し, \(x\) を極限とする収束列の１つを \(\{x_{n}\}_{n=1}^\infty\) とすると, \(x=\{x_{n}\}_{n=1}^\infty\in\mathit\Phi\) であるから \(\gamma(\{x_{n}\}_{n=1}^\infty)\in\mathscr Y\) となる。明らかに \(\gamma(\{x_n\}_{n=1}^\infty)\) は \(x\in\mathscr X\) を極限とする収束列の選び方に無関係に定まる。<br>
+            　このとき, 写像 \(\varphi:\mathscr X\to\mathscr Y\) を
+\[
+\varphi:\mathscr X\ni x\to\gamma(\{x_n\}_{n=1}^\infty)\in\mathscr Y
+\]
+            によって定めれば, これは等長写像になる。
+\[
+\begin{align}
+
+\rho\left(\varphi\left(x\right),\varphi\left(y\right)\right) &=\rho\left(\gamma\left(\{x_n\}_{n=1}^\infty\right),\gamma\left(\{y_n\}_{n=1}^\infty\right)\right) \\
+\\
+&=\lim_{n\to\infty} d(x_n, y_n) \\
+\\
+&=d\left(\lim_{n\to\infty} x_n, \lim_{n\to\infty} y_n \right) \\
+\\
+&=d(x,y)
+
+\end{align}
+\]
+等長写像 \(\varphi:\mathscr X\to\mathscr Y\) による距離空間 \(\mathscr X\)の像 \(\varphi(\mathscr X)\subset\mathscr Y\) は \(\mathscr Y\) で稠密である。
+<br>
+例えば \(\mathscr Y\) の任意の点 \(\xi\) に対し \(\xi=\gamma(\{x_n\}_{n=1}^\infty)\) となる基本列
+
             <br>
             (Q.E.D.)
         </p>

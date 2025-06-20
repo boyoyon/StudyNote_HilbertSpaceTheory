@@ -15,11 +15,36 @@
     <body>
         <h1>縮小写像 (Reduced Mapping)</h1>
         <p>
-            \(0\lt k\lt 1\) なる正数 \(k\) があって, 任意の2点 \(x,y\in\mathscr X\) について<br>
-            \(\rho(Tx,Ty)\leq kd(x,y)\) となるとき, 写像 \(T:\mathscr X\to\mathscr Z\) は<strong>縮小<br>
-            写像</strong>という。<br>
+            \(\mathscr X\)：距離関数 \(d\) が与えられた完備距離空間<br>
+            \(\mathscr Z\)：距離関数 \(\rho\) が与えられた完備距離空間<br>
+            \(T：\mathscr X\to\mathscr Z\) の写像<br>
+            \(Tx：\) 写像 \(T\) による \(x\in\mathscr X\) の像<br>
+           とする。<br>
+            <br>
+            \(0\lt k\lt 1\) なる正数 \(k\) があって, 任意の2点 \(x,y\in\mathscr X\) について
+        </p>
+        <p>
+            <center>\(\rho(Tx,Ty)\leq kd(x,y)\)</center> 
+        </p>
+        <p>
+            となるとき, 写像 \(T:\mathscr X\to\mathscr Z\) は<strong>縮小写像</strong>という。<br>
             <br>
             定義から明らかだが, 縮小写像は連続写像となっている。
         </p>
+        <h2>蛇足</h2>
+        <p>
+            \(\forall x\in\mathscr X\) に対して \(d(x,y)\lt\delta\) をみたす \(\forall y\in\mathscr X\) を考えると, 縮小写像の定義より
+        </p>
+        <p>
+            <center>\(\rho(Tx,Ty)\leq kd(x,y)\lt k\delta\)</center>
+        </p>
+        <p>
+            となり, \(k\delta=\varepsilon\) とおくと
+        </p>
+        <p>
+            <center>\(\rho(Tx,Ty)\lt\varepsilon\)</center>
+        </p>
+        <p>
+            となり、連続であることがわかる。\(x,y\) は \(\mathscr X\) の任意の点だったので, すべての点で連続となり、連続写像になっている。
     </body>
 </html>
