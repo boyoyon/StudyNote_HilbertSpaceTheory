@@ -44,7 +44,7 @@
             <a href="data/UnitarySpace.html">ユニタリー空間</a> \(\mathscr X\) の互いに直交する<a href="data/Vector.html">ベクトル</a> \(x, y∈\mathscr X\) に対し,<br>
             恒等式 \(||x+y||^2＝||x||^2+||y||^2\) が成り立つ。            
         </p>
-        <h2><a href="data/theorem05.html">定理5.</a> ジョルダン・フォン・ノイマンの定理</h2>
+        <h2><a href="data/theorem05.html">定理5.</a> ジョルダン・フォン・ノイマンの定理 (中線定理)</h2>
         <p>
             <a href="data/Vector.html">ベクトル</a> \(x, y∈\mathscr X\)に対し, 恒等式<br>
             \(||x+y||^2+||x－y||^2＝2(||x||^2+||y||^2)\)<br>
@@ -62,12 +62,12 @@
         <p>
             任意の<a href="data/MetricSpace.html">距離空間</a>は<a href="data/CompleteMetricSpace.html">完備距離空間</a>の中に<a href="data/Dense.html">稠密</a>に埋め込むことができる。<br>
             <br>
-            集合 \(\mathscr X\) が距離関数 \(d\) について距離空間になっているとする。<br>
-            このとき, ある完備距離空間 \(\mathscr Y\) が存在し, その距離関数 \(ρ\) として,<br>
+            集合 \(\mathscr X\) が<a href="data/DistanceFunction.html">距離関数</a> \(d\) について<a href="data/MetricSpace.html">距離空間</a>になっているとする。<br>
+            このとき, ある<a href="data/CompleteMetricSpace.html">完備距離空間</a> \(\mathscr Y\) が存在し, その<a href="data/DistanceFunction.html">距離関数</a> \(ρ\) として,<br>
             \(ρ(φ(x), φ(y))＝ d(x,y)　(∀x, y∈\mathscr X)\) を満足する<br>
             \(φ：\mathscr X → \mathscr Y\) (<a href="data/Isometry.html">等長写像</a>)が存在する。<br>
-            さらに, この等長写像 \(φ\) による \(\mathscr X\) の像 \(φ(\mathscr X)≡\{φ(x)|∀x∈\mathscr X\}\) <br>
-            は \(\mathscr Y\) で稠密である。
+            さらに, この<a href="data/Isometry.html">等長写像</a> \(φ\) による \(\mathscr X\) の像 \(φ(\mathscr X)≡\{φ(x)|∀x∈\mathscr X\}\) <br>
+            は \(\mathscr Y\) で<a href="data/Dense.html">稠密</a>である。
         </p>
         <h2><a href="data/theorem08.html">定理8.</a></h2>
         <p>
@@ -81,19 +81,19 @@
         <h2><a href="data/theorem10.html">定理10.</a></h2>
         <p>
             <a href="data/CompleteMetricSpace.html">完備距離空間</a> \(\mathscr X\) から<a href="data/CompleteMetricSpace.html">完備距離空間</a> \(\mathscr Z\) への写像 \(T：\mathscr X→\mathscr Z\)<br>
-            が点 \(x∈\mathscr X\) で連続ならば、\(x\) に収束する任意の<a href="data/PointSequence.html">点列</a> \(\{x_{n}\}_{n=1}^∞⊂\mathscr X\)<br>
+            が点 \(x∈\mathscr X\) で<a href="data/Continuous.html">連続</a>ならば、\(x\) に収束する任意の<a href="data/PointSequence.html">点列</a> \(\{x_{n}\}_{n=1}^∞⊂\mathscr X\)<br>
             に対して<a href="data/PointSequence.html">点列</a> \(\{Tx_{n}\}_{n=1}^∞\subset \mathscr Z\) は点 \(Tx\) に収束する。<br>
             また, 逆も成り立つ。
         </p>
         <h2><a href="data/theorem11.html">定理11.</a> 不動点定理</h2>
         <p>
-            <a href="data/CompleteMetricSpace.html">完備距離空間</a> \(X\) からそれ自身への写像 \(T:\mathscr X → \mathscr X\) が縮小写像ならば<br>
+            <a href="data/CompleteMetricSpace.html">完備距離空間</a> \(X\) からそれ自身への写像 \(T:\mathscr X → \mathscr X\) が<a href="data/ReducedMapping.html">縮小写像</a>ならば<br>
             \(Tx=x\) となる点 \(x∈X\) が唯一存在する。<br>
-            この点を縮小写像 \(T\) の不動点という。
+            この点を<a href="data/ReducedMapping.html">縮小写像</a> \(T\) の不動点という。
         </p>
         <h2><a href="data/theorem12.html">定理12.</a> 存在定理</h2>
         <p>
-            関数 \(f:R^2\ni (x,y)\to f(x,y)\in R\) は領域 \(D⊂R^2\) で連続であり<br>
+            関数 \(f:R^2\ni (x,y)\to f(x,y)\in R\) は領域 \(D⊂R^2\) で<a href="data/Continuous.html">連続</a>であり<br>
             かつ何らかの正数 \(k\gt 0\) が存在して任意の \((x,y),(x,z)\in D\) に対して<br>
             不等式 \(|f(x,y)－f(x,z)|\leq k|y－z|\) (<strong>リプシッツ条件</strong>)が満たされるとき, <br>
             任意の \(y_{0}∈R\) についての初期条件 \(y(x_{0})＝y_{0}\) を満足する微分方程式<br>
@@ -101,7 +101,7 @@
         </p>
         <h2><a href="data/theorem13.html">定理13.</a> ワイエルシュトラス</h2>
         <p>
-            閉区間 \([a,b]\subset R\) で定義された任意の連続関数 \(f\in\mathscr C[a,b]\) とする。<br>
+            閉区間 \([a,b]\subset R\) で定義された任意の<a href="data/ContinuousFunction.html">連続関数</a> \(f\in\mathscr C[a,b]\) とする。<br>
             このとき、任意の正数 \(\varepsilon\gt 0\) に対し, 何らかの多項式関数 \(p=p(x)\) <br>
             が存在して \(||f-p||\lt\varepsilon\) となる。
         </p>
@@ -186,30 +186,30 @@
         </p>
         <h2><a href="data/theorem24.html">定理24.</a></h2>
         <p>
-            等長作用素はユニタリー作用素であり, 逆に<br>
-            ユニタリー作用素は等長作用素である。<br>
+            <a href="data/IsolengthOperator.html">等長作用素</a>は<a href="data/UnitaryOperator.html">ユニタリー作用素</a>であり, 逆に<br>
+            <a href="data/UnitaryOperator.html">ユニタリー作用素</a>は<a href="data/IsolengthOperator.html">等長作用素</a>である。<br>
         </p>
         <h2><a href="data/theorem25.html">定理25.</a></h2>
         <p>
-            <a href="data/HilbertSpace.html">ヒルベルト空間</a>上の任意の有界線形作用素 \(T\) は<br>
+            <a href="data/HilbertSpace.html">ヒルベルト空間</a>上の任意の<a href="data/BoundedLinearOperator.html">有界線形作用素</a> \(T\) は<br>
             \(T=X+iY\)<br>
-            と一意に分解できる。ここで, \(X,Y\) は自己共役作用素である。
+            と一意に分解できる。ここで, \(X,Y\) は<a href="data/SelfAdjointOperator.html">自己共役作用素</a>である。
         </p>
         <h2><a href="data/theorem26.html">定理26.</a></h2>
         <p>
-            \(T\in \mathscr B(\mathscr H)\) が自己共役作用素ならば, \(\forall x\in \mathscr H\) に対して<br>
+            \(T\in \mathscr B(\mathscr H)\) が<a href="data/SelfAdjointOperator.html">自己共役作用素</a>ならば, \(\forall x\in \mathscr H\) に対して<br>
             \((x|Tx)\) は実数値になる。逆に, \(\forall x\in \mathscr H\) に対して \((x|Tx)\) <br>
-            が実数となるならば, \(T\) は自己共役作用素である。
+            が実数となるならば, \(T\) は<a href="data/SelfAdjointOperator.html">自己共役作用素</a>である。
         </p>
         <h2><a href="data/theorem27.html">定理27.</a></h2>
         <p>
-            \(T\in \mathscr B(\mathscr H)\) が自己共役作用素ならば, <br>
+            \(T\in \mathscr B(\mathscr H)\) が<a href="data/SelfAdjointOperator.html">自己共役作用素</a>ならば, <br>
             \(||T||=sup\{|(x|Tx)| |\forall x\in \mathscr H, ||x||\leq1\}\)<br>
             が成り立つ。
         </p>
         <h2><a href="data/theorem28.html">定理28.</a></h2>
         <p>
-            \(P\in \mathscr B(\mathscr H)\) が射影作用素のとき, その値域<br>
+            \(P\in \mathscr B(\mathscr H)\) が<a href="data/ProjectionOperator.html">射影作用素</a>のとき, その値域<br>
             \(\mathscr R(P)\equiv\{y=Px|\forall x\in \mathscr H\}\)<br>
             は<a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) の閉部分空間となり, それを \(\mathscr M\) とおいた直和分解<br>
             \(x=x_{\mathscr M}+x_{\mathscr M^\perp }　(\forall x\in \mathscr H, x_{\mathscr M}, x_{\mathscr M^\perp }\in \mathscr M^\perp)\)<br>
@@ -218,17 +218,17 @@
             となる。逆に, 任意の閉部分集合 \(\mathscr M\) に関する直和分解 \(\mathscr H=\mathscr M\oplus \mathscr M^\perp\)<br>
             について, <br>
             \(P:\mathscr H\ni x\to x_{\mathscr M}\in \mathscr M\)<br>
-            は射影作用素になる。
+            は<a href="data/ProjectionOperator.html">射影作用素</a>になる。
         </p>
         <h2><a href="data/theorem29.html">定理29.</a></h2>
         <p>
-            \(P,Q\in \mathscr B(\mathscr H)\) を2つの射影作用素とする。このとき,<br>
-            \(PQ\) が射影作用素となるための必要十分条件は, \(P\) と \(Q\) が可換となる, <br>
+            \(P,Q\in \mathscr B(\mathscr H)\) を2つの<a href="data/ProjectionOperator.html">射影作用素</a>とする。このとき,<br>
+            \(PQ\) が<a href="data/ProjectionOperator.html">射影作用素</a>となるための必要十分条件は, \(P\) と \(Q\) が可換となる, <br>
             すなわち \(PQ=QP\) となることである。
         </p>
         <h2><a href="data/theorem30.html">定理30.</a></h2>
         <p>
-            射影作用素 \(P,Q\in \mathscr B(\mathscr H)\) の値域を \(\mathscr M, \mathscr N\) とする。このとき<br>
+            <a href="data/ProjectionOperator.html">射影作用素</a> \(P,Q\in \mathscr B(\mathscr H)\) の値域を \(\mathscr M, \mathscr N\) とする。このとき<br>
             \(PQ=0\) なら \(\mathscr M\perp\mathscr N\) であり、逆も成り立つ。
         </p>
         <h2><a href="data/theorem31.html">定理31.</a></h2>
@@ -240,27 +240,27 @@
         <h2><a href="data/theorem32.html">定理32.</a></h2>
         <p>
             \(T\in\mathscr B(\mathscr H)\) が<a href="data/HilbertSpace.html">ヒルベルト空間</a>上の正規作用素ならば, <br>
-            有界線形作用素としての一意分解<br>
+            <a href="data/BoundedLinearOperator.html">有界線形作用素</a>としての一意分解<br>
             \(T=X+iY\)<br>
-            において, 自己共役作用素 \(X,Y\) は可換<br>
+            において, <a href="data/SelfAdjointOperator.html">自己共役作用素</a> \(X,Y\) は可換<br>
             \(XY=YX\)<br>
             となる。
         </p>
         <h2><a href="data/theorem33.html">定理33.</a></h2>
         <p>
-            \(\lambda\) を \(T\in\mathscr B(\mathscr H)\) の固有値とすると,             \(|\lambda|\leq||T||\) となる。<br>
-            また, \(T\) が自己共役作用素ならば \(\lambda\) は実数となり, <br>
-            等長作用素なら, \(|\lambda|=1\) となる。
+            \(\lambda\) を \(T\in\mathscr B(\mathscr H)\) の<a href="data/Eigenvalue.html">固有値</a>とすると,             \(|\lambda|\leq||T||\) となる。<br>
+            また, \(T\) が<a href="data/SelfAdjointOperator.html">自己共役作用素</a>ならば \(\lambda\) は実数となり, <br>
+            <a href="data/IsolengthOperator.html">等長作用素</a>なら, \(|\lambda|=1\) となる。
         </p>
         <h2><a href="data/theorem34.html">定理34.</a></h2>
         <p>
-            \(T\in\mathscr B(\mathscr H)\) が正規作用素のとき, \(\lambda\) が \(T\) の固有値ならば<br>
-            \(\overline{\lambda}\) は共役作用素 \(T^*\) の固有値となる。また, 逆も正しい。
+            \(T\in\mathscr B(\mathscr H)\) が正規作用素のとき, \(\lambda\) が \(T\) の<a href="data/Eigenvalue.html">固有値</a>ならば<br>
+            \(\overline{\lambda}\) は<a href="data/ConjugateOperator.html">共役作用素</a> \(T^*\) の<a href="data/Eigenvalue.html">固有値</a>となる。また, 逆も正しい。
         </p>
         <h2><a href="data/theorem35.html">定理35.</a></h2>
         <p>
             \(T\in\mathscr B(\mathscr H)\) が \(|\lambda|=||T||\) となるような<br>
-            \(\lambda\in C\) を近似固有値として持つならば,<br>
+            \(\lambda\in C\) を<a href="data/ApproximateEigenvalue.html">近似固有値</a>として持つならば,<br>
             \(\displaystyle \sup_{||x||=1} |(x|Tx)|=||T||\)<br>
             が成り立ち, また逆も正しい。
         </p>
@@ -273,37 +273,37 @@
         </p>
         <h2><a href="data/theorem37.html">定理37.</a></h2>
         <p>
-            \(T\) を<a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) 上の完全連続作用素とし, \(0\neq\lambda\in C\)<br>
-            をその固有値とすると, 固有部分空間<br>
+            \(T\) を<a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) 上の<a href="data/CompletelyContinuousOperator.html">完全連続作用素</a>とし, \(0\neq\lambda\in C\)<br>
+            をその<a href="data/Eigenvalue.html">固有値</a>とすると, 固有部分空間<br>
             \(\mathscr N_{T}(\lambda)=\{x\in \mathscr H|(T-\lambda I)x=0\}\)<br>
             は有限次元である。
         </p>
         <h2><a href="data/theorem38.html">定理38.</a></h2>
         <p>
-            \(T\) を<a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) 上の完全連続作用素とする。このとき<br>
-            \(0\neq\lambda\in C\) が \(T\) の近似固有値ならば, それは固有値である。
+            \(T\) を<a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) 上の<a href="data/CompletelyContinuousOperator.html">完全連続作用素</a>とする。このとき<br>
+            \(0\neq\lambda\in C\) が \(T\) の<a href="data/ApproximateEigenvalue.html">近似固有値</a>ならば, それは<a href="data/Eigenvalue.html">固有値</a>である。
         </p>
-        <h2><a href="data/theorem39.html">定理39.</a> 固有値の存在定理</h2>
+        <h2><a href="data/theorem39.html">定理39.</a> <a href="data/Eigenvalue.html">固有値</a>の存在定理</h2>
         <p>
-            <a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) 上の完全連続作用素 \(T\neq0\) が<br>
-            正規作用素となるなら, 少なくとも1つの固有値が存在する。
+            <a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) 上の<a href="data/CompletelyContinuousOperator.html">完全連続作用素</a> \(T\neq0\) が<br>
+            正規作用素となるなら, 少なくとも1つの<a href="data/Eigenvalue.html">固有値</a>が存在する。
         </p>
         <h2><a href="data/theorem40.html">定理40.</a></h2>
         <p>
-            <a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) 上の完全連続作用素 \(T\) が正規作用素<br>
-            となるなら, その固有値は高々加算無限個しか存在しない。
+            <a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) 上の<a href="data/CompletelyContinuousOperator.html">完全連続作用素</a> \(T\) が正規作用素<br>
+            となるなら, その<a href="data/Eigenvalue.html">固有値</a>は高々加算無限個しか存在しない。
         </p>
         <h2><a href="data/lemma05.html">補題5.</a></h2>
         <p>
             <a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) 上の完全連続正規作用素 \(T\) のすべての<br>
-            固有値 \(\{\lambda_{m}\}_{m=1}^\infty\) に対して, \(x\perp\mathscr N_{T}(\lambda_{m})\) となる \(x\in\mathscr H\) は<br>
+            <a href="data/Eigenvalue.html">固有値</a> \(\{\lambda_{m}\}_{m=1}^\infty\) に対して, \(x\perp\mathscr N_{T}(\lambda_{m})\) となる \(x\in\mathscr H\) は<br>
             \(x=0\) しかない。
         </p>
         <h2><a href="data/theorem41.html">定理41.</a> スペクトル分解</h2>
         <p>
             <a href="data/HilbertSpace.html">ヒルベルト空間</a> \(\mathscr H\) 上の完全連続正規作用素 \(T\) のスペクトルを<br>
-            \(\sigma(T)=\{\lambda_{m}\}_{m=1}^\infty\) とし, 固有値 \(\lambda_{m}\) に属する<br>
-            固有部分空間 \(\mathscr N_{T}(\lambda_{m})\) への射影作用素を \(P_{m}\) とする。このとき,<br>
+            \(\sigma(T)=\{\lambda_{m}\}_{m=1}^\infty\) とし, <a href="data/Eigenvalue.html">固有値</a> \(\lambda_{m}\) に属する<br>
+            固有部分空間 \(\mathscr N_{T}(\lambda_{m})\) への<a href="data/ProjectionOperator.html">射影作用素</a>を \(P_{m}\) とする。このとき,<br>
             \(T=\displaystyle \sum_{m=1}^\infty \lambda_{m}P_{m}\)<br>
             なる恒等式が成立する。これを, 完全連続正規作用素 \(T\) のスペクトル分解と呼ぶ。 
         </p>
